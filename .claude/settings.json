@@ -7,7 +7,7 @@
       "command": "node",
       "args": ["/root/.claude/mcp/higgsfield-proxy.js"],
       "env": {
-        "HIGGSFIELD_TOKEN": "hf_56jazldbBOAYIJUKy9tHZCfD6a8TieaLWwQ_iijoMnT65-UU77TQVNS1dMBNvwu-"
+        "HIGGSFIELD_TOKEN": ""
       }
     }
   }

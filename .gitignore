@@ -1,0 +1,21 @@
+# Local settings (contains API keys, never commit)
+*.local.json
+
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel/
+
+# Client credentials (post-close)
+clients/*/brand-assets/credentials*
+
+# OS files
+.DS_Store
+
+# Build artifacts
+qa-report.json
+
+# Photos (client-specific, too large for git)
+photos/
+clients/*/photos/
