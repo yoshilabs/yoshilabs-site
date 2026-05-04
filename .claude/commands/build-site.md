@@ -159,6 +159,30 @@ No image may force the page wider than 100vw.
 Background images on mobile: use background-size: cover, not contain.
 ```
 
+### LAW 11 — Overlay Elements on Illustrations
+```
+NEVER trap text-heavy elements (badges, credential pills, name tags) inside
+small illustration containers that shrink on mobile.
+
+Desktop: overlay pills on illustrations are fine (ample space).
+Mobile (<480px): ALL overlay pills inside illustrations/visuals MUST be
+  hidden (display: none) and replaced with a standalone element below the
+  illustration — full-width card, proper padding, no overlapping.
+
+This applies to:
+  - Credential badges on doctor avatars
+  - "Years of experience" pills on hero visuals
+  - Any text overlay on an SVG illustration or photo container
+
+Pattern:
+  Desktop: .overlay-pill { display: flex; }  -- inside illustration
+  Mobile:  .overlay-pill { display: none; }  -- hidden
+           .overlay-standalone { display: flex; }  -- full card below
+
+The standalone version gets REAL spacing (1.25rem+ padding, 44px icon,
+full readable font sizes). It never re-shrinks.
+```
+
 ---
 
 ## DESIGN AUTHORITY
