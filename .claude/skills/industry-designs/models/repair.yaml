@@ -1,0 +1,114 @@
+vertical: repair
+name: Repair Services / Electronics / Appliance / Auto
+
+core_emotion: "Reliability, speed, problem-solved"
+visual_voice: "Practical, straightforward, competent"
+motion_style: "Quick, functional (0.3-0.5s, snappy ease)"
+
+typography:
+  font_options:
+    - mood: "Fast, reliable, no-nonsense"
+      heading: "Barlow Condensed"
+      body: "Barlow"
+      heading_weights: [500, 600, 700]
+      body_weights: [400, 500, 600, 700]
+    - mood: "Friendly neighborhood repair"
+      heading: "Nunito"
+      body: "Nunito Sans"
+      heading_weights: [600, 700, 800]
+      body_weights: [400, 600, 700]
+    - mood: "Technical, precise, specialist"
+      heading: "Space Grotesk"
+      body: "Inter"
+      heading_weights: [400, 500, 600, 700]
+      body_weights: [400, 500, 600, 700]
+  scale:
+    h1: "clamp(2.25rem, 5vw, 3.75rem)"
+    h2: "clamp(1.75rem, 3.5vw, 2.5rem)"
+    h3: "clamp(1.25rem, 2vw, 1.5rem)"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+  rules:
+    - "letter-spacing: 0.15em on uppercase labels"
+    - "line-height: 1.7 on body text"
+    - "Body text ALWAYS left-aligned"
+    - "Speed is key — fonts should feel fast to read"
+
+color_system:
+  light:
+    dominant_60:
+      bg: "#FFFFFF"
+      bg_secondary: "#F8F8F8"
+    secondary_30:
+      text_primary: "#1C1C1C"
+      text_secondary: "#404040"
+      text_muted: "#6B6B6B"
+      card_bg: "#F5F5F5"
+    accent_10:
+      primary: "#E74C00"
+      hover: "#CC4400"
+      light: "#FF7033"
+      ghost: "rgba(231,76,0,.08)"
+    supporting:
+      tool_blue: "#2563EB"
+      success_green: "#16A34A"
+      caution_yellow: "#F59E0B"
+      steel_gray: "#475569"
+  neutrals:
+    - "#1C1C1C"
+    - "#404040"
+    - "#525252"
+    - "#6B6B6B"
+    - "#8A8A8A"
+    - "#A3A3A3"
+    - "#C4C4C4"
+    - "#D9D9D9"
+    - "#F0F0F0"
+    - "#F8F8F8"
+
+structure:
+  border_radius:
+    buttons: "8px"
+    cards: "10px"
+    images: "8px"
+    large_elements: "12px"
+    philosophy: "Clean and functional — slightly rounded but efficient. Not fussy."
+  shadows:
+    small: "0 1px 2px rgba(0,0,0,.05), 0 4px 8px rgba(0,0,0,.03)"
+    medium: "0 2px 4px rgba(0,0,0,.05), 0 8px 16px rgba(0,0,0,.05)"
+    large: "0 4px 8px rgba(0,0,0,.05), 0 16px 32px rgba(0,0,0,.07)"
+    card_hover: "0 8px 22px rgba(231,76,0,.06), 0 24px 60px rgba(0,0,0,.08)"
+  icon_style: "Outline/lightweight, technical. Tools, gears, checkmarks."
+  photography:
+    style: "Hands-on repair work, before/after, tools, completed jobs"
+    lighting: "Bright, well-lit workshop or on-site"
+    composition: "Close-up of repair work, technician at work, before/after split"
+    hero: "Technician at work OR bold text-driven hero with 'Fast Repair' promise"
+    cards: "Square, service category photos or icons"
+    about: "Technician portrait, workshop/shop, tools"
+  animation:
+    speed: "Fast (0.3-0.5s)"
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    style: "Snappy, functional. Quick reveals, no decorative animation. Speed = trust."
+
+sections:
+  - {name: "Hero", purpose: "'Fast Reliable Repair' + phone/WhatsApp CTA", required: true}
+  - {name: "Services", purpose: "What we fix — phone, laptop, appliance, AC, auto", required: true}
+  - {name: "How It Works", purpose: "3-step process: Contact → Diagnose → Fix", required: true}
+  - {name: "Why Choose Us", purpose: "Speed, warranty, pricing transparency", required: true}
+  - {name: "Testimonials", purpose: "Customer reviews with photos", required: true}
+  - {name: "Pricing", purpose: "Starting prices or 'Get a Quote'", required: true}
+  - {name: "FAQ", purpose: "Turnaround time, warranty, service area", required: true}
+  - {name: "Contact", purpose: "Phone, WhatsApp, location, hours", required: true}
+
+cta_strategy:
+  primary_text: "Book a Repair"
+  secondary_text: "Our Services"
+  urgency: "Broken device? We fix it today."
+  trust_signals: ["Same-day service", "90-day warranty", "5-star Google reviews"]
+
+local_context:
+  payment: ["GCash", "Cash", "Maya"]
+  contact: ["WhatsApp", "Phone", "Facebook Messenger"]
+  typical_hours: "Mon-Sat 8AM-6PM, some Sunday emergency"
+  notes: "Filipinos search 'repair near me' on Facebook. WhatsApp/phone are primary contact. Emphasize speed and warranty. Many customers are walk-in."

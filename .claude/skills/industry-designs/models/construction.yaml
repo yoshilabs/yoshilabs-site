@@ -1,0 +1,220 @@
+vertical: construction
+name: Construction / Building / Contracting
+
+# === BRAND PERSONALITY ===
+core_emotion: "Strength, solidity, trust"
+visual_voice: "Bold, industrial, grounded"
+motion_style: "Sturdy, deliberate (0.5-0.7s, confident ease)"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "Industrial strength, structural engineering"
+      heading: "Archivo Black"
+      body: "Source Sans 3"
+      heading_weights: [400]
+      body_weights: [400, 600, 700]
+
+    - mood: "Modern builder, bold and commanding"
+      heading: "Bebas Neue"
+      body: "DM Sans"
+      heading_weights: [400]
+      body_weights: [400, 500, 600, 700]
+
+    - mood: "Structured, assertive, dependable"
+      heading: "Oswald"
+      body: "Inter"
+      heading_weights: [400, 500, 600, 700]
+      body_weights: [400, 500, 600]
+
+    - mood: "Architectural sophistication, premium builder"
+      heading: "DM Serif Display"
+      body: "Manrope"
+      heading_weights: [400]
+      body_weights: [400, 500, 600, 700]
+
+  scale:
+    h1: "clamp(2.75rem, 6vw, 5rem)"
+    h2: "clamp(2rem, 4.5vw, 3.5rem)"
+    h3: "clamp(1.5rem, 3vw, 2.25rem)"
+    h4: "1.375rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "Headings UPPERCASE for impact, or title-case for premium/architectural feel"
+    - "letter-spacing: 0.08em on headings — structured, not crowded"
+    - "letter-spacing: 0.15em on small labels and nav items"
+    - "line-height: 1.1-1.2 on headings (tight, solid)"
+    - "line-height: 1.7 on body"
+    - "body text ALWAYS left-aligned"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Warm Off-White"
+      bg: "#F5F2ED"
+      bg_secondary: "#EBE7E1"
+    secondary_30:
+      name: "Steel Charcoal"
+      text_primary: "#1C1C1C"
+      text_secondary: "#4A4A4A"
+      text_muted: "#7A7A7A"
+      card_bg: "#FFFFFF"
+    accent_10:
+      name: "Safety Amber"
+      primary: "#D4860B"
+      hover: "#B8720A"
+      light: "#E8A43A"
+      ghost: "rgba(212,134,11,.1)"
+    supporting:
+      steel_blue: "#3D5A80"
+      steel_blue_dark: "#2C4360"
+      concrete: "#B0A999"
+      charcoal: "#2A2A2A"
+
+  dark:
+    dominant_60:
+      name: "Deep Charcoal"
+      bg: "#141414"
+      bg_secondary: "#1C1C1C"
+    secondary_30:
+      name: "Warm White"
+      text_primary: "#F0EDE8"
+      text_secondary: "#B0ADA8"
+      text_muted: "#706E6A"
+      card_bg: "#222222"
+    accent_10:
+      name: "Industrial Amber"
+      primary: "#E8A43A"
+      hover: "#D4920B"
+      light: "#F0BE6E"
+    supporting:
+      steel_blue: "#5B8DB8"
+      orange_accent: "#E8701A"
+      concrete_light: "#8A8478"
+
+  neutrals:
+    - "#FFFFFF"
+    - "#F0EDE8"
+    - "#D0CBC3"
+    - "#B0A999"
+    - "#8A8478"
+    - "#6A6560"
+    - "#4A4A4A"
+    - "#2A2A2A"
+    - "#1C1C1C"
+    - "#141414"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "6px"
+    cards: "8px"
+    images: "6px"
+    large_elements: "10px"
+    philosophy: "Minimal rounding — clean, structural, engineered. Strength, not softness."
+
+  shadows:
+    small: "0 1px 2px rgba(0,0,0,.06), 0 4px 8px rgba(0,0,0,.04)"
+    medium: "0 2px 4px rgba(0,0,0,.06), 0 8px 16px rgba(0,0,0,.08)"
+    large: "0 4px 8px rgba(0,0,0,.06), 0 16px 32px rgba(0,0,0,.10)"
+    card_hover: "0 8px 24px rgba(0,0,0,.12), 0 20px 48px rgba(0,0,0,.08)"
+    accent_glow: "0 0 30px rgba(212,134,11,.2)"
+
+  icon_style: "Solid, geometric icons. Clean and uniform (1.5-2px stroke). Structured, not decorative."
+
+  photography:
+    style: "Wide structural shots, clean angles, finished builds. Think architectural photography meets jobsite realism."
+    lighting: "Natural daylight, golden hour for exteriors, even interior lighting"
+    composition: "Wide angles, strong lines, before/after comparisons, detail shots of materials"
+    hero: "Signature project wide shot or architectural detail with bold text overlay"
+    cards: "Landscape (16:9 or 3:2), project exteriors/interiors, clean and well-lit"
+    about: "Team on site, equipment, behind-the-scenes construction, handshakes"
+
+  animation:
+    speed: "Medium-sturdy (0.5-0.7s)"
+    easing: "cubic-bezier(0.25, 0.1, 0.25, 1) — smooth, confident, deliberate"
+    hover_easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    style: "Solid reveals, measured lifts, structural grid animations. Sturdy and deliberate — nothing bouncy or playful."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Bold architectural/project shot + company name + tagline + 'Get a Free Quote' CTA"
+    layout: "Full-bleed image with dark overlay, strong horizontal lines"
+    required: true
+
+  - name: "Services"
+    purpose: "3-6 service cards (residential, commercial, renovation, project management, etc.)"
+    layout: "Structured grid with icons, clean card design"
+    required: true
+
+  - name: "Featured Projects"
+    purpose: "Portfolio showcase — 4-6 signature projects with photos and scope"
+    layout: "Image-heavy grid or masonry, project type labels"
+    required: true
+
+  - name: "Stats / Credentials"
+    purpose: "Animated counters — projects completed, years experience, team size, client satisfaction"
+    layout: "Horizontal stat strip with large numbers, solid background"
+    required: true
+
+  - name: "About / Expertise"
+    purpose: "Company story, team credentials, certifications, licenses"
+    layout: "Split layout — editorial photo + text block"
+    required: true
+
+  - name: "Process"
+    purpose: "How they work — consultation, design, build, handover (3-5 steps)"
+    layout: "Numbered steps or timeline, left-to-right flow"
+    required: false
+
+  - name: "Testimonials"
+    purpose: "Client reviews, project success stories with before/after"
+    layout: "Carousel or cards with client name + project type"
+    required: true
+
+  - name: "Contact / Get a Quote"
+    purpose: "Quote request form, service area, phone, email, office address"
+    layout: "Form + contact details side by side"
+    required: true
+
+  - name: "Footer"
+    purpose: "Contact, services list, service areas, certifications, socials"
+    layout: "Multi-column, substantial and structured"
+    required: true
+
+cta_strategy:
+  primary_text: "Get a Free Quote"
+  secondary_text: "View Our Projects"
+  join_text: "Start Your Project"
+  placement: "Hero, after featured projects, after testimonials, sticky nav"
+  urgency: "Book your consultation — projects fill up fast"
+  trust_signals:
+    - "Licensed and insured"
+    - "15+ years of experience"
+    - "200+ projects completed"
+    - "5-star Google rating"
+
+competitor_references:
+  - name: "Turner Construction"
+    url: "turnerconstruction.com"
+    takeaways: "Clean layout, bold imagery, structured grid, professional trust signals"
+  - name: "Skanska"
+    url: "skanska.com"
+    takeaways: "Minimalist, strong typography, project showcase focus, blue/steel palette"
+  - name: "Mortenson"
+    url: "mortenson.com"
+    takeaways: "Dark hero sections, bold stats, process visualization, industry credibility"
+
+local_context:
+  payment: ["GCash", "Maya", "Cash", "Bank Transfer", "Cheque"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  booking_platforms: ["Cal.com", "Google Calendar", "Facebook Page"]
+  trust_signals: ["PCAB license", "Years operating", "Project portfolio", "Engineer credentials"]
+  social_proof: "Facebook page reviews, project photos, before/after albums, Google reviews"
+  mobile_first: true
+  typical_hours: "Mon-Sat 7AM-6PM"
+  notes: "Filipino clients want to see finished projects and credentials. PCAB license is a trust differentiator. Show before/after transformations. GCash/bank for progress billing. Include service area coverage."

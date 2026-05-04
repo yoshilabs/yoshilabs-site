@@ -1,0 +1,223 @@
+vertical: accounting
+name: Accounting / Bookkeeping / Financial Services
+
+# === BRAND PERSONALITY ===
+core_emotion: "Precision, reliability, clarity"
+visual_voice: "Structured, clean, professional"
+motion_style: "Smooth, systematic (0.5-0.7s, confident ease)"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "Modern fintech, trustworthy precision"
+      heading: "DM Sans"
+      body: "Inter"
+      heading_weights: [400, 500, 700]
+      body_weights: [400, 500, 600]
+      note: "DM Sans geometric clarity meets Inter readability — modern Xero aesthetic"
+
+    - mood: "Established professional, structured authority"
+      heading: "Source Serif 4"
+      body: "DM Sans"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 600]
+      note: "Serif heading adds tradition and gravitas. Sans-serif body keeps it modern."
+
+    - mood: "Clean geometric, fintech-forward"
+      heading: "Plus Jakarta Sans"
+      body: "Inter"
+      heading_weights: [600, 700, 800]
+      body_weights: [400, 500, 600]
+      note: "Weight contrast between heading (700-800) and body (400-500) creates hierarchy without serifs"
+
+    - mood: "Warm, approachable accounting"
+      heading: "Outfit"
+      body: "Karla"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 700]
+      note: "Slightly friendlier — good for small local firms wanting warmth without losing credibility"
+
+  scale:
+    h1: "clamp(2.5rem, 5vw, 4rem)"
+    h2: "clamp(1.8rem, 3.5vw, 2.75rem)"
+    h3: "clamp(1.25rem, 2vw, 1.5rem)"
+    h4: "1.25rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "letter-spacing: 0.12em on ALL uppercase labels"
+    - "line-height: 1.7 on body text"
+    - "heading line-height: 1.25-1.35"
+    - "Body text ALWAYS left-aligned"
+    - "Numbers and financial figures: use tabular figures (font-feature-settings: 'tnum')"
+    - "Avoid decorative or hand-drawn fonts — precision is the personality"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Clean Off-White"
+      bg: "#FAFAFA"
+      bg_secondary: "#F2F4F7"
+    secondary_30:
+      name: "Deep Navy"
+      text_primary: "#1C1C1C"
+      text_secondary: "#3A3F4B"
+      text_muted: "#6B7280"
+      card_bg: "#FFFFFF"
+    accent_10:
+      name: "Confident Teal"
+      primary: "#0D7C66"
+      hover: "#0A6B58"
+      light: "#12A085"
+      ghost: "#E6F5F1"
+    supporting:
+      navy: "#1B2A4A"
+      steel: "#6B7B8D"
+      warm_gold: "#C8A96E"
+      section_alt: "#F7F8FA"
+      success_green: "#10B981"
+      border_light: "#E5E7EB"
+
+  dark:
+    dominant_60:
+      name: "Deep Slate"
+      bg: "#0F1419"
+      bg_secondary: "#1A2332"
+    secondary_30:
+      name: "Cool Silver"
+      text_primary: "#F0F2F5"
+      text_secondary: "#A0AEBE"
+      text_muted: "#6B7B8D"
+      card_bg: "#1E2D3D"
+    accent_10:
+      name: "Bright Teal"
+      primary: "#14B8A6"
+      hover: "#0D9488"
+      light: "#5EEAD4"
+    supporting:
+      navy_accent: "#3B82A0"
+      gold_accent: "#D4A843"
+
+  neutrals:
+    - "#1C1C1C"
+    - "#3A3F4B"
+    - "#4B5563"
+    - "#6B7280"
+    - "#9CA3AF"
+    - "#B0B8C4"
+    - "#D1D5DB"
+    - "#E5E7EB"
+    - "#F2F4F7"
+    - "#FAFAFA"
+    - "#FFFFFF"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "8px"
+    cards: "10px"
+    images: "10px"
+    large_elements: "14px"
+    philosophy: "Clean and structured — slightly rounded for approachability but crisp enough for precision"
+
+  shadows:
+    small: "0 1px 2px rgba(13,124,102,.04), 0 4px 8px rgba(0,0,0,.03)"
+    medium: "0 2px 4px rgba(0,0,0,.04), 0 8px 16px rgba(0,0,0,.05)"
+    large: "0 4px 8px rgba(0,0,0,.04), 0 16px 32px rgba(0,0,0,.07)"
+    card_hover: "0 8px 22px rgba(13,124,102,.08), 0 24px 60px rgba(0,0,0,.08)"
+
+  icon_style: "Solid/geometric, clean and uniform. No hand-drawn. No playful. Think dashboard UI icons."
+
+  photography:
+    style: "Bright, structured, professional. Modern office / fintech aesthetic."
+    lighting: "Even, well-lit, natural where possible — clean but not clinical"
+    composition: "Office workspace, team collaboration, financial dashboards, handshakes, documents"
+    hero: "Clean office shot or abstract data visualization with confident overlay"
+    cards: "Service-related imagery — organized documents, laptops with dashboards, team meetings"
+    about: "Accountant portrait, team photo, modern office interior"
+
+  animation:
+    speed: "Medium (0.5-0.7s)"
+    easing: "cubic-bezier(0.4, 0.0, 0.2, 1)"
+    hover_easing: "ease"
+    style: "Smooth, systematic reveals. Confident, not flashy. Think financial dashboard transitions."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Professional shot + firm name + 'Get Free Consultation' CTA"
+    layout: "Clean hero with structured layout, clear value proposition, and prominent CTA"
+    required: true
+
+  - name: "Services"
+    purpose: "Accounting, bookkeeping, tax prep, payroll — with clear descriptions"
+    layout: "Clean card grid or structured list with icons"
+    required: true
+
+  - name: "About / Team"
+    purpose: "Firm credentials, CPA licenses, years of experience, team bios"
+    layout: "Split: team photo left, credentials right"
+    required: true
+
+  - name: "Why Choose Us / Trust"
+    purpose: "Differentiators — accuracy guarantee, responsive service, local expertise"
+    layout: "Icon + text grid or stat counters (clients served, years in business)"
+    required: true
+
+  - name: "Testimonials"
+    purpose: "Client reviews, case studies, retention rates"
+    layout: "Carousel or grid with business names and star ratings"
+    required: true
+
+  - name: "Pricing / Plans"
+    purpose: "Transparent pricing tiers or starting-at pricing"
+    layout: "Pricing cards with clear feature lists"
+    required: false
+
+  - name: "FAQ"
+    purpose: "Common questions — tax deadlines, document requirements, pricing, onboarding"
+    layout: "Accordion"
+    required: true
+
+  - name: "Free Consultation CTA"
+    purpose: "Book a call or send a message — low friction entry point"
+    layout: "Centered CTA with form or booking link + phone + email"
+    required: true
+
+  - name: "Location & Contact"
+    purpose: "Map, address, office hours, full contact info"
+    layout: "Two-column: map + info"
+    required: true
+
+cta_strategy:
+  primary_text: "Get Free Consultation"
+  secondary_text: "View Services"
+  placement: "Hero, after services, after testimonials, sticky nav"
+  urgency: "Tax season is coming — get your books in order"
+  trust_signals:
+    - "Licensed CPA"
+    - "BOC registered"
+    - "Xero / QuickBooks Certified"
+
+competitor_references:
+  - name: "Xero"
+    url: "xero.com"
+    takeaways: "Clean teal palette, structured layouts, generous whitespace, confidence through simplicity"
+  - name: "QuickBooks (Intuit)"
+    url: "quickbooks.intuit.com"
+    takeaways: "Professional but approachable. Green accent. Clear service tiers. Trust through clarity."
+  - name: "Bench"
+    url: "bench.co"
+    takeaways: "Modern fintech aesthetic. Light backgrounds, green/teal accents, clean sans-serif. Premium but not stuffy."
+
+local_context:
+  payment: ["GCash", "Maya", "Bank Transfer", "Cash"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Email"]
+  booking_platforms: ["Cal.com", "Google Calendar", "Calendly"]
+  trust_signals: ["CPA licensed", "Years of experience", "BIR registered", "QuickBooks/Xero certified"]
+  social_proof: "Google reviews, Facebook page, client testimonials, business associations"
+  mobile_first: true
+  typical_hours: "Mon-Fri 8AM-5PM, Sat 9AM-12PM"
+  notes: "Filipino SMEs need accountants for BIR compliance — emphasize tax deadline knowledge and BIR registration. GCash/bank transfer are standard payment. Many small business owners find accountants through referrals and Facebook. Show understanding of local tax season (April deadline). Highlight ease of onboarding — most business owners dread the paperwork process."

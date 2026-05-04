@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": ["Read", "Write", "mcp__higgsfield__generate_image", "mcp__higgsfield__check_credits"]
+  },
+  "mcpServers": {
+    "higgsfield": {
+      "command": "node",
+      "args": ["/root/.claude/mcp/higgsfield-proxy.js"],
+      "env": {
+        "HIGGSFIELD_TOKEN": "hf_56jazldbBOAYIJUKy9tHZCfD6a8TieaLWwQ_iijoMnT65-UU77TQVNS1dMBNvwu-"
+      }
+    }
+  }
+}

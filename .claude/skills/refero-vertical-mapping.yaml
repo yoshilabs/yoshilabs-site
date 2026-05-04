@@ -1,0 +1,98 @@
+# Refero Style → Industry Vertical Mapping
+# Use this to pick a world-class design reference for each client vertical
+
+mapping:
+  salon:
+    primary: Superhuman
+    secondary: ElevenLabs
+    reason: "Cinematic, immersive, experience-focused — perfect for beauty/wellness"
+  dental:
+    primary: Anthropic
+    secondary: OpenAI
+    reason: "Scholarly, clean, trustworthy — medical credibility without looking sterile"
+  restaurant:
+    primary: Stripe
+    secondary: Family
+    reason: "Structured, appetizing, payment/checkout DNA — food business flow"
+  repair:
+    primary: Cursor
+    secondary: Hyperstudio
+    reason: "Bold, technical, industrial — shows competence and precision"
+  real-estate:
+    primary: Linear
+    secondary: Mercury
+    reason: "Dark mode, data-heavy, premium aspirational — property dashboard feel"
+  law-firm:
+    primary: Anthropic
+    secondary: Titan
+    reason: "Editorial, authoritative, text-heavy — legal credibility"
+  gym:
+    primary: Cursor
+    secondary: Antimetal
+    reason: "Bold, energetic, high-contrast — power and performance"
+  bakery:
+    primary: ElevenLabs
+    secondary: Family
+    reason: "Warm, editorial, storytelling — food craft and care"
+  veterinary:
+    primary: Superhuman
+    secondary: OpenAI
+    reason: "Caring, immersive, clean — trust for pet owners"
+  accounting:
+    primary: Linear
+    secondary: Stripe
+    reason: "Dark, data-driven, precise — financial dashboards"
+  construction:
+    primary: Cursor
+    secondary: Hyperstudio
+    reason: "Technical, structural, engineering — shows building expertise"
+  tutorial:
+    primary: Anthropic
+    secondary: Perplexity
+    reason: "Educational, clean info hierarchy, scholarly"
+  photography:
+    primary: Minimalissimo
+    secondary: ElevenLabs
+    reason: "Minimal gallery aesthetic, visual-first, editorial"
+  event-planner:
+    primary: Base44
+    secondary: ElevenLabs
+    reason: "Modern playful, gradient warmth, creative energy"
+  creative-agency:
+    primary: monopo-saigon
+    secondary: Base44
+    reason: "Asian minimal, dark gradient, modern creative"
+  general:
+    primary: OpenAI
+    secondary: Dia-Browser
+    reason: "Clean, versatile, trustworthy — works for any business"
+
+# Quick reference for all 20 styles
+styles:
+  Linear:         "Dark command center, neon lime accent, Layered surfaces (#08090a → #0f1011 → #161718)"
+  Stripe:         "White architectural blueprint, structured, payment/checkout DNA"
+  Anthropic:     "Warm research journal, editorial, scholarly, text-heavy"
+  Cursor:         "Warm ivory studio, technical, bold, developer-focused"
+  Mercury:        "Mountain top command center, premium banking, aspirational"
+  Superhuman:     "Cinematic cockpit, immersive, experience-focused, warm tech"
+  ElevenLabs:     "Architect's blueprint on warm vellum, editorial, storytelling"
+  Raycast:        "Obsidian command terminal, dark utility, developer tools"
+  Base44:         "Softly lit gradient canvas, modern playful, contemporary"
+  OpenAI:         "Blank page, clean minimal, trustworthy"
+  Perplexity:     "Ivory desk with graphite tools, clean info hierarchy, research"
+  Airbnb:         "Vacation photos on white wall, visual-first, cards, booking"
+  Titan:          "Monochrome financial ledger, premium data, investment"
+  Hyperstudio:    "Monochrome terminal with amber, structural engineering, dark"
+  Dia-Browser:    "Prism on white stationery, light, clean, contemporary"
+  Family:         "Pixar storyboard on cream paper, warm, friendly, versatile"
+  Antimetal:      "Electric storm over blueprint, high contrast, dramatic"
+  monopo-saigon:  "Shifting gradient depths, dark gradient, Asian minimal"
+  Minimalissimo:  "White gallery canvas, extreme minimal, gallery aesthetic"
+  General-Intelligence: "Architectural night sky, premium tech, innovation"
+
+# Usage in builds
+# Include this file in Claude Code prompts:
+# "Read .claude/skills/refero-design-systems.yaml and use the [style] system
+# as the primary design reference for this build."
+# Then follow our industry model for section structure, but use Refero's
+# colors, typography, spacing, and dos/donts for the visual execution.

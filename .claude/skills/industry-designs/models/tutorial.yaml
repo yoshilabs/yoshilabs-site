@@ -1,0 +1,114 @@
+vertical: tutorial
+name: Tutorial Center / Review Center / Learning Center
+
+core_emotion: "Growth, achievement, possibility"
+visual_voice: "Encouraging, structured, energetic"
+motion_style: "Upbeat, progressive (0.4-0.6s, hopeful ease)"
+
+typography:
+  font_options:
+    - mood: "Academic, serious review center"
+      heading: "Merriweather"
+      body: "Source Sans 3"
+      heading_weights: [400, 700, 900]
+      body_weights: [400, 600, 700]
+    - mood: "Modern, tech-forward learning"
+      heading: "Space Grotesk"
+      body: "Inter"
+      heading_weights: [400, 500, 600, 700]
+      body_weights: [400, 500, 600, 700]
+    - mood: "Friendly, approachable tutorial"
+      heading: "Nunito"
+      body: "Karla"
+      heading_weights: [600, 700, 800]
+      body_weights: [400, 500, 700]
+  scale:
+    h1: "clamp(2.5rem, 5vw, 4rem)"
+    h2: "clamp(1.8rem, 3.5vw, 2.75rem)"
+    h3: "clamp(1.25rem, 2vw, 1.5rem)"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+  rules:
+    - "letter-spacing: 0.15em on uppercase labels"
+    - "line-height: 1.7 on body text"
+    - "Body text ALWAYS left-aligned"
+    - "Stats matter — show pass rates, student counts prominently"
+
+color_system:
+  light:
+    dominant_60:
+      bg: "#FFFFFF"
+      bg_secondary: "#F5F3FF"
+    secondary_30:
+      text_primary: "#1E1B3A"
+      text_secondary: "#3D3870"
+      text_muted: "#6B65A0"
+      card_bg: "#F8F6FF"
+    accent_10:
+      primary: "#7C3AED"
+      hover: "#6D28D9"
+      light: "#A78BFA"
+      ghost: "rgba(124,58,237,.08)"
+    supporting:
+      success_green: "#10B981"
+      warm_orange: "#F59E0B"
+      sky_blue: "#0EA5E9"
+      soft_pink: "#EC4899"
+  neutrals:
+    - "#1E1B3A"
+    - "#3D3870"
+    - "#544D85"
+    - "#6B65A0"
+    - "#8880B8"
+    - "#A59BC8"
+    - "#C0B6D8"
+    - "#D8D0E8"
+    - "#F0ECF5"
+    - "#F8F6FF"
+
+structure:
+  border_radius:
+    buttons: "12px"
+    cards: "14px"
+    images: "12px"
+    large_elements: "16px"
+    philosophy: "Friendly and encouraging — enough rounding to feel welcoming without being childish"
+  shadows:
+    small: "0 1px 2px rgba(124,58,237,.04), 0 4px 8px rgba(0,0,0,.03)"
+    medium: "0 2px 4px rgba(0,0,0,.04), 0 8px 16px rgba(124,58,237,.04)"
+    large: "0 4px 8px rgba(0,0,0,.04), 0 16px 32px rgba(124,58,237,.06)"
+    card_hover: "0 8px 22px rgba(124,58,237,.08), 0 24px 60px rgba(0,0,0,.08)"
+  icon_style: "Slightly rounded, educational. Books, checkmarks, trophies, caps."
+  photography:
+    style: "Students learning, celebrating results, classroom energy"
+    lighting: "Bright, warm, optimistic lighting"
+    composition: "Students in class, graduation poses, teacher helping student, study groups"
+    hero: "Students celebrating success OR inspiring classroom moment"
+    cards: "Subject photos, classroom, study materials"
+    about: "Teachers/instructors, classroom, student success stories"
+  animation:
+    speed: "Medium (0.4-0.6s)"
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    style: "Upbeat, progressive. Elements that feel like growth/achievement."
+
+sections:
+  - {name: "Hero", purpose: "Center name + pass rate stat + 'Enroll Now' CTA", required: true}
+  - {name: "Programs", purpose: "Subjects offered — Math, Science, English, College Entrance, LET, BAR", required: true}
+  - {name: "Results / Stats", purpose: "Pass rates, topnotchers, student success stories", required: true}
+  - {name: "About / Teachers", purpose: "Instructor credentials, teaching methodology", required: true}
+  - {name: "Testimonials", purpose: "Student/parent reviews with results", required: true}
+  - {name: "Schedule / Programs", purpose: "Class schedules, batch dates, enrollment periods", required: true}
+  - {name: "FAQ", purpose: "Pricing, schedule, class size, online options", required: true}
+  - {name: "Enroll / Contact", purpose: "Enrollment form + phone + WhatsApp", required: true}
+
+cta_strategy:
+  primary_text: "Enroll Now"
+  secondary_text: "View Programs"
+  urgency: "Next batch starts [date]. Limited slots."
+  trust_signals: ["95% pass rate", "Topnotcher-producing", "20+ years teaching"]
+
+local_context:
+  payment: ["GCash", "Bank Transfer", "Cash", "Maya"]
+  contact: ["WhatsApp", "Phone", "Facebook Messenger", "Email"]
+  typical_hours: "Mon-Sat, varying class schedules"
+  notes: "PH review centers are competitive. Pass rate is the #1 selling point. Parents are often the decision-makers. Programs: LET, BAR, Civil Service, UPCAT, board exams. Emphasize results with real numbers."

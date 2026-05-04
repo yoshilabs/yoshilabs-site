@@ -1,0 +1,220 @@
+vertical: restaurant
+name: Restaurant / Cafe
+
+# === BRAND PERSONALITY ===
+core_emotion: "Appetite, warmth, craving"
+visual_voice: "Rich, inviting, editorial"
+motion_style: "Smooth, cinematic (0.8-1.2s, smooth deceleration)"
+
+# === TYPOGRAPHY ===
+typography:
+  # Each pairing creates a DIFFERENT restaurant personality
+  font_options:
+    - mood: "Fine dining, elegant"
+      heading: "Playfair Display"
+      body: "DM Sans"
+      heading_weights: [400, 700]
+      body_weights: [400, 500, 600]
+    
+    - mood: "Modern, clean-eating, health-focused"
+      heading: "DM Serif Display"
+      body: "Inter"
+      heading_weights: [400]
+      body_weights: [400, 500, 600, 700]
+    
+    - mood: "Artisanal, chef-driven, personality-rich"
+      heading: "Fraunces"
+      body: "Outfit"
+      heading_weights: [400, 700, 900]
+      body_weights: [400, 500, 600]
+    
+    - mood: "Refined, literary, classic"
+      heading: "Cormorant Garamond"
+      body: "Lato"
+      heading_weights: [400, 600, 700]
+      body_weights: [300, 400, 700]
+
+  scale:
+    h1: "clamp(2.75rem, 6vw, 5rem)"
+    h2: "clamp(2rem, 4vw, 3.25rem)"
+    h3: "clamp(1.5rem, 3vw, 2.25rem)"
+    h4: "1.375rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+  
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text minimum"
+    - "heading line-height: 1.15-1.25"
+    - "body text ALWAYS left-aligned, never center"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  # Light mode: Warm Crave
+  light:
+    dominant_60:
+      name: "Warm Cream"
+      bg: "#FFFBF2"
+      bg_secondary: "#F5EFE0"
+    secondary_30:
+      name: "Warm Charcoal"
+      text_primary: "#1A1410"
+      text_secondary: "#2E2419"
+      text_muted: "#4A3C2E"
+      card_bg: "#E8DCC8"
+    accent_10:
+      name: "Deep Red (Appetite Trigger)"
+      primary: "#B33232"
+      hover: "#962828"
+      light: "#E68585"
+      ghost: "#FCE8E8"
+    supporting:
+      amber: "#D49420"
+      amber_light: "#F5E0A5"
+      olive: "#3D5A3E"
+      olive_light: "#87D68D"
+      warm_stone: "#B5A48E"
+  
+  # Dark mode: Premium Moody
+  dark:
+    dominant_60:
+      name: "Near Black"
+      bg: "#0F0D0A"
+      bg_secondary: "#1A1714"
+    secondary_30:
+      name: "Warm Gray"
+      text_primary: "#F5EFE0"
+      text_secondary: "#B5A48E"
+      text_muted: "#8C7A66"
+      card_bg: "#252018"
+    accent_10:
+      name: "Warm Gold"
+      primary: "#D49420"
+      hover: "#B57D08"
+      light: "#EBBD5C"
+    supporting:
+      red_accent: "#C94B4B"
+      cream: "#FFFBF2"
+
+  # Full 10-shade ramp for CSS variables
+  neutrals:
+    - "#1A1410"  # text (warm black)
+    - "#2E2419"  # text-secondary
+    - "#4A3C2E"  # text-muted
+    - "#6B5B4A"  # subtle text
+    - "#8C7A66"  # borders
+    - "#B5A48E"  # dividers
+    - "#D4C7B5"  # light bg
+    - "#E8DCC8"  # card bg
+    - "#F5EFE0"  # secondary bg
+    - "#FFFBF2"  # primary bg (warm white)
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "8px"
+    cards: "12px"
+    images: "16px"
+    large_elements: "20px"
+    philosophy: "Warm but refined — not sharp, not bubbly"
+  
+  shadows:
+    small: "0 1px 2px rgba(26,20,16,.04), 0 4px 8px rgba(26,20,16,.03)"
+    medium: "0 2px 4px rgba(26,20,16,.04), 0 8px 16px rgba(26,20,16,.06)"
+    large: "0 4px 8px rgba(26,20,16,.04), 0 16px 32px rgba(26,20,16,.08)"
+    card_hover: "0 8px 22px rgba(26,20,16,.08), 0 24px 60px rgba(26,20,16,.10)"
+  
+  icon_style: "Hand-drawn or warm line art, varied stroke weight"
+  
+  photography:
+    style: "Dark, moody, editorial. Think Bon Appetit magazine."
+    lighting: "Warm amber, dramatic side-lighting"
+    composition: "Top-down plating shots, shallow DOF, steam/motion"
+    hero: "Full-bleed food shot, dark gradient overlay"
+    cards: "Square or 4:3 aspect ratio, food-forward"
+    about: "Chef/owner portrait in warm light, kitchen action shot"
+  
+  animation:
+    speed: "Slow to medium (0.6-1.2s)"
+    easing: "cubic-bezier(0.77, 0, 0.175, 1) for reveals"
+    hover_easing: "ease for interactions"
+    style: "Cinematic, graceful. Smooth fade-ups, gentle parallax. No bounce, no snap."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Mouth-watering food shot + restaurant name + primary CTA"
+    layout: "full-bleed-image"
+    required: true
+  
+  - name: "Philosophy / Story"
+    purpose: "Chef/owner story, cuisine philosophy, origin"
+    layout: "Split layout: text left, editorial photo right"
+    required: true
+  
+  - name: "Menu Highlights"
+    purpose: "4-6 signature dishes with photos and prices"
+    layout: "Elegant grid cards, category tabs optional"
+    required: true
+  
+  - name: "Ambiance Gallery"
+    purpose: "Interior shots, plating, atmosphere"
+    layout: "Masonry or 2x3 grid"
+    required: false
+  
+  - name: "Reviews / Testimonials"
+    purpose: "Google/Facebook reviews, food blogger mentions"
+    layout: "Carousel with dots"
+    required: true
+  
+  - name: "Reservation / Order"
+    purpose: "Table booking or delivery platform links"
+    layout: "Centered CTA card with platform badges"
+    required: true
+  
+  - name: "Location & Hours"
+    purpose: "Map, address, parking info"
+    layout: "Two-column: info + map embed"
+    required: true
+  
+  - name: "Footer"
+    purpose: "Contact, socials, newsletter, legal"
+    layout: "Multi-column with Instagram feed preview"
+    required: true
+
+# === CTA STRATEGY ===
+cta_strategy:
+  primary_text: "Reserve a Table"
+  secondary_text: "View Menu"
+  delivery_text: "Order Now"
+  placement: "Hero, after menu section, sticky nav"
+  urgency: "Limited seating — reserve now"
+  trust_signals:
+    - "4.8 stars on Google"
+    - "Featured in local food blogs"
+    - "100+ 5-star reviews"
+
+# === COMPETITOR REFERENCES ===
+competitor_references:
+  - name: "Noma (Copenhagen)"
+    url: "noma.dk"
+    takeaways: "Minimal navigation, video hero, editorial photography, lots of whitespace, understated luxury"
+  
+  - name: "Eleven Madison Park (NYC)"
+    url: "elevenmadisonpark.com"
+    takeaways: "Clean serif typography, moody food photography, elegant simplicity"
+  
+  - name: "Toyo Eatery (Manila)"
+    url: "toyoeatery.com"
+    takeaways: "Premium Filipino restaurant, dark aesthetic, strong typography, local pride"
+
+# === PH LOCAL CONTEXT ===
+local_context:
+  payment: ["GCash", "Maya", "Cash", "Credit Card"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  delivery_platforms: ["GrabFood", "Foodpanda"]
+  trust_signals: ["Sanitation permit", "DTI registered", "Local media features"]
+  social_proof: "Google reviews, Facebook ratings, food blogger features"
+  mobile_first: true
+  typical_hours: "Tue-Sun 11AM-10PM"
+  notes: "Include delivery badges prominently. Filipinos order online heavily. WhatsApp/FB Messenger for reservations."

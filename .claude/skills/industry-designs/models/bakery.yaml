@@ -1,0 +1,148 @@
+vertical: bakery
+name: Bakery / Cafe / Pastry Shop
+
+core_emotion: "Warmth, nostalgia, comfort"
+visual_voice: "Cozy, artisanal, handmade"
+motion_style: "Gentle, homey (0.5-0.7s, warm ease)"
+
+typography:
+  font_options:
+    - mood: "Artisanal warmth, handmade charm"
+      heading: "Lora"
+      body: "Quicksand"
+      heading_weights: [400, 500, 600, 700]
+      body_weights: [400, 500, 600, 700]
+    - mood: "Friendly elegance, bakeshop charm"
+      heading: "Playfair Display"
+      body: "Nunito"
+      heading_weights: [400, 700]
+      body_weights: [400, 600, 700]
+    - mood: "Personality-rich, artisan personality"
+      heading: "Fraunces"
+      body: "Outfit"
+      heading_weights: [400, 700, 900]
+      body_weights: [400, 500, 600]
+    - mood: "Cozy traditional, home-baked feel"
+      heading: "Cormorant Garamond"
+      body: "Karla"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 700]
+  scale:
+    h1: "clamp(2.75rem, 6vw, 5rem)"
+    h2: "clamp(2rem, 4vw, 3.25rem)"
+    h3: "clamp(1.5rem, 3vw, 2.25rem)"
+    h4: "1.375rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text"
+    - "heading line-height: 1.2-1.3"
+    - "Body text ALWAYS left-aligned"
+    - "Use italic for product descriptions — adds warmth"
+
+color_system:
+  light:
+    dominant_60:
+      bg: "#FFFDF8"
+      bg_secondary: "#FFF3E0"
+    secondary_30:
+      text_primary: "#5C3D2E"
+      text_secondary: "#7A5A48"
+      text_muted: "#9B8070"
+      card_bg: "#FFF8F0"
+    accent_10:
+      primary: "#E8A0BF"
+      hover: "#D48AA8"
+      light: "#F0C0D5"
+      ghost: "rgba(232,160,191,.1)"
+    supporting:
+      terracotta: "#C75B39"
+      brown: "#8B5E3C"
+      latte: "#D4A574"
+      vanilla: "#F5E6D3"
+      espresso: "#3D2B1F"
+  dark:
+    dominant_60:
+      bg: "#1A1208"
+      bg_secondary: "#251C10"
+    secondary_30:
+      text_primary: "#FFF3E0"
+      text_secondary: "#D4A574"
+      text_muted: "#9B8070"
+      card_bg: "#2A1F14"
+    accent_10:
+      primary: "#F0C0D5"
+      hover: "#E8A0BF"
+      light: "#F5D5E2"
+    supporting:
+      terracotta: "#E07040"
+      cream: "#FFFDF8"
+  neutrals:
+    - "#3D2B1F"
+    - "#5C3D2E"
+    - "#7A5A48"
+    - "#9B8070"
+    - "#B8A090"
+    - "#D4BCA8"
+    - "#E8D8C8"
+    - "#F5E6D3"
+    - "#FFF3E0"
+    - "#FFFDF8"
+
+structure:
+  border_radius:
+    buttons: "16px"
+    cards: "16px"
+    images: "20px"
+    large_elements: "24px"
+    philosophy: "Friendly and approachable — generous rounding. Warmth, not edge."
+  shadows:
+    small: "0 1px 2px rgba(60,30,15,.04), 0 4px 8px rgba(60,30,15,.03)"
+    medium: "0 2px 4px rgba(60,30,15,.04), 0 8px 16px rgba(60,30,15,.06)"
+    large: "0 4px 8px rgba(60,30,15,.04), 0 16px 32px rgba(60,30,15,.08)"
+    card_hover: "0 8px 22px rgba(60,30,15,.08), 0 24px 60px rgba(60,30,15,.10)"
+  icon_style: "Hand-drawn or warm, varied stroke weight. Friendly, not corporate."
+  photography:
+    style: "Warm, rustic, close-up. Think bake-from-scratch aesthetic."
+    lighting: "Warm natural light, golden tones, soft shadows"
+    composition: "Close-up textures (crumbs, glaze), hands in flour, steaming ovens, stacked pastries"
+    hero: "Close-up baked goods with warm gradient overlay"
+    cards: "Square or portrait, single product hero shot"
+    about: "Baker at work, oven interior, ingredient flat-lays"
+  animation:
+    speed: "Medium (0.5-0.7s)"
+    easing: "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+    hover_easing: "ease"
+    style: "Gentle reveals, cozy transitions. Warm and inviting, not flashy."
+
+sections:
+  - {name: "Hero", purpose: "Beautiful pastry shot + bakery name + 'Order Now' CTA", layout: "Full-bleed warm hero", required: true}
+  - {name: "Menu / Products", purpose: "Baked goods with photos and prices", layout: "Card grid with warm styling", required: true}
+  - {name: "About / Story", purpose: "Baker's story, ingredients philosophy, origin", layout: "Split: photo left, story right", required: true}
+  - {name: "Gallery", purpose: "Product photography, behind-the-scenes", layout: "Masonry or 2x3 grid", required: false}
+  - {name: "Testimonials", purpose: "Customer reviews", layout: "Carousel", required: true}
+  - {name: "Order / Visit", purpose: "Online order links + visit info", layout: "CTA card with platform badges", required: true}
+  - {name: "Location & Hours", purpose: "Map, address, parking", layout: "Two-column", required: true}
+  - {name: "Footer", purpose: "Contact, socials, Instagram preview", layout: "Multi-column", required: true}
+
+cta_strategy:
+  primary_text: "Order Now"
+  secondary_text: "View Menu"
+  placement: "Hero, after menu, sticky nav"
+  urgency: "Fresh baked daily — pre-order recommended"
+  trust_signals: ["Fresh daily", "Handmade with love", "5-star Google reviews"]
+
+competitor_references:
+  - name: "Tartine Bakery (SF)"
+    takeaways: "Warm tones, rustic photography, artisanal feel, serif + sans pairing"
+  - name: "Dominique Ansel Bakery"
+    takeaways: "Playful but premium, clean product shots, warm palette"
+
+local_context:
+  payment: ["GCash", "Maya", "Cash"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  delivery_platforms: ["GrabFood", "Foodpanda"]
+  trust_signals: ["DTI registered", "Fresh daily", "Local ingredients"]
+  mobile_first: true
+  typical_hours: "Tue-Sun 7AM-8PM"

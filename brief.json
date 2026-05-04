@@ -1,0 +1,155 @@
+{
+  "client_name": "Yoshi Labs",
+  "business_name": "Yoshi Labs",
+  "industry": "creative-agency",
+  "slug": "yoshi-labs",
+  "location": "Davao, Philippines",
+  "contact": {
+    "email": "prince@yoshilabs.io",
+    "phone": "",
+    "whatsapp": "",
+    "address": "Davao City, Philippines",
+    "hours": "",
+    "socials": {
+      "facebook": "",
+      "instagram": "",
+      "tiktok": ""
+    }
+  },
+  "tagline": "AI systems for Filipino businesses",
+  "description": "Yoshi Labs builds websites, AI assistants, SEO, and automations for Filipino SMEs. Founded by Prince Yoshiko Intes and FINN (AI co-founder).",  
+  "services": [
+    {
+      "name": "Professional Website",
+      "description": "Premium website with animations, mobile-first, SEO-ready. 5 pages. Built in 3-5 days.",
+      "price": "Starts at ₱15,000"
+    },
+    {
+      "name": "Google SEO & Maps",
+      "description": "Show up when customers search. Google Business Profile, local SEO, Maps optimization.",
+      "price": ""
+    },
+    {
+      "name": "AI Assistant",
+      "description": "24/7 AI answers customers on Messenger. Taglish. Books appointments. Follows up automatically.",
+      "price": ""
+    },
+    {
+      "name": "Smart Automations",
+      "description": "Reminders, follow-ups, review requests, welcome messages — all on autopilot.",
+      "price": ""
+    }
+  ],
+  "pricing": {
+    "setup": "₱15,000",
+    "monthly": "₱5,000",
+    "contract": "No contracts. Cancel anytime after setup."
+  },
+  "about": {
+    "story": "Yoshi Labs was founded by Prince Yoshiko Intes, a Filipino-Canadian entrepreneur who saw that 77% of Filipino SMEs want to go digital — but only 3% have adopted AI. Traditional agencies charge ₱30-50K/month for websites that look the same. We saw an opening: build systems that combine human design with AI speed. Each site we ship is built in 3-5 days, costs a fraction of traditional rates, and comes with an AI assistant that never sleeps. We are based in Davao, Philippines and work with businesses across the country.",
+    "team": [
+      {
+        "name": "Prince Yoshiko Intes",
+        "role": "Founder",
+        "bio": "Filipino-Canadian entrepreneur. Runs Yoshi Labs alongside FINN."
+      }
+    ],
+    "fun_facts": ["Based in Davao", "Filipino-Canadian", "AI-powered"]
+  },
+  "brand": {
+    "colors": {
+      "bg": "#08090a",
+      "bg_elevated_1": "#0f1011",
+      "bg_elevated_2": "#161718",
+      "border": "#23252a",
+      "border_subtle": "#323334",
+      "text_primary": "#f7f8f8",
+      "text_secondary": "#d0d6e0",
+      "text_tertiary": "#8a8f98",
+      "text_muted": "#62666d",
+      "accent": "#e4f222",
+      "accent_blue": "#5e6ad2",
+      "accent_cyan": "#02b8cc",
+      "success": "#27a644",
+      "warning": "#eb5757"
+    },
+    "fonts": {
+      "heading": "Inter",
+      "body": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "style": "dark",
+    "gradient": "none"
+  },
+  "sections": [
+    "navigation",
+    "hero",
+    "problem",
+    "services",
+    "how-it-works",
+    "pricing",
+    "about",
+    "faq",
+    "cta",
+    "footer"
+  ],
+  "ctas": {
+    "primary": "Book a Free Consultation",
+    "secondary": "See Our Work",
+    "tertiary": "Ask about this option"
+  },
+  "faq": [
+    {
+      "question": "Do I need any tech knowledge?",
+      "answer": "None at all. We handle everything — setup, maintenance, updates. You just run your business."
+    },
+    {
+      "question": "How fast can you build my website?",
+      "answer": "3-5 business days from the time you send us your business info. Often faster."
+    },
+    {
+      "question": "What if I already have a website?",
+      "answer": "We'll audit it for free and show you exactly what to improve. Most websites need a complete rebuild to be competitive."
+    },
+    {
+      "question": "What does the AI Assistant actually do?",
+      "answer": "It answers customer inquiries on Messenger 24/7 — pricing, availability, booking, FAQs. It speaks Taglish and English. It follows up with leads automatically. It books appointments."
+    },
+    {
+      "question": "Can I cancel anytime?",
+      "answer": "Yes. No contracts. After the initial setup, you can cancel the monthly retainer anytime. Your website stays yours."
+    },
+    {
+      "question": "What industries do you work with?",
+      "answer": "Any Filipino SME — restaurants, salons, clinics, real estate, retail, professional services, housekeeping, catering, construction. If you have customers, we can help."
+    },
+    {
+      "question": "Why is it so affordable?",
+      "answer": "Because AI does 80% of the work. We pass those savings to you. Traditional agencies charge ₱30-50K/mo for less."
+    }
+  ],
+  "competitors": [],
+  "testimonials": [],
+  "portfolio": [
+    {
+      "name": "Bleuspace",
+      "type": "Real Estate"
+    },
+    {
+      "name": "So Social",
+      "type": "Events"
+    },
+    {
+      "name": "Keisha Fitness",
+      "type": "Fitness"
+    }
+  ],
+  "refero_style": "monopo-saigon",
+  "photos_needed": [
+    "hero-ai-abstract",
+    "team-prince",
+    "office-davao"
+  ],
+  "deadline": "",
+  "notes": "Yoshi Labs own website. Must be the BEST site we've ever built. Dark mode with gradient accents. monopo-saigon design DNA: deep black base, animated gradient hero, Roobert font, pill buttons, spacious layout."
+}

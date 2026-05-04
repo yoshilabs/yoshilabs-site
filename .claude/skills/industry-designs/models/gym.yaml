@@ -1,0 +1,214 @@
+vertical: gym
+name: Gym / Fitness / Training
+
+# === BRAND PERSONALITY ===
+core_emotion: "Power, energy, transformation"
+visual_voice: "Bold, high-contrast, dynamic"
+motion_style: "Snappy, explosive (0.3-0.5s, spring easing)"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "Hardcore, maximum impact"
+      heading: "Bebas Neue"
+      body: "Inter"
+      heading_weights: [400]
+      body_weights: [400, 500, 600, 700]
+
+    - mood: "Modern gym, bold but approachable"
+      heading: "Oswald"
+      body: "Nunito Sans"
+      heading_weights: [400, 500, 600, 700]
+      body_weights: [400, 600, 700]
+
+    - mood: "Industrial strength, functional fitness"
+      heading: "Archivo Black"
+      body: "Source Sans 3"
+      heading_weights: [400]
+      body_weights: [400, 600, 700]
+
+    - mood: "Aggressive, competitive, fight gym"
+      heading: "Anton"
+      body: "DM Sans"
+      heading_weights: [400]
+      body_weights: [400, 500, 700]
+
+  scale:
+    h1: "clamp(3rem, 7vw, 6rem)"
+    h2: "clamp(2.25rem, 5vw, 4rem)"
+    h3: "clamp(1.5rem, 3vw, 2.25rem)"
+    h4: "1.375rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "Headings UPPERCASE by default — gyms demand attention"
+    - "letter-spacing: 0.05em on headings for breathing room"
+    - "letter-spacing: 0.15em on small labels"
+    - "line-height: 1.1-1.2 on headings (tight, powerful)"
+    - "line-height: 1.7 on body"
+    - "body text ALWAYS left-aligned"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Near Black"
+      bg: "#0D0D0D"
+      bg_secondary: "#141414"
+    secondary_30:
+      name: "Pure White"
+      text_primary: "#FFFFFF"
+      text_secondary: "#CCCCCC"
+      text_muted: "#888888"
+      card_bg: "#1A1A1A"
+    accent_10:
+      name: "Electric Red"
+      primary: "#FF3B30"
+      hover: "#E0342B"
+      light: "#FF6B63"
+      ghost: "rgba(255,59,48,.1)"
+    supporting:
+      yellow: "#FFE600"
+      yellow_dark: "#B8A800"
+      gray_mid: "#333333"
+      gray_light: "#666666"
+
+  dark:
+    dominant_60:
+      name: "Deep Black"
+      bg: "#080808"
+      bg_secondary: "#0F0F0F"
+    secondary_30:
+      name: "Cool White"
+      text_primary: "#FFFFFF"
+      text_secondary: "#B0B0B0"
+      text_muted: "#707070"
+      card_bg: "#151515"
+    accent_10:
+      name: "Neon Yellow"
+      primary: "#FFE600"
+      hover: "#D4C000"
+      light: "#FFF066"
+    supporting:
+      red_accent: "#FF3B30"
+      blue_accent: "#3B82F6"
+      green_accent: "#22C55E"
+
+  neutrals:
+    - "#FFFFFF"
+    - "#CCCCCC"
+    - "#888888"
+    - "#666666"
+    - "#555555"
+    - "#444444"
+    - "#333333"
+    - "#1A1A1A"
+    - "#141414"
+    - "#0D0D0D"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "6px"
+    cards: "10px"
+    images: "8px"
+    large_elements: "12px"
+    philosophy: "Sharp, aggressive — minimal rounding. Power, not softness."
+
+  shadows:
+    small: "0 1px 2px rgba(0,0,0,.3), 0 4px 8px rgba(0,0,0,.2)"
+    medium: "0 2px 4px rgba(0,0,0,.3), 0 8px 16px rgba(0,0,0,.25)"
+    large: "0 4px 8px rgba(0,0,0,.3), 0 16px 32px rgba(0,0,0,.3)"
+    card_hover: "0 8px 22px rgba(255,59,48,.15), 0 24px 60px rgba(0,0,0,.4)"
+    accent_glow: "0 0 30px rgba(255,59,48,.3)"
+
+  icon_style: "Bold, filled icons. Thick strokes (2-3px). Power, not delicacy."
+
+  photography:
+    style: "Action shots, high-contrast, dramatic. Think Nike ads."
+    lighting: "Harsh, dramatic side-lighting, deep shadows"
+    composition: "Dynamic angles, full-body action, sweat/exertion"
+    hero: "Dark action shot with neon accent overlay"
+    cards: "Wide format (16:9), trainer in action or class shot"
+    about: "Team/trainer portraits, gym interior wide shots"
+
+  animation:
+    speed: "Fast (0.3-0.5s)"
+    easing: "cubic-bezier(0.175, 0.885, 0.32, 1.275) — spring/snappy"
+    hover_easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    style: "Explosive reveals, punchy hovers, energetic counters. Fast and bold."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Powerful action shot + bold headline + 'Start Free Trial' CTA"
+    layout: "Full-bleed dark hero with neon accent"
+    required: true
+
+  - name: "Programs / Classes"
+    purpose: "3-6 program cards (HIIT, strength, yoga, boxing, etc.)"
+    layout: "Bold grid cards with icons"
+    required: true
+
+  - name: "Stats / Results"
+    purpose: "Animated counters — members, classes, years, transformations"
+    layout: "Horizontal stat strip with large numbers"
+    required: true
+
+  - name: "Schedule / Timetable"
+    purpose: "Weekly class schedule or booking link"
+    layout: "Table or linked calendar"
+    required: false
+
+  - name: "Trainers / Coaches"
+    purpose: "Coach profiles with photo + specialty"
+    layout: "Grid of trainer cards"
+    required: true
+
+  - name: "Testimonials"
+    purpose: "Transformation stories, member quotes"
+    layout: "Carousel with bold quotes"
+    required: true
+
+  - name: "Pricing / Join"
+    purpose: "Membership tiers or 'Book Intro Session' CTA"
+    layout: "Pricing cards or single powerful CTA"
+    required: true
+
+  - name: "Footer"
+    purpose: "Contact, location, socials, class schedule link"
+    layout: "Multi-column, dark theme"
+    required: true
+
+cta_strategy:
+  primary_text: "Start Free Trial"
+  secondary_text: "View Schedule"
+  join_text: "Join Now"
+  placement: "Hero, after programs, after testimonials, sticky nav"
+  urgency: "Limited spots — start this week"
+  trust_signals:
+    - "500+ active members"
+    - "Certified coaches"
+    - "4.9 stars on Google"
+
+competitor_references:
+  - name: "Barry's Bootcamp"
+    url: "barrys.com"
+    takeaways: "Dark theme, red accent, bold condensed type, high-energy imagery"
+  - name: "Nike Training"
+    url: "nike.com/training"
+    takeaways: "Black + neon, aggressive typography, action photography"
+  - name: "F45 Training"
+    url: "f45training.com"
+    takeaways: "Bold colors, community-focused, energetic but structured"
+
+local_context:
+  payment: ["GCash", "Maya", "Cash", "Bank Transfer"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  booking_platforms: ["Cal.com", "Google Calendar"]
+  trust_signals: ["Certified trainers", "Years operating", "Member count"]
+  social_proof: "Facebook group, Instagram transformations, Google reviews"
+  mobile_first: true
+  typical_hours: "Mon-Sat 5AM-10PM, Sun 7AM-8PM"
+  notes: "Filipinos are heavily into fitness social media. Show transformations. GCash for monthly dues."

@@ -1,0 +1,207 @@
+vertical: dental
+name: Dental / Medical / Healthcare
+
+# === BRAND PERSONALITY ===
+core_emotion: "Comfort, trust, relief"
+visual_voice: "Clinical, calm, modern"
+motion_style: "Minimal, reassuring (0.6-0.8s, gentle ease)"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "Modern clinical, trustworthy"
+      heading: "Montserrat"
+      body: "Open Sans"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 600]
+
+    - mood: "Friendly modern healthcare"
+      heading: "Outfit"
+      body: "Inter"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 600, 700]
+
+    - mood: "Single-family modern (weight contrast only)"
+      heading: "Plus Jakarta Sans"
+      body: "Plus Jakarta Sans"
+      heading_weights: [700, 800]
+      body_weights: [400, 500]
+      note: "Use weight contrast — 800 heading vs 400 body"
+
+    - mood: "Warm, approachable clinic"
+      heading: "Nunito"
+      body: "Karla"
+      heading_weights: [600, 700, 800]
+      body_weights: [400, 500, 700]
+
+  scale:
+    h1: "clamp(2.5rem, 5vw, 4rem)"
+    h2: "clamp(1.8rem, 3.5vw, 2.75rem)"
+    h3: "clamp(1.25rem, 2vw, 1.5rem)"
+    h4: "1.25rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text"
+    - "heading line-height: 1.25-1.35"
+    - "Body text ALWAYS left-aligned"
+    - "NEVER use heavy/black weights — feels aggressive, not reassuring"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Pure White"
+      bg: "#FFFFFF"
+      bg_secondary: "#F0F7F6"
+    secondary_30:
+      name: "Calming Teal"
+      text_primary: "#1A1A1A"
+      text_secondary: "#3D5A5A"
+      text_muted: "#718096"
+      card_bg: "#F7FAFA"
+    accent_10:
+      name: "Trust Blue"
+      primary: "#2A9D8F"
+      hover: "#238B7E"
+      light: "#5FBFB3"
+      ghost: "#E8F4F2"
+    supporting:
+      soft_blue: "#5B9BD5"
+      light_teal: "#E0F2EF"
+      warm_gray: "#F5F5F5"
+      navy_accent: "#254476"
+
+  dark:
+    dominant_60:
+      name: "Dark Teal"
+      bg: "#0A1A18"
+      bg_secondary: "#0F2420"
+    secondary_30:
+      name: "Cool White"
+      text_primary: "#F0F7F6"
+      text_secondary: "#A0B8B5"
+      text_muted: "#6B8582"
+      card_bg: "#152E2A"
+    accent_10:
+      name: "Bright Teal"
+      primary: "#3BD6C0"
+      hover: "#2A9D8F"
+      light: "#7FE8D5"
+    supporting:
+      blue_accent: "#5B9BD5"
+
+  neutrals:
+    - "#1A1A1A"
+    - "#3D5A5A"
+    - "#5A7A7A"
+    - "#718096"
+    - "#90A0A0"
+    - "#B0C0C0"
+    - "#D0DDDB"
+    - "#E0ECEA"
+    - "#F0F7F6"
+    - "#FFFFFF"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "10px"
+    cards: "12px"
+    images: "12px"
+    large_elements: "16px"
+    philosophy: "Clean and modern — slightly rounded, approachable but clinical"
+
+  shadows:
+    small: "0 1px 2px rgba(42,157,143,.04), 0 4px 8px rgba(0,0,0,.03)"
+    medium: "0 2px 4px rgba(0,0,0,.04), 0 8px 16px rgba(0,0,0,.04)"
+    large: "0 4px 8px rgba(0,0,0,.04), 0 16px 32px rgba(0,0,0,.06)"
+    card_hover: "0 8px 22px rgba(42,157,143,.08), 0 24px 60px rgba(0,0,0,.08)"
+
+  icon_style: "Outline/minimal, 1.5px stroke. Clean, clinical, not playful."
+
+  photography:
+    style: "Bright, clinical, modern. Forward-health aesthetic."
+    lighting: "Bright, even, white — clinical clean"
+    composition: "Treatment rooms, smiling patients, modern equipment, doctor portraits"
+    hero: "Clinic interior or doctor portrait with calm overlay"
+    cards: "Treatment/procedure images, clean backgrounds"
+    about: "Doctor portrait, team photo, clinic exterior"
+
+  animation:
+    speed: "Slow-medium (0.6-0.8s)"
+    easing: "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+    hover_easing: "ease"
+    style: "Calm fades, no sudden movements. Reassuring. Nothing jarring."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Clinic shot + name + 'Book Appointment' CTA"
+    layout: "Clean hero with calming image and clear CTA"
+    required: true
+
+  - name: "Services / Treatments"
+    purpose: "Dental services with brief descriptions"
+    layout: "Clean card grid or list"
+    required: true
+
+  - name: "About / Doctor"
+    purpose: "Dentist credentials, experience, certifications"
+    layout: "Split: doctor photo left, bio right"
+    required: true
+
+  - name: "Testimonials"
+    purpose: "Patient reviews, before/after (dental)"
+    layout: "Carousel with patient photos and star ratings"
+    required: true
+
+  - name: "Technology / Facilities"
+    purpose: "Modern equipment, sterilization, safety protocols"
+    layout: "Image grid with captions"
+    required: false
+
+  - name: "FAQ"
+    purpose: "Common dental questions, insurance, pricing"
+    layout: "Accordion"
+    required: true
+
+  - name: "Book Appointment"
+    purpose: "Online booking link + phone + WhatsApp"
+    layout: "Centered CTA with multiple contact options"
+    required: true
+
+  - name: "Location & Hours"
+    purpose: "Map, address, clinic hours"
+    layout: "Two-column: map + info"
+    required: true
+
+cta_strategy:
+  primary_text: "Book Appointment"
+  secondary_text: "View Services"
+  placement: "Hero, after services, sticky nav"
+  urgency: "New patient special available"
+  trust_signals:
+    - "Licensed dentist"
+    - "PRC registered"
+    - "Modern sterilization equipment"
+
+competitor_references:
+  - name: "Forward Health"
+    url: "forward.com"
+    takeaways: "Clean, modern, clinical but warm. Teal/green palette. Sans-serif."
+  - name: "Apple Health UI"
+    url: "apple.com/health"
+    takeaways: "Clinical clean, white space, minimal decoration, trust through simplicity"
+
+local_context:
+  payment: ["GCash", "Maya", "Cash", "Health Insurance (Maxicare, PhilHealth)"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  booking_platforms: ["Cal.com", "Google Calendar"]
+  trust_signals: ["PRC licensed", "Years of practice", "Modern equipment", "PhilHealth accredited"]
+  social_proof: "Google reviews, Facebook page, patient testimonials"
+  mobile_first: true
+  typical_hours: "Mon-Sat 9AM-6PM"
+  notes: "Filipinos choose dentists through referrals. Show credentials prominently. HMO/PhilHealth acceptance is a major selling point."

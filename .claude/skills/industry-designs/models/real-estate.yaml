@@ -1,0 +1,212 @@
+vertical: real-estate
+name: Real Estate / Property
+
+# === BRAND PERSONALITY ===
+core_emotion: "Aspiration, trust, prestige"
+visual_voice: "Sophisticated, clean, premium"
+motion_style: "Smooth, confident (0.5-0.8s, confident ease)"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "Premium, established, trustworthy"
+      heading: "DM Serif Display"
+      body: "Inter"
+      heading_weights: [400]
+      body_weights: [400, 500, 600, 700]
+
+    - mood: "Luxury listings, high-end brokerage"
+      heading: "Playfair Display"
+      body: "IBM Plex Sans"
+      heading_weights: [400, 700]
+      body_weights: [400, 500, 600]
+
+    - mood: "Modern, refined elegance"
+      heading: "Cormorant Garamond"
+      body: "Manrope"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 600, 700]
+
+    - mood: "Contemporary, clean, corporate"
+      heading: "Libre Baskerville"
+      body: "Source Sans 3"
+      heading_weights: [400, 700]
+      body_weights: [400, 600, 700]
+
+  scale:
+    h1: "clamp(2.75rem, 6vw, 5rem)"
+    h2: "clamp(2rem, 4vw, 3.25rem)"
+    h3: "clamp(1.5rem, 3vw, 2.25rem)"
+    h4: "1.375rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+    price: "clamp(1.5rem, 2.5vw, 2rem)"
+
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text minimum"
+    - "heading line-height: 1.15-1.25"
+    - "Prices should be larger than headings — the number IS the product"
+    - "body text ALWAYS left-aligned"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Warm Off-White"
+      bg: "#FAFAF8"
+      bg_secondary: "#F5F0EB"
+    secondary_30:
+      name: "Deep Navy"
+      text_primary: "#1B2A4A"
+      text_secondary: "#2D3E5C"
+      text_muted: "#6B7B8D"
+      card_bg: "#FFFFFF"
+    accent_10:
+      name: "Warm Gold"
+      primary: "#C8A96E"
+      hover: "#B08F55"
+      light: "#E0CBA8"
+      ghost: "#F5EFE0"
+    supporting:
+      emerald: "#23A885"
+      emerald_light: "#87D68D"
+      steel: "#6B7B8D"
+      charcoal: "#2D2D2D"
+
+  dark:
+    dominant_60:
+      name: "Navy Dark"
+      bg: "#0A0F1A"
+      bg_secondary: "#0F1628"
+    secondary_30:
+      name: "Cool Silver"
+      text_primary: "#F5F0EB"
+      text_secondary: "#B0B8C8"
+      text_muted: "#7888A0"
+      card_bg: "#1A2238"
+    accent_10:
+      name: "Bright Gold"
+      primary: "#E0CBA8"
+      hover: "#C8A96E"
+      light: "#F5E6D3"
+    supporting:
+      emerald_accent: "#3BD6A0"
+      navy_accent: "#2A4A7F"
+
+  neutrals:
+    - "#1B2A4A"
+    - "#2D3E5C"
+    - "#4A5A72"
+    - "#6B7B8D"
+    - "#8C9AAA"
+    - "#B0B8C8"
+    - "#D0D5DE"
+    - "#E8EBF0"
+    - "#F5F0EB"
+    - "#FAFAF8"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "8px"
+    cards: "12px"
+    images: "12px"
+    large_elements: "16px"
+    philosophy: "Clean and refined — consistent, not sharp, not soft"
+
+  shadows:
+    small: "0 1px 2px rgba(27,42,74,.04), 0 4px 8px rgba(27,42,74,.03)"
+    medium: "0 2px 4px rgba(27,42,74,.04), 0 8px 16px rgba(27,42,74,.06)"
+    large: "0 4px 8px rgba(27,42,74,.04), 0 16px 32px rgba(27,42,74,.08)"
+    card_hover: "0 8px 22px rgba(27,42,74,.08), 0 24px 60px rgba(27,42,74,.10)"
+
+  icon_style: "Line + filled combo, 1.5-2px stroke. Professional, not playful."
+
+  photography:
+    style: "Bright, aspirational, wide-angle. Think Architectural Digest."
+    lighting: "Golden hour, natural light, warm tones"
+    composition: "Wide angles showing space, lifestyle shots, aerial/drone"
+    hero: "Stunning property or area shot with warm gradient overlay"
+    cards: "16:9 landscape, property front or interior wide shot"
+    about: "Agent portrait, office interior, community shots"
+
+  animation:
+    speed: "Medium (0.5-0.8s)"
+    easing: "cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+    hover_easing: "ease"
+    style: "Smooth parallax, subtle card lifts, confident reveals. Nothing rushed."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Stunning property/area shot + search bar or CTA"
+    layout: "Full-bleed with overlay + search/CTA"
+    required: true
+
+  - name: "Featured Listings"
+    purpose: "Property cards with photo, price, beds/baths, location"
+    layout: "3-column card grid with hover effects"
+    required: true
+
+  - name: "About / Agent"
+    purpose: "Agent bio, experience, certifications, local expertise"
+    layout: "Split: photo left, bio right"
+    required: true
+
+  - name: "Services"
+    purpose: "Buy, Sell, Rent, Property Management"
+    layout: "Icon grid with descriptions"
+    required: true
+
+  - name: "Testimonials"
+    purpose: "Client stories with sale prices or success metrics"
+    layout: "Carousel with client photos"
+    required: true
+
+  - name: "Market / Community"
+    purpose: "Area expertise, neighborhood guides, market data"
+    layout: "Image grid with area cards"
+    required: false
+
+  - name: "Contact / Valuation"
+    purpose: "Free home valuation CTA + contact form"
+    layout: "Two-column: form + CTA card"
+    required: true
+
+  - name: "Footer"
+    purpose: "Areas served, quick links, social proof"
+    layout: "Multi-column"
+    required: true
+
+cta_strategy:
+  primary_text: "Schedule Viewing"
+  secondary_text: "View Listings"
+  valuation_text: "Free Home Valuation"
+  placement: "Hero, after listings, after testimonials, sticky nav"
+  urgency: "New listings daily — don't miss out"
+  trust_signals:
+    - "100+ properties sold"
+    - "4.9 stars on Google"
+    - "10+ years in Davao"
+
+competitor_references:
+  - name: "Compass"
+    url: "compass.com"
+    takeaways: "Clean navy + white, strong search UX, property-forward, trust-building"
+  - name: "Sotheby's International Realty"
+    url: "sothebysrealty.com"
+    takeaways: "Ultra-premium, large property photography, serif typography, gold accents"
+  - name: "Zillow Luxury"
+    url: "zillow.com/luxury"
+    takeaways: "Bright, spacious, large hero images, clean grid layouts"
+
+local_context:
+  payment: ["Bank Transfer", "GCash", "Cash", "Check"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  booking_platforms: ["Cal.com", "Google Calendar"]
+  trust_signals: ["Licensed broker", "PRC registered", "Years in area"]
+  social_proof: "Google reviews, Facebook page, sold property photos"
+  mobile_first: true
+  typical_hours: "Mon-Sat 8AM-6PM"
+  notes: "Filipinos buy property through agents they TRUST. Show face, credentials, testimonials prominently. GCash/Maya for commissions."

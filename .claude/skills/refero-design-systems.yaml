@@ -1,0 +1,2651 @@
+source: Refero Design (styles.refero.design)
+description: 20 world-class design systems extracted from real product screens. Use
+  as reference for premium client builds.
+styles:
+- name: ElevenLabs
+  url: https://elevenlabs.io
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Eggshell
+      hex: '#fdfcfc'
+      role: Page background and primary surface — the near-white warmth distinguishes
+        this f
+    - name: Powder
+      hex: '#f5f3f1'
+      role: Secondary surface, hover states, subtle section backgrounds
+    - name: Chalk
+      hex: '#e5e5e5'
+      role: 'All borders, dividers, card outlines, button outlines — the single border
+        color '
+    - name: Fog
+      hex: '#b1b0b0'
+      role: Disabled states, placeholder elements, logo grid grayscale treatment
+    - name: Gravel
+      hex: '#777169'
+      role: Secondary body text, nav items, subheadings, captions — warm stone undertone
+        sep
+    - name: Slate
+      hex: '#a59f97'
+      role: Tertiary text, icon strokes, deemphasized labels
+    - name: Cinder
+      hex: '#57534'
+      role: Mid-tone text, secondary headings on light surfaces
+    - name: Obsidian
+      hex: '#000000'
+      role: Primary text, filled CTA buttons (background), logo mark — the absolute
+        black ag
+    accent:
+    - name: Signal Blue
+      hex: '#0447ff'
+      role: 'ElevenAgents product dot / brand avatar accent — appears only in small
+        circular '
+    - name: Ember
+      hex: '#ff4704'
+      role: ElevenCreative product dot / brand avatar accent — small circular UI indicator
+        o
+    brand:
+    - name: Voice Spectrum
+      hex: '#3d75d8'
+      role: Logo mark conic gradient — the spinning blue-cyan wheel that is the ElevenLabs
+        l
+  dos:
+  - Use Waldenburg 300 with -0.02em letter-spacing for all headings at 32px and above
+    — never substitute a heavier weight.
+  - Apply 9999px border-radius to every button and pill tag; use 16-20px for cards
+    and panels; use 0px for bare input fields.
+  - 'Keep the entire color palette at near-zero saturation: #000000 text, #fdfcfc
+    background, #e5e5e5 borders, #777169 secondary text. Reserve #ff4704 and #0447ff
+    for product avatar dots only.'
+  - Use the inset shadow rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset on white UI surfaces
+    that sit on eggshell — it replaces border outlines on cards without adding visual
+    weight.
+  - Use Geist Mono 400 13px only for machine-generated or technical inline annotations
+    (e.g. [whispers], [sarcastic]) and code snippets.
+  donts:
+  - Never use a weight above 300 for Waldenburg display headlines — weight 700 belongs
+    only to WaldenburgFH product-label contexts at 14px.
+  - 'Never introduce saturated color for text, background fills, or buttons — the
+    Signal Blue #0447ff and Ember #ff4704 are reserved exclusively for 8-16px avatar/dot
+    indicators.'
+  - Never apply box-shadow elevation larger than rgba(0,0,0,0.4) 0px 0px 1.143px —
+    ElevenLabs cards float by 1px shadow, not by depth layering.
+  - 'Never use a pure white #ffffff background for page surfaces — use #fdfcfc (Eggshell)
+    for all base surfaces to preserve the warm papery ground.'
+  - Never place Inter body text below 13px in product UI contexts or below 14px in
+    marketing prose — the 0.01em tracking needs minimum size to work.
+  typography:
+    fonts:
+    - family: Inter
+      weights:
+      - 400
+      - 500
+    - family: Geist Mono
+      weights:
+      - 400
+    - family: Waldenburg
+      weights:
+      - 300
+    - family: WaldenburgFH
+      weights:
+      - 700
+    scale:
+      base: 16
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+    topTokens:
+    - value: 1
+      frequency: 6
+      properties:
+      - marginLeft
+      - marginRight
+      - marginTop
+    - value: 2
+      frequency: 3
+      properties:
+      - marginRight
+    - value: 3
+      frequency: 6
+      properties:
+      - marginTop
+    - value: 4
+      frequency: 26
+      properties:
+      - rowGap
+      - columnGap
+      - paddingRight
+      - paddingTop
+      - paddingBottom
+      - paddingLeft
+      - marginTop
+    - value: 6
+      frequency: 170
+      properties:
+      - rowGap
+      - columnGap
+      - paddingRight
+      - paddingLeft
+      - marginRight
+  shapes:
+    radii:
+    - value: 4
+      contexts:
+      - link
+      - other
+      - button
+      - body
+      frequency: 107
+    - value: 8
+      contexts:
+      - other
+      frequency: 14
+    - value: 12
+      contexts:
+      - other
+      - button
+      frequency: 24
+    - value: 16
+      contexts:
+      - other
+      - card
+      - button
+      - nav
+      frequency: 14
+    - value: 20
+      contexts:
+      - other
+      - link
+      frequency: 60
+    shadows:
+    - value: rgba(0, 0, 0, 0.075) 0px 0px 0px 0.5px inset
+      contexts:
+      - other
+      frequency: 22
+    - value: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px, rgba(0, 0, 0, 0.04) 0px 1px 2px
+        0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px
+      contexts:
+      - button
+      frequency: 12
+    - value: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset
+      contexts:
+      - other
+      frequency: 7
+- name: Cursor
+  url: https://cursor.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Canvas Parchment
+      hex: '#f7f7f4'
+      role: Page backgrounds, card backgrounds, neutral button backgrounds — provides
+        a soft
+    - name: Inkwell
+      hex: '#262510'
+      role: Primary text, strong borders, navigation text — grounds the lighter surfaces
+        wit
+    - name: Muted Stone
+      hex: '#7a7974'
+      role: 'Secondary text, subtle borders, icon fills — a mid-tone gray for less
+        prominent '
+    - name: Deep Shadow
+      hex: '#141414'
+      role: Deepest text variant — for maximum contrast on headlines or critical information
+    - name: Pebble Gray
+      hex: '#e6e5e0'
+      role: Hover states on neutral buttons, subtle card backgrounds — visually lighter
+        than
+    - name: Highlight Beige
+      hex: '#cdcdc9'
+      role: Subtle card backgrounds on nested elements, faint border color — a light
+        neutral
+    accent:
+    - name: Onyx Outline
+      hex: '#f54e00'
+      role: Outlined action button borders and link text — a vibrant orange indicating
+        inter
+    - name: Chartreuse Alert
+      hex: '#4ade80'
+      role: supporting accents, small interactive text snippets — a vivid green for
+        positive
+    - name: Goldenrod Accent
+      hex: '#c08532'
+      role: Accent for specific interactive states or icons, often found in button
+        backgroun
+    - name: Forest Green Action
+      hex: '#34785c'
+      role: Specific button backgrounds/borders like 'View PR' — a moderate green
+        for distin
+  dos:
+  - Use CursorGothic for all headings and primary UI text, applying precise letter-spacing
+    values (e.g., -0.45px at 72px, -0.08px at 22px).
+  - 'Elevate content with the multi-layered shadow token: rgba(0, 0, 0, 0.14) 0px
+    28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px 0px, oklab(0.263084 -0.00230259
+    0.0124794 / 0.1) 0px 0px 0px 1px.'
+  - Apply Canvas Parchment (#f7f7f4) as the primary background for all major page
+    sections and UI elements.
+  - Reserve Onyx Outline (#f54e00) exclusively for outlined interactive elements or
+    prominent link text to signal primary action.
+  - Use 4px border-radius for most general rounded elements like cards and buttons,
+    with 8px radius for more visually distinct components.
+  donts:
+  - Do not use solid background colors for primary call-to-action buttons; prefer
+    bordered actions with Onyx Outline (#f54e00).
+  - Avoid arbitrary shadow values; adhere strictly to the defined multi-layered shadow
+    for all elevated cards and elements.
+  - Never use purely achromatic grays for primary text or borders; always use Inkwell
+    (#26251e) or Muted Stone (#7a7974).
+  - Do not introduce new font families or weights beyond CursorGothic (400), Lato
+    (400, 600), and berkeleyMono (400, 500).
+  - Do not use the vivid accent color Onyx Outline (#f54e00) as a background fill
+    for any component.
+  typography:
+    fonts:
+    - family: CursorGothic
+      weights:
+      - 400
+    - family: berkeleyMono
+      weights:
+      - 400
+      - 500
+    - family: system-ui
+      weights:
+      - 400
+      - 500
+      - 600
+      - 700
+    - family: EB Garamond
+      weights:
+      - 400
+      - 500
+    - family: Lato
+      weights:
+      - 400
+      - 600
+    - family: -apple-system
+      weights:
+      - 400
+    scale:
+      base: 15
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: null
+    density: compact
+    topTokens:
+    - value: 1
+      contexts:
+      - other
+      frequency: 15
+      properties:
+      - rowGap
+      - columnGap
+      - paddingBottom
+      propertyContextPairs:
+      - rowGap|other
+      - columnGap|other
+      - paddingBottom|other
+    - value: 2
+      contexts:
+      - body
+      - other
+      - button
+      - heading
+      - card
+      frequency: 100
+      properties:
+      - rowGap
+      - columnGap
+      - paddingTop
+      - paddingBottom
+      - marginTop
+      - marginBottom
+      - paddingRight
+      - paddingLeft
+      propertyContextPairs:
+      - rowGap|body
+      - columnGap|body
+      - rowGap|other
+      - columnGap|other
+      - paddingTop|button
+      - paddingBottom|button
+      - rowGap|button
+      - columnGap|button
+      - marginTop|body
+      - marginBottom|body
+      - marginBottom|heading
+      - paddingRight|button
+      - paddingLeft|button
+      - marginBottom|button
+      - paddingTop|other
+      - paddingRight|other
+      - paddingLeft|other
+      - paddingBottom|other
+      - paddingTop|body
+      - paddingBottom|body
+      - marginBottom|other
+      - paddingTop|card
+      - paddingRight|card
+      - paddingBottom|card
+      - paddingLeft|card
+    - value: 3
+      contexts:
+      - button
+      - other
+      frequency: 101
+      properties:
+      - paddingTop
+      - paddingBottom
+      - paddingLeft
+      - paddingRight
+      - rowGap
+      - columnGap
+      propertyContextPairs:
+      - paddingTop|button
+      - paddingBottom|button
+      - paddingLeft|other
+      - paddingRight|other
+      - rowGap|other
+      - columnGap|other
+      - paddingTop|other
+      - paddingBottom|other
+    - value: 4
+      contexts:
+      - link
+      - other
+      - body
+      - button
+      - heading
+      - card
+      frequency: 113
+      properties:
+      - paddingTop
+      - paddingRight
+      - paddingBottom
+      - paddingLeft
+      - rowGap
+      - columnGap
+      - marginLeft
+      - marginBottom
+      - marginTop
+      propertyContextPairs:
+      - paddingTop|link
+      - paddingRight|link
+      - paddingBottom|link
+      - paddingLeft|link
+      - paddingLeft|other
+      - paddingTop|other
+      - paddingBottom|other
+      - rowGap|body
+      - columnGap|body
+      - marginLeft|button
+      - marginBottom|heading
+      - paddingRight|other
+      - rowGap|other
+      - columnGap|other
+      - rowGap|button
+      - columnGap|button
+      - marginLeft|body
+      - paddingTop|button
+      - paddingBottom|button
+      - paddingTop|card
+      - paddingBottom|card
+      - marginBottom|other
+      - marginTop|other
+      - paddingRight|body
+      - paddingLeft|body
+      - paddingTop|body
+      - paddingBottom|body
+    - value: 5
+      contexts:
+      - other
+      - list
+      - heading
+      - nav
+      - button
+      frequency: 84
+      properties:
+      - paddingTop
+      - paddingBottom
+      - marginBottom
+      - paddingRight
+      - paddingLeft
+      - rowGap
+      - columnGap
+      propertyContextPairs:
+      - paddingTop|other
+      - paddingBottom|other
+      - marginBottom|other
+      - paddingRight|other
+      - paddingLeft|other
+      - paddingLeft|list
+      - paddingBottom|heading
+      - paddingTop|nav
+      - paddingBottom|nav
+      - rowGap|button
+      - columnGap|button
+  shapes:
+    radii:
+    - value: 4
+      contexts:
+      - card
+      - other
+      - button
+      - body
+      - icon
+      - link
+      frequency: 135
+    - value: 8
+      contexts:
+      - other
+      - button
+      - card
+      frequency: 32
+    - value: 1.5
+      contexts:
+      - other
+      frequency: 12
+    - value: 12
+      contexts:
+      - card
+      frequency: 1
+    shadows:
+    - value: rgba(0, 0, 0, 0.14) 0px 28px 70px 0px, rgba(0, 0, 0, 0.1) 0px 14px 32px
+        0px, oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 1px
+      contexts:
+      - card
+      frequency: 6
+    - value: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px, rgba(0, 0, 0, 0.15) 0px 12px
+        24px -8px, oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 0.5px
+      contexts:
+      - card
+      frequency: 1
+    - value: oklab(0.263084 -0.00230259 0.0124794 / 0.1) 0px 0px 0px 1px, rgba(0,
+        0, 0, 0.28) 0px 18px 36px -18px
+      contexts:
+      - card
+      frequency: 1
+- name: Linear
+  url: https://linear.app
+  theme: dark
+  northStar: ''
+  colors:
+    neutral:
+    - name: Pitch Black
+      hex: '#08090a'
+      role: Page background, primary surface for base elements, subtly integrated
+        into shado
+    - name: Graphite
+      hex: '#0f1011'
+      role: Elevated card backgrounds, slightly lighter than the canvas to denote
+        layering.
+    - name: Deep Slate
+      hex: '#161718'
+      role: Secondary elevated card backgrounds, providing another layer of visual
+        hierarchy
+    - name: Charcoal Grey
+      hex: '#23252a'
+      role: Borders and some shadowed card surfaces, framing elements with a subtle
+        distinct
+    - name: Muted Ash
+      hex: '#323334'
+      role: Subtle borders and dividers, indicating soft separations within the dark
+        theme.
+    - name: Gunmetal
+      hex: '#383b3f'
+      role: 'Tertiary background elements and input borders, a darker neutral for
+        functional '
+    - name: Porcelain
+      hex: '#f7f8f8'
+      role: Primary text and icons, providing strong contrast for readability against
+        dark b
+    - name: Light Steel
+      hex: '#d0d6e0'
+      role: Secondary text and borders, for less prominent information or structural
+        lines.
+    - name: Storm Cloud
+      hex: '#8a8f98'
+      role: Tertiary text, descriptive labels, and inactive states, recedes into the
+        backgro
+    - name: Fog Grey
+      hex: '#62666d'
+      role: Muted text for metadata, timestamps, and further de-emphasized content.
+    - name: Alabaster
+      hex: '#e5e5e6'
+      role: Informational borders and subtle fills, often seen in code blocks or explanatory
+    brand:
+    - name: Neon Lime
+      hex: '#e4f222'
+      role: Primary action indicators, active states, and focus elements — a high-energy
+        foc
+    accent:
+    - name: Aether Blue
+      hex: '#5e6ad2'
+      role: Decorative highlights and occasional background elements, suggesting a
+        technolog
+    - name: Cyan Spark
+      hex: '#02b8cc'
+      role: Informational highlights and unique icon fills, providing a cool accent.
+    - name: Deep Violet
+      hex: '#6366f1'
+      role: Background accents in specific content blocks, indicating a distinct information
+    - name: Amethyst
+      hex: '#8b5cf6'
+      role: Another variant of violet for backgrounds, used interchangeably with Deep
+        Violet
+    semantic:
+    - name: Forest Green
+      hex: '#008d2c'
+      role: Positive status indicators, success messages, and related iconography.
+    - name: Emerald
+      hex: '#27a644'
+      role: Success and completion states, often paired with green text.
+    - name: Warning Red
+      hex: '#eb5757'
+      role: Observed in icon fill, body borderColor, other fill. Extracted usage does
+        not su
+  dos:
+  - Use 'Pitch Black' (#08090a) for the primary page background to establish the dark
+    theme.
+  - Apply 'Porcelain' (#f7f8f8) for all primary text and important icons to ensure
+    readability.
+  - Highlight primary interactive elements exclusively with 'Neon Lime' (#e4f222)
+    as a background, restricting its use to guide user attention.
+  - Create depth and hierarchy by layering surfaces using 'Pitch Black' (#08090a),
+    'Graphite' (#0f1011), and 'Deep Slate' (#161718) backgrounds.
+  - Employ the Inter Variable font family with specific letter-spacing adjustments
+    for all UI text, such as -0.22px for display sizes and -0.11px for body text,
+    to maintain a tight, precise feel.
+  donts:
+  - Do not introduce additional bright or saturated colors beyond 'Neon Lime' (#e4f222)
+    for interactive elements; maintain its singular role.
+  - Avoid using harsh white backgrounds or light-themed patterns, as the system is
+    anchored in a dark mode aesthetic.
+  - Do not deviate from the specified typeface choices; 'Inter Variable' and 'Berkeley
+    Mono' are fundamental to the visual identity.
+  - Refrain from using strong, diffuse shadows; elevation is achieved through subtle
+    layering and sharp, contained shadows like rgba(0, 0, 0, 0.4) 0px 2px 4px 0px.
+  - Do not apply broad, decorative background gradients across large sections of the
+    UI; gradients are subtle and contained to specific functional areas.
+  typography:
+    fonts:
+    - family: Inter Variable
+      weights:
+      - 300
+      - 400
+      - 510
+      - 590
+    - family: Berkeley Mono
+      weights:
+      - 400
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: compact
+    topTokens:
+    - value: 1
+      contexts:
+      - other
+      - button
+      - input
+      frequency: 23
+      properties:
+      - paddingTop
+      - paddingBottom
+      - marginRight
+      - marginLeft
+      - marginTop
+      propertyContextPairs:
+      - paddingTop|other
+      - paddingBottom|other
+      - marginRight|other
+      - marginLeft|other
+      - marginTop|other
+      - paddingTop|button
+      - paddingBottom|button
+      - paddingTop|input
+      - paddingBottom|input
+      - marginRight|input
+      - marginLeft|input
+    - value: 2
+      contexts:
+      - nav
+      - button
+      - body
+      - icon
+      - other
+      - list
+      frequency: 43
+      properties:
+      - rowGap
+      - columnGap
+      - paddingLeft
+      - marginLeft
+      propertyContextPairs:
+      - rowGap|nav
+      - columnGap|nav
+      - rowGap|button
+      - columnGap|button
+      - paddingLeft|body
+      - marginLeft|icon
+      - rowGap|other
+      - columnGap|other
+      - rowGap|list
+      - columnGap|list
+    - value: 3
+      contexts:
+      - card
+      - body
+      frequency: 34
+      properties:
+      - rowGap
+      - columnGap
+      - paddingRight
+      - paddingLeft
+      propertyContextPairs:
+      - rowGap|card
+      - columnGap|card
+      - paddingRight|body
+      - paddingLeft|body
+    - value: 4
+      contexts:
+      - button
+      - other
+      - icon
+      - body
+      frequency: 67
+      properties:
+      - paddingRight
+      - paddingLeft
+      - rowGap
+      - columnGap
+      - marginTop
+      - marginBottom
+      - marginRight
+      - marginLeft
+      propertyContextPairs:
+      - paddingRight|button
+      - paddingLeft|button
+      - rowGap|other
+      - columnGap|other
+      - marginTop|other
+      - marginBottom|other
+      - marginRight|icon
+      - rowGap|button
+      - columnGap|button
+      - marginRight|body
+      - marginLeft|other
+      - marginRight|button
+      - marginRight|other
+      - paddingLeft|other
+    - value: 5
+      contexts:
+      - button
+      - body
+      - other
+      frequency: 34
+      properties:
+      - paddingLeft
+      - marginRight
+      - marginLeft
+      - rowGap
+      - columnGap
+      propertyContextPairs:
+      - paddingLeft|button
+      - marginRight|body
+      - marginLeft|body
+      - rowGap|other
+      - columnGap|other
+  shapes:
+    radii:
+    - value: 2
+      contexts:
+      - other
+      - nav
+      - button
+      - body
+      - badge
+      - link
+      frequency: 83
+    - value: 6
+      contexts:
+      - button
+      - nav
+      - other
+      - card
+      - input
+      - icon
+      - link
+      frequency: 58
+    - value: 12
+      contexts:
+      - card
+      - other
+      frequency: 23
+    - value: 9999
+      contexts:
+      - button
+      - nav
+      frequency: 13
+    - value: 22
+      contexts:
+      - other
+      frequency: 7
+    shadows:
+    - value: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px
+      contexts:
+      - card
+      frequency: 16
+    - value: rgba(0, 0, 0, 0.2) 0px 0px 12px 0px inset
+      contexts:
+      - other
+      frequency: 7
+    - value: rgb(35, 37, 42) 0px 0px 0px 1px inset
+      contexts:
+      - card
+      frequency: 5
+- name: Stripe
+  url: https://stripe.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Midnight Ink
+      hex: '#061b31'
+      role: Primary text, critical headings, icons, primary button text for ghost
+        buttons
+    - name: Slate Blue
+      hex: '#50617a'
+      role: Secondary text, muted links, subtle borders, descriptive captions
+    - name: Ghost Gray
+      hex: '#64748d'
+      role: Tertiary text, placeholder text, inactive states, subtle dividers
+    - name: Platinum White
+      hex: '#ffffff'
+      role: Page backgrounds, card surfaces, primary button text against dark backgrounds
+    - name: Porcelain White
+      hex: '#f8fafd'
+      role: Secondary card surfaces, subtle background variations
+    - name: Powder Blue
+      hex: '#e5edf5'
+      role: Background for secondary sections, light card backgrounds
+    - name: Stone Gray
+      hex: '#d8d6df'
+      role: Horizontal rules, subtle borders, graphical elements
+    brand:
+    - name: Deep Violet
+      hex: '#533afd'
+      role: Primary calls to action (buttons, links), active states, significant icons
+        — est
+    accent:
+    - name: Washed Violet
+      hex: '#b9b9f9'
+      role: Border for ghost buttons, subtle accents
+    - name: Soft Violet
+      hex: '#8087ff'
+      role: Decorative icons, gradient highlights, sub-brand accents
+    - name: Accent Green
+      hex: '#81b81a'
+      role: Green outline accent for tags, dividers, and focused UI edges
+    - name: Vibrant Orange
+      hex: '#ff6118'
+      role: Orange outline accent for tags, dividers, and focused UI edges.
+    - name: Sunburst Gradient
+      hex: '#ffbb00'
+      role: Decorative gradients in hero sections and product showcases, adding a
+        dynamic, a
+    - name: Dreamy Gradient
+      hex: '#7f7dc8'
+      role: Abstract background graphics, product display panels, adding depth and
+        a tech-ce
+    - name: Fuchsia Glow Gradient
+      hex: '#ff2ede'
+      role: Decorative illustration elements, feature highlights
+  dos:
+  - Use Platinum White (#ffffff) as the default page background for most sections.
+  - Apply Deep Violet (#533afd) specifically for primary interactive elements, ensuring
+    strong visual call to action.
+  - Employ sohne-var weight 300 for all display and large heading typography to maintain
+    a refined, impactful presence.
+  - Keep card surfaces subtle, using Powder Blue (#e5edf5) or Porcelain White (#f8fafd)
+    with soft 6px rounded corners.
+  - Utilize -0.0300em letter-spacing for large text (56px) to maintain a cohesive,
+    modern typographic aesthetic.
+  donts:
+  - Do not use saturated colors for large areas or text unless they are part of a
+    decorative gradient or a specific accent.
+  - Avoid using hard, sharp shadows; prefer soft, diffused shadows like rgba(0, 0,
+    0, 0.2) 0px 0px 32px 8px for elevation.
+  - Do not introduce new font families; sohne-var is the sole typeface for all typographic
+    needs.
+  - Refrain from using border radii other than 4px and 6px for interactive components
+    and cards, respectively.
+  - Do not use generic blue for links or buttons; Deep Violet (#533afd) is the designated
+    action color.
+  typography:
+    fonts:
+    - family: sohne-var
+      weights:
+      - 300
+      - 400
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+    topTokens:
+    - value: 1
+      contexts:
+      - other
+      - body
+      frequency: 3
+      properties:
+      - paddingTop
+      - marginBottom
+      propertyContextPairs:
+      - paddingTop|other
+      - marginBottom|body
+    - value: 2
+      contexts:
+      - nav
+      - body
+      - icon
+      - other
+      - link
+      frequency: 38
+      properties:
+      - marginTop
+      - marginRight
+      - paddingTop
+      - paddingBottom
+      - paddingRight
+      - paddingLeft
+      propertyContextPairs:
+      - marginTop|nav
+      - marginRight|body
+      - marginTop|icon
+      - paddingTop|other
+      - paddingBottom|other
+      - marginTop|other
+      - paddingTop|link
+      - paddingRight|link
+      - paddingBottom|link
+      - paddingLeft|link
+    - value: 3
+      contexts:
+      - other
+      frequency: 4
+      properties:
+      - rowGap
+      - columnGap
+      propertyContextPairs:
+      - rowGap|other
+      - columnGap|other
+    - value: 4
+      contexts:
+      - button
+      - nav
+      - other
+      - card
+      frequency: 56
+      properties:
+      - rowGap
+      - columnGap
+      - paddingBottom
+      - paddingRight
+      - paddingLeft
+      - marginRight
+      - marginLeft
+      - paddingTop
+      propertyContextPairs:
+      - rowGap|button
+      - columnGap|button
+      - rowGap|nav
+      - columnGap|nav
+      - rowGap|other
+      - columnGap|other
+      - paddingBottom|other
+      - paddingRight|other
+      - paddingLeft|other
+      - marginRight|other
+      - marginLeft|other
+      - paddingTop|card
+      - paddingRight|card
+      - paddingBottom|card
+      - paddingLeft|card
+    - value: 5
+      contexts:
+      - card
+      - other
+      frequency: 9
+      properties:
+      - paddingRight
+      propertyContextPairs:
+      - paddingRight|card
+      - paddingRight|other
+  shapes:
+    radii:
+    - value: 4
+      contexts:
+      - button
+      - nav
+      - other
+      - card
+      - link
+      - image
+      - body
+      frequency: 96
+    - value: 1
+      contexts:
+      - other
+      frequency: 35
+    - value: 8
+      contexts:
+      - other
+      frequency: 4
+    - value: 16
+      contexts:
+      - other
+      frequency: 1
+    shadows:
+    - value: rgba(0, 0, 0, 0.2) 0px 0px 32px 8px
+      contexts:
+      - card
+      frequency: 4
+    - value: rgba(50, 50, 93, 0.12) 0px 16px 32px 0px
+      contexts:
+      - card
+      frequency: 2
+    - value: rgba(23, 23, 23, 0.08) 0px 15px 35px 0px
+      contexts:
+      - card
+      frequency: 1
+- name: Superhuman
+  url: https://superhuman.com
+  theme: mixed
+  northStar: ''
+  colors:
+    neutral:
+    - name: Parchment Canvas
+      hex: '#f2f0eb'
+      role: Primary page background below the hero; the warm, slightly toasted off-white
+        tha
+    - name: Ink
+      hex: '#292827'
+      role: Primary text, borders, nav labels — near-black with a warm brown undertone
+        inste
+    - name: Bone
+      hex: '#ffffff'
+      role: Card surfaces, hero text, button text on dark backgrounds
+    - name: Fog
+      hex: '#e3e3e2'
+      role: Subtle UI dividers, light button borders, tab backgrounds
+    - name: Driftwood
+      hex: '#dcd7d3'
+      role: Secondary dividers and section rule lines
+    - name: Graphite
+      hex: '#666666'
+      role: Secondary body text — feature descriptions and supporting copy beneath
+        headings
+    brand:
+    - name: Aubergine
+      hex: '#421d24'
+      role: Announcement banner background, footer background — deep muted red that
+        brackets
+    - name: Aubergine Deep
+      hex: '#4e242c'
+      role: SVG icon fills and border accents within dark brand surfaces
+    accent:
+    - name: Iris
+      hex: '#714cb6'
+      role: Ghost/outlined action borders, link text, focus rings — the only chromatic
+        accen
+    - name: Indigo Glow
+      hex: '#353088'
+      role: Focus shadow on primary CTA links (inset ring depth cue)
+    - name: Lavender Chip
+      hex: '#d4c7ff'
+      role: Sign-up button fill on dark hero — soft violet chip against dark photography
+    - name: Hero Dusk Gradient
+      hex: '#a8a4d8'
+      role: Full-viewport hero background gradient overlaying the dusk photography;
+        pastel v
+  dos:
+  - 'Use #f2f0eb as the page canvas for all content sections below the hero — never
+    plain white (#ffffff) as the canvas background.'
+  - Apply Super Sans VF at weight 600–700 for all headings with letter-spacing -0.022em
+    to -0.028em at sizes 28px and above.
+  - 'Use #714cb6 exclusively as outlined ghost button borders and link colors on light
+    surfaces — never as a filled button background.'
+  - 'Reserve #421d24 only for the announcement banner and footer — it must bracket
+    the page without appearing in content sections.'
+  - Set border-radius 8px for inline buttons and badges, 16px for cards, 999px for
+    pill tabs and floating UI chips.
+  donts:
+  - Don't use a pure white (#ffffff) page background for content sections — the parchment
+    (#f2f0eb) canvas is what separates this from generic SaaS.
+  - 'Don''t apply #714cb6 as a filled button background — evidence shows it appears
+    only as outlined borders and link text, never as a button fill.'
+  - Don't use letter-spacing at 0 or positive values for headings — all heading sizes
+    use negative tracking; flat tracking breaks the compressed headline aesthetic.
+  - Don't introduce additional typefaces — Super Sans VF handles every text role;
+    mixing in system fonts or other typefaces breaks the typographic cohesion.
+  - Don't use standard box-shadow elevation for cards — depth is achieved through
+    overlapping layout and backdrop-blur, not drop shadows.
+  typography:
+    fonts:
+    - family: Super Sans VF
+      weights:
+      - 460
+      - 500
+      - 540
+      - 600
+      - 700
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+    topTokens:
+    - value: 2
+      contexts:
+      - body
+      - other
+      frequency: 18
+      properties:
+      - paddingTop
+      - paddingBottom
+      - rowGap
+      - columnGap
+      propertyContextPairs:
+      - paddingTop|body
+      - paddingBottom|body
+      - rowGap|other
+      - columnGap|other
+    - value: 4
+      contexts:
+      - body
+      - button
+      - nav
+      - other
+      - card
+      frequency: 92
+      properties:
+      - rowGap
+      - columnGap
+      - paddingRight
+      - paddingLeft
+      - marginTop
+      - paddingTop
+      - paddingBottom
+      - marginRight
+      propertyContextPairs:
+      - rowGap|body
+      - columnGap|body
+      - rowGap|button
+      - columnGap|button
+      - rowGap|nav
+      - columnGap|nav
+      - paddingRight|body
+      - paddingLeft|body
+      - marginTop|other
+      - rowGap|other
+      - columnGap|other
+      - paddingTop|card
+      - paddingRight|card
+      - paddingBottom|card
+      - paddingLeft|card
+      - paddingRight|other
+      - paddingLeft|other
+      - marginRight|nav
+    - value: 6
+      contexts:
+      - button
+      - link
+      frequency: 11
+      properties:
+      - paddingTop
+      - paddingBottom
+      - paddingRight
+      propertyContextPairs:
+      - paddingTop|button
+      - paddingBottom|button
+      - paddingTop|link
+      - paddingRight|link
+      - paddingBottom|link
+    - value: 8
+      contexts:
+      - other
+      - body
+      - nav
+      - button
+      - link
+      frequency: 70
+      properties:
+      - paddingTop
+      - paddingRight
+      - paddingBottom
+      - paddingLeft
+      - rowGap
+      - columnGap
+      - marginTop
+      propertyContextPairs:
+      - paddingTop|other
+      - paddingTop|body
+      - paddingRight|body
+      - paddingBottom|body
+      - paddingLeft|body
+      - rowGap|nav
+      - columnGap|nav
+      - paddingRight|button
+      - paddingLeft|button
+      - paddingRight|nav
+      - paddingLeft|nav
+      - rowGap|button
+      - columnGap|button
+      - rowGap|other
+      - columnGap|other
+      - marginTop|other
+      - paddingRight|other
+      - paddingBottom|other
+      - paddingLeft|other
+      - rowGap|link
+      - columnGap|link
+    - value: 12
+      contexts:
+      - button
+      - card
+      - other
+      - link
+      frequency: 44
+      properties:
+      - paddingTop
+      - paddingRight
+      - paddingBottom
+      - paddingLeft
+      - rowGap
+      - columnGap
+      propertyContextPairs:
+      - paddingTop|button
+      - paddingRight|button
+      - paddingBottom|button
+      - paddingLeft|button
+      - paddingTop|card
+      - paddingBottom|card
+      - paddingTop|other
+      - paddingRight|other
+      - paddingBottom|other
+      - paddingLeft|other
+      - rowGap|other
+      - columnGap|other
+      - rowGap|button
+      - columnGap|button
+      - rowGap|link
+      - columnGap|link
+  shapes:
+    radii:
+    - value: 8
+      contexts:
+      - body
+      - button
+      - other
+      - link
+      frequency: 10
+    - value: 16
+      contexts:
+      - button
+      - card
+      frequency: 5
+    - value: 24
+      contexts:
+      - card
+      frequency: 3
+    - value: 999
+      contexts:
+      - card
+      - other
+      frequency: 3
+    - value: 12
+      contexts:
+      - link
+      frequency: 1
+    shadows:
+    - value: rgb(113, 76, 182) 0px 0px 0px 1px inset
+      contexts:
+      - button
+      frequency: 1
+- name: Titan
+  url: https://www.titan.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Midnight Ink
+      hex: '#111111'
+      role: Primary text, darkest surface. Creates stark contrast against lighter
+        background
+    - name: Canvas White
+      hex: '#ffffff'
+      role: Page backgrounds, card surfaces, ghost button text. The primary backdrop
+        for all
+    - name: Off-White Sage
+      hex: '#f3efeb'
+      role: Subtle background for card variants and secondary sections, provides a
+        soft, war
+    - name: Faded Stone
+      hex: '#e9eaeb'
+      role: Subtle borders and dividers, navigation backgrounds, a very light gray
+        that acts
+    - name: Gunmetal Gray
+      hex: '#615e5b'
+      role: Secondary text, muted helper text, and subtle icon details. Provides lower
+        contr
+    - name: Soft Concrete
+      hex: '#d8d3cc'
+      role: Subtle borders for ghost buttons and card containers, provides minimal
+        visual se
+    brand:
+    - name: Action Black
+      hex: '#000000'
+      role: 'Primary button backgrounds, key interactive elements. The pure black
+        stands out '
+    accent:
+    - name: Highlight Orange
+      hex: '#ff9900'
+      role: Decorative strokes and subtle highlights, often within SVG elements. A
+        small spl
+  dos:
+  - Use Midnight Ink (#111111) as the primary text color against Canvas White (#ffffff)
+    or Off-White Sage (#f3efeb) to maintain high contrast.
+  - Apply a 160px border-radius to all primary and ghost buttons, and 140px to navigation
+    elements for a consistent pill-shaped aesthetic.
+  - Separate major content sections with 80px vertical spacing to ensure comfortable
+    density and visual breathing room.
+  - Utilize Geist at weight 700 for headings, sizes 40px and 60px, with -0.0300em
+    letter spacing to create impactful, condensed titles.
+  - Use Geist Mono sparingly for numerical data or technical terms, leveraging its
+    'ss08' feature for distinct presentation.
+  donts:
+  - Avoid introducing additional saturated colors; maintain the predominantly monochrome
+    palette with only subtle Highlight Orange accents in decorative elements.
+  - Do not use box-shadows for elevation; rely on background color changes or subtle
+    borders for surface differentiation.
+  - Do not use generic circular or square button radii; adhere to the specific 160px
+    and 140px values for interactive elements.
+  - Avoid dense, unbroken blocks of text; break up content with generous padding,
+    section gaps, and clear typographic hierarchy.
+  - Do not use default browser link styles; all links should be styled with Midnight
+    Ink (#111111) and no underline by default.
+  typography:
+    fonts:
+    - family: Geist
+      weights:
+      - 400
+      - 500
+      - 700
+    - family: Geist Mono
+      weights:
+      - 400
+      - 500
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 160
+    - 32
+    - 140
+    shadows: 0
+- name: Mercury
+  url: https://mercury.com
+  theme: dark
+  northStar: ''
+  colors:
+    brand:
+    - name: Mercury Blue
+      hex: '#5266eb'
+      role: Primary CTA buttons — the single, vivid accent in a muted palette, focusing
+        user
+    accent:
+    - name: Ghost Blue
+      hex: '#cdddff'
+      role: Secondary button backgrounds, hover states — a desaturated, ethereal blue
+        sugges
+    neutral:
+    - name: Deep Space
+      hex: '#171721'
+      role: Outermost page background layer, providing depth.
+    - name: Midnight Slate
+      hex: '#1e1e2a'
+      role: Primary page and section backgrounds.
+    - name: Graphite
+      hex: '#272735'
+      role: Subtle button backgrounds and interactive surfaces.
+    - name: Lead
+      hex: '#70707d'
+      role: Borders, dividers, subtle UI accents.
+    - name: Starlight
+      hex: '#ededf3'
+      role: Primary text color for headlines, body, and navigation.
+    - name: Silver
+      hex: '#c3c3cc'
+      role: Secondary text, footer copy, disabled states.
+    - name: Pure White
+      hex: '#ffffff'
+      role: Text on primary CTA buttons (#5266eb).
+  dos:
+  - Use 'arcadiaDisplay' at a light weight (360) for all major headlines to maintain
+    an airy, sophisticated tone.
+  - Reserve the 'Mercury Blue' (#5266eb) accent exclusively for primary, action-oriented
+    CTAs.
+  - 'Employ the deep neutral palette (#171721, #1e1e2a) for all backgrounds to create
+    a focused, immersive environment.'
+  - Utilize extreme corner radii (32px, 40px) for all primary and secondary buttons,
+    creating a signature 'pill' shape.
+  - Maintain high contrast with 'Starlight' (#ededf3) text on dark backgrounds for
+    all primary content.
+  donts:
+  - Don't use 'Mercury Blue' (#5266eb) for text, backgrounds, or decorative elements.
+  - Don't use heavy font weights (>530) for any typography.
+  - Don't apply shadows for elevation. Use color and opacity shifts instead.
+  - Don't introduce new saturated colors. The palette is monochrome plus one blue
+    accent.
+  - Don't use small corner radii on buttons. They should always be pills.
+  typography:
+    fonts:
+    - family: arcadia
+      weights:
+      - 360
+      - 400
+      - 420
+      - 480
+    - family: arcadiaDisplay
+      weights:
+      - 360
+      - 480
+      - 530
+    scale:
+      base: 20
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: spacious
+  shapes:
+    radii:
+    - 4
+    - 8
+    - 12
+    shadows: 0
+- name: Anthropic
+  url: https://anthropic.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Slate Dark
+      hex: '#141413'
+      role: 'Primary text, borders, nav items, icon fills, card backgrounds — the
+        near-black '
+    - name: Ivory Light
+      hex: '#faf9f5'
+      role: Page background, button fills, light surface base — the warm off-white
+        that give
+    - name: Ivory Medium
+      hex: '#f0eee6'
+      role: Nav backgrounds, secondary surface level, border highlights
+    - name: Ivory Dark
+      hex: '#e8e6dc'
+      role: Body text on dark backgrounds, dividers, subtle borders
+    - name: Oat
+      hex: '#e3dacc'
+      role: Tertiary surface backgrounds, warm mid-tone fills
+    - name: Cloud Medium
+      hex: '#b0aea5'
+      role: Disabled/muted borders, secondary interactive borders, subdued UI chrome
+    - name: Cloud Light
+      hex: '#d1cfc5'
+      role: Dividers, hairline borders, inactive states
+    - name: Cloud Dark
+      hex: '#87867f'
+      role: Secondary text, meta labels, timestamps
+    - name: Slate Medium
+      hex: '#3d3d3a'
+      role: Mid-dark borders, focus rings on light surfaces
+    - name: Slate Light
+      hex: '#5e5d59'
+      role: Tertiary text, captions, footer secondary content
+    accent:
+    - name: Clay
+      hex: '#d97757'
+      role: Accent CTA elements, highlight states — warm terracotta held in reserve
+        for mome
+    - name: Accent Ember
+      hex: '#c6613f'
+      role: Deeper accent state, hover/pressed clay interactions
+    - name: Olive
+      hex: '#788c5d'
+      role: Thematic tag or category label color variant
+    - name: Sky
+      hex: '#6a9bcc'
+      role: Thematic tag or category label color variant
+    - name: Fig
+      hex: '#c46686'
+      role: Thematic tag or category label color variant
+    - name: Cactus
+      hex: '#bcd1ca'
+      role: Thematic tag or category label color variant
+  dos:
+  - 'Use #faf9f5 (Ivory Light) as the page base — never pure white (#ffffff) or neutral
+    gray.'
+  - 'Apply borderRadius 0px to all buttons and interactive controls except the primary
+    ''Try Claude'' CTA which uses 0px 0px 8px 8px (asymmetric: flat top, rounded bottom
+    only).'
+  - Emphasize headline keywords with a thick text-decoration underline only — never
+    color, bold weight increase, or highlight backgrounds — as the sole decorative
+    emphasis mechanism.
+  - Use Anthropic Serif at display sizes (91px, weight 400) exclusively within dark
+    (#141413) surface cards; use Anthropic Sans for all light-surface headlines.
+  - 'Restrict chromatic color to the CSS accent palette (Clay #d97757, Olive #788c5d,
+    etc.) and deploy it sparingly — one accent per section maximum; default state
+    uses zero chromatic color.'
+  donts:
+  - Never use pure white (#ffffff) or pure black (#000000) as a surface background
+    — all surfaces must come from the ivory/slate token range.
+  - Never add box-shadows or drop-shadows to any component — surface contrast and
+    border lines are the only depth signals.
+  - Never round button corners uniformly — the 0px radius is a deliberate formal signal;
+    avoid introducing 4px, 6px, or pill buttons.
+  - Never use Anthropic Serif on the page's ivory background at large sizes — the
+    serif display scale is reserved for the dark card inversion.
+  - Never apply multiple chromatic accent colors within a single section — the palette
+    tokens (Clay, Sky, Fig, Olive) are categorical variants, not combinable accents.
+  typography:
+    fonts:
+    - family: Anthropic Sans
+      weights:
+      - 400
+      - 500
+      - 600
+      - 700
+    - family: Anthropic Serif
+      weights:
+      - 400
+      - 600
+    - family: Anthropic Mono
+      weights:
+      - 400
+    scale:
+      base: 12
+      name: Major Third
+      ratio: 1.25
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: compact
+  shapes:
+    radii:
+    - 8
+    - 16
+    - 24
+    shadows: 0
+- name: Antimetal
+  url: https://antimetal.com
+  theme: mixed
+  northStar: ''
+  colors:
+    brand:
+    - name: Midnight Navy
+      hex: '#1b2540'
+      role: Primary text, heading color on light surfaces, nav text, icon fills, input
+        text,
+    - name: Deep Cosmos
+      hex: '#001033'
+      role: Blue action color for filled buttons, selected navigation states, and
+        focused co
+    - name: Hero Gradient
+      hex: '#0050f8'
+      role: Full-bleed hero background — dark navy at top fading through electric
+        blue to li
+    accent:
+    - name: Chartreuse Pulse
+      hex: '#d0f100'
+      role: Green action color for filled buttons, selected navigation states, and
+        focused c
+    - name: Ice Veil
+      hex: '#e0f6ff'
+      role: Ghost button borders in dark hero mode, subtle icon stroke tints, very-light
+        atm
+    - name: Blue Glow Radial
+      hex: '#0080f8'
+      role: Supporting palette color for small decorative accents when the core palette
+        need
+    neutral:
+    - name: Ghost Canvas
+      hex: '#f8f9fc'
+      role: 'Primary page background, card fill for feature sections, section backgrounds
+        in '
+    - name: Pure Surface
+      hex: '#ffffff'
+      role: 'Elevated card surfaces above the ghost canvas — product UI cards, floating
+        pill '
+    - name: Slate Ink
+      hex: '#6b7184'
+      role: Secondary body text, muted labels, icon fills at reduced emphasis
+    - name: Ash Medium
+      hex: '#7c8293'
+      role: Tertiary text, hairline border fills, subtle strokes on dividers and icon
+        outlin
+    - name: Storm Gray
+      hex: '#596075'
+      role: Mid-tone text in body copy within darker surface contexts, muted border
+        strokes
+    - name: Fog Border
+      hex: '#b1b5c0'
+      role: Hairline borders on buttons and cards in the light theme, icon stroke
+        at minimum
+  dos:
+  - Use 9999px radius on ALL buttons and interactive pill elements — this applies
+    across both dark and light surfaces without exception.
+  - 'Reserve #d0f100 exclusively for the primary CTA fill; never use it for decorative
+    elements, icons, or backgrounds other than action buttons.'
+  - Apply blue-tinted shadows using rgba(0,39,80,...) for all card elevation — never
+    use neutral black-based shadows like rgba(0,0,0,...) on light surfaces.
+  - Use ivarTextFont with font-feature-settings 'ss04','ss06','ss09','ss10','ss11'
+    only at 32px and above; abcdFont handles everything below 32px.
+  - 'Maintain the hero-to-light transition as the singular dark section — subsequent
+    sections stay on #f8f9fc with #ffffff elevated cards; do not add additional dark
+    bands.'
+  donts:
+  - 'Don''t use #d0f100 in hero sections or dark backgrounds for decorative illustration
+    fills — it appears only as a filled button background.'
+  - Don't apply radius other than 9999px to buttons — even small utility buttons in
+    the product UI use the pill shape.
+  - Don't mix ivarTextFont into body copy or UI labels below 32px; the serif is strictly
+    a display instrument.
+  - 'Don''t use more than two surface levels in light sections (#f8f9fc canvas + #ffffff
+    card) — the design system has almost no mid-tone fill colors between these two
+    steps.'
+  - Don't create dark sections beyond the hero; the page's rhythm depends on a single
+    dramatic dark entry followed by sustained light product canvas.
+  typography:
+    fonts:
+    - family: abcdFont
+      weights:
+      - 400
+      - 450
+      - 480
+    - family: ivarTextFont
+      weights:
+      - 400
+    scale:
+      base: 16
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: compact
+  shapes:
+    radii:
+    - 60
+    - 16
+    - 2
+    shadows: 7
+- name: monopo saigon
+  url: https://monopo.vn
+  theme: dark
+  northStar: ''
+  colors:
+    neutral:
+    - name: Midnight Canvas
+      hex: '#000000'
+      role: Primary background for pages, cards, and dark-themed sections
+    - name: Frost White
+      hex: '#ffffff'
+      role: Primary text color, link defaults, borders for ghost components, and accents
+        aga
+    - name: Deep Shadow
+      hex: '#181818'
+      role: Secondary text in footers and less prominent information. Subtly darker
+        borders
+    - name: Whisper Gray
+      hex: '#6d6d6d'
+      role: Muted body text and auxiliary text where lower contrast is desired
+    - name: Misty Gray
+      hex: '#636363'
+      role: Background for subtle, low-contrast interactive elements like the cookie
+        consent
+    brand:
+    - name: Deep Ocean Gradient
+      hex: '#a0e0ab'
+      role: Atmospheric background for hero sections and full-bleed visual elements,
+        creatin
+  dos:
+  - Prioritize Roobert as the primary typeface for all textual content, utilizing
+    its diverse weights to establish hierarchy.
+  - Maintain a spacious layout with a base unit of 4px and aim for an element gap
+    of 14px to ensure visual breathing room.
+  - Use Midnight Canvas (#000000) for all primary backgrounds and Frost White (#ffffff)
+    for primary text to ensure high contrast.
+  - Apply a border-radius of 75.024px to all buttons for a distinctly rounded, pill-like
+    appearance.
+  - Implement the Deep Ocean Gradient (linear-gradient(90deg, rgb(160, 224, 171),
+    rgb(255, 172, 46) 50%, rgb(165, 45, 37))) as a background for hero and large interactive
+    sections.
+  donts:
+  - Avoid using harsh, saturated accent colors that would disrupt the site's subdued
+    and atmospheric palette.
+  - Do not introduce square or sharp borders on interactive elements; button radii
+    should always be 75.024px.
+  - Refrain from using strong box-shadows or heavy elevation, as the design relies
+    on gradient depth rather than layered elements.
+  - Do not deviate from the specified Roobert and Raleway font families; avoid generic
+    system fonts for branding elements.
+  - Avoid tight information density; maintain spacious relationships between elements
+    and sections.
+  typography:
+    fonts:
+    - family: Roobert
+      weights:
+      - 300
+      - 400
+      - 600
+    - family: Raleway
+      weights:
+      - 400
+    - family: system-ui
+      weights:
+      - 400
+    scale:
+      base: 15
+      name: Minor Third
+      ratio: 1.2
+      confidence: 0.92
+  spacing:
+    baseUnit: 4
+    density: spacious
+  shapes:
+    radii:
+    - 75.024
+    - 10
+    shadows: 0
+- name: Dia Browser
+  url: https://diabrowser.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Ink Black
+      hex: '#000000'
+      role: Primary text, headings, nav links, borders, icon fills — the sole chromatic
+        anch
+    - name: Snow
+      hex: '#ffffff'
+      role: Card backgrounds (at 90% opacity), base fills, overlay surfaces
+    - name: Canvas
+      hex: '#f8f8f8'
+      role: Page background (--background token), the overall canvas beneath frosted
+        cards
+    - name: Fog
+      hex: '#efefef'
+      role: Header background, subtle section dividers
+    - name: Pebble
+      hex: '#d9d9d9'
+      role: Filled button backgrounds ("Download Dia") — neutral gray buttons avoid
+        competin
+    - name: Graphite
+      hex: '#636363'
+      role: Body text, secondary copy, subheadings beneath display type
+    - name: Slate
+      hex: '#959595'
+      role: Tertiary text, nav labels, metadata captions
+    - name: Steel
+      hex: '#aeaeae'
+      role: Disabled states, carousel indicator dots, icon strokes
+    - name: Ash
+      hex: '#7c7c7c'
+      role: Subtle borders, secondary body text
+    brand:
+    - name: Spectrum Gradient
+      hex: '#fa3d1d'
+      role: 'The signature chromatic moment — ambient hero glow and decorative accent
+        strip; '
+    accent:
+    - name: Rose Quartz
+      hex: '#c679c4'
+      role: Gradient stop — pink/mauve tone at the warm edge of the spectrum
+    - name: Marigold
+      hex: '#ffb005'
+      role: Gradient stop — warm amber center of the spectrum, available as --yellow
+        token
+    - name: Signal Blue
+      hex: '#0358f7'
+      role: Gradient stop — the cool end of the spectrum, available as --blue token
+        for link
+    - name: Hot Pink
+      hex: '#fd02f5'
+      role: Available as --pink token for highlight or playful accent contexts
+  dos:
+  - Use the spectrum gradient (pink → red → amber → lavender → blue) ONLY as ambient
+    background glow or decorative strip — never as text color or button fill
+  - Keep buttons neutral gray (#D9D9D9) or transparent; the system deliberately avoids
+    chromatic CTAs to keep focus on content
+  - Apply 30px border-radius consistently to cards and filled buttons; use 9999px
+    pill radius only for ghost/tab buttons
+  - Use ABC Oracle weight 300 for all display text (50px+) with -0.04em letter-spacing;
+    weight 500 only for buttons and labels ≤16px
+  - 'Apply backdrop-filter: blur(24px) with rgba(255,255,255,0.9) for any elevated
+    surface to maintain the frosted-glass layering'
+  donts:
+  - Never use saturated colors (--red, --blue, --pink, --yellow) as solid backgrounds
+    or button fills — they exist only within the gradient and as design tokens for
+    rare micro-accents
+  - Never use border-radius less than 10px on any element; the system has no sharp
+    corners
+  - Never use font weights above 500 — there is no bold (600/700/800) anywhere in
+    this system
+  - Never add drop shadows beyond the single 8px blur shadow; avoid layered or colored
+    shadows
+  - Never place dark backgrounds behind content sections; the system is exclusively
+    light with the gradient as the only warm/dark element
+  typography:
+    fonts:
+    - family: ABC Oracle
+      weights:
+      - 300
+      - 400
+      - 500
+    - family: ABC Favorit Mono
+      weights:
+      - 400
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 8
+    density: spacious
+  shapes:
+    radii:
+    - 30
+    - 10
+    - 9999
+    shadows: 1
+- name: Family
+  url: https://family.co
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Warm Canvas
+      hex: '#fbfaf9'
+      role: Page background, nav background, light button fill
+    - name: Stone Surface
+      hex: '#f2f0ed'
+      role: Card inset border color, secondary button background, subtle dividers
+    - name: Parchment Card
+      hex: '#f8f7f4'
+      role: Feature card backgrounds (display-p3 0.984 0.980 0.976 approximation)
+    - name: Graphite
+      hex: '#474645'
+      role: Body text, nav links, card body copy — the dominant text color across
+        the entire
+    - name: Charcoal Primary
+      hex: '#343433'
+      role: Nav text, headings at smaller sizes, links — mapped to --color-primary
+        and --col
+    - name: Midnight
+      hex: '#121212'
+      role: Primary CTA button background, high-contrast heading text
+    - name: Obsidian
+      hex: '#000000'
+      role: Dark card background (phone mockup cards), icon fills
+    - name: Ash
+      hex: '#848281'
+      role: Muted body text, secondary nav labels
+    - name: Fog
+      hex: '#c6c6c6'
+      role: Footer text, inactive borders, dividers
+    - name: Smoke
+      hex: '#a7a7a7'
+      role: Disabled states, placeholder text, tertiary labels
+    - name: Pepper
+      hex: '#282624'
+      role: Dark nav overlay text, deep secondary labels
+    brand:
+    - name: Ember Orange
+      hex: '#ff3e00'
+      role: Primary brand accent — CTA text links, icon highlights, illustration character
+        c
+    - name: Meadow Green
+      hex: '#00ca48'
+      role: Secondary brand accent — success indicators, illustration fills, receive/confirm
+    - name: Sky Blue
+      hex: '#0090ff'
+      role: Tertiary brand accent — links in body, illustration fills, Ethereum-related
+        UI e
+    - name: Sunburst Yellow
+      hex: '#ffbb26'
+      role: Quaternary brand accent — coin illustrations, star motifs, card highlights
+    accent:
+    - name: Deep Amber
+      hex: '#d48f00'
+      role: Yellow shadow/stroke in illustrations, icon outlines on yellow elements
+    - name: Ocean Blue
+      hex: '#0086fc'
+      role: Link color in body copy, stroke on blue illustration elements
+    - name: Ice Blue
+      hex: '#64c6ff'
+      role: Illustration fill — lighter blue tones on characters and graphics
+    - name: Spearmint
+      hex: '#00c978'
+      role: Illustration stroke and fill variant for green characters
+    - name: Flamingo
+      hex: '#ff58ae'
+      role: Illustration accent — pink character fills, occasional badge backgrounds
+    - name: Violet Pop
+      hex: '#9f4fff'
+      role: Illustration accent — purple character/NFT badge backgrounds
+    semantic:
+    - name: Coral Red
+      hex: '#ff2b3a'
+      role: Error state background, destructive action indicator
+    - name: Valid Green
+      hex: '#00c454'
+      role: Success/valid input state — mapped to --background-valid
+  dos:
+  - 'Use #fbfaf9 as page background — never pure white (#ffffff) at canvas level;
+    the warm cream cast is the foundation of the tactile feel.'
+  - 'Apply the inset stone border (box-shadow: color(display-p3 0.949 0.941 0.929)
+    0px 0px 0px 1px inset) on all white cards instead of a CSS border property — keeps
+    cards off-layout-flow.'
+  - 'Use border-radius 32px for all pill buttons (both #121212 dark and #f6f4ef light
+    variants) — the pill shape is non-negotiable for interactive elements.'
+  - 'Apply tight negative letter-spacing to all large text: -2.11px at 68px display,
+    -1.14px at 44px heading-lg, scaling to near-zero at body sizes.'
+  - Restrict the Family custom typeface to display and large section headings only
+    (44px and 68px) — Inter handles all UI text regardless of weight.
+  donts:
+  - Don't use drop shadows on content cards — the inset warm-stone border is the only
+    surface definition mechanism; shadows appear only on the dark phone mockup and
+    hover-elevated states.
+  - 'Don''t use pure #ffffff as a page background — it breaks the warm cream identity;
+    #fbfaf9 is the minimum warmth threshold.'
+  - Don't use the illustration characters as pure decoration at small sizes — below
+    60px they lose their expressive faces and become abstract blobs.
+  - Don't mix Inter weight 700+ with the Family display typeface — the site uses Inter
+    max weight 600; heavier weights fight the custom font's personality.
+  - Don't apply Ember Orange (#ff3e00) to more than one UI element per viewport —
+    its rarity is what creates urgency; overuse collapses the hierarchy.
+  typography:
+    fonts:
+    - family: Inter
+      weights:
+      - 400
+      - 500
+      - 600
+    - family: Family
+      weights:
+      - 500
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 10
+    - 40
+    - 72
+    shadows: 5
+- name: Raycast
+  url: https://raycast.com
+  theme: dark
+  northStar: ''
+  colors:
+    neutral:
+    - name: Void Black
+      hex: '#040506'
+      role: Dominant page canvas and deepest shadow color — the ground state everything
+        floa
+    - name: Deep Charcoal
+      hex: '#07080a'
+      role: Primary card and section backgrounds; the first surface level above canvas
+    - name: Graphite 700
+      hex: '#111214'
+      role: Secondary surface and elevated card backgrounds
+    - name: Graphite 600
+      hex: '#1b1c1e'
+      role: Observed in other boxShadow, link boxShadow, badge backgroundColor. Extracted
+        us
+    - name: Graphite 500
+      hex: '#363739'
+      role: Border color for dividers, shadow tones on elevated components
+    - name: Graphite 400
+      hex: '#454647'
+      role: Subtle borders, muted button borders, body divider lines
+    - name: Slate 300
+      hex: '#6a6b6c'
+      role: Secondary body text, icon fills, disabled states
+    - name: Slate 200
+      hex: '#9c9c9d'
+      role: Tertiary text, muted links, placeholder-level labels
+    - name: Ash 50
+      hex: '#e6e6e6'
+      role: Primary download/CTA button background — warm near-white on black for
+        maximum co
+    - name: Snow
+      hex: '#ffffff'
+      role: Primary text on dark surfaces, nav links, headline text, icon strokes,
+        border hi
+    brand:
+    - name: Ember Red
+      hex: '#ff6363'
+      role: Observed in body borderColor, other backgroundColor, other fill.
+    - name: Ember Dark
+      hex: '#452324'
+      role: Observed in other backgroundColor, other borderColor.
+    accent:
+    - name: Mint Signal
+      hex: '#59d499'
+      role: Observed in other backgroundColor. Semantic/state role was not supported
+        by extr
+    - name: Sky Signal
+      hex: '#56c2ff'
+      role: Observed in other backgroundColor. Semantic/state role was not supported
+        by extr
+    - name: Nebula Glow
+      hex: '#043f96'
+      role: Radial section atmosphere gradient — low-opacity blue bloom behind hero
+        and feat
+    - name: Violet Haze
+      hex: '#523091'
+      role: Radial section atmosphere gradient — low-opacity purple bloom for alternate
+        feat
+  dos:
+  - 'Use #040506 as the page canvas ground — never a warm or cool-tinted near-black,
+    only this near-pure neutral void'
+  - Apply the keyboard key shadow stack (rgba(0,0,0,0.4) outer, rgba(255,255,255,0.2)
+    inset top highlight) on any element meant to feel physically pressable
+  - 'Keep headline letter-spacing negative at display sizes: -0.11em at 56px, -0.13em
+    at 64px — critical to the compressed, dense headline feel'
+  - Use radial gradients (blue or violet, max 0.7 opacity core fading to transparent)
+    as per-section atmosphere layers behind content — never flat colored sections
+  - 'Badge and chip text: Inter weight 500, positive letter-spacing +0.04em to +0.073em,
+    on #1B1C1 background — the tracking contrast with headlines is part of the two-register
+    system'
+  donts:
+  - 'Do not use any colored backgrounds for section containers — all surface backgrounds
+    must be from the #040506 → #1B1C1 neutral stack only'
+  - Do not apply border-radius above 20px to cards — the design uses 8px, 11px, 16px,
+    20px; rounder forms break the precision instrument aesthetic
+  - 'Do not use #FF6363 as a button fill or large background — it appears only as
+    a small status dot, icon accent, or single-word label text'
+  - 'Do not use white (#FFFFFF) as a button background — the primary action uses #E6E6E6
+    specifically; pure white reads as system/OS chrome at this scale'
+  - Do not use positive letter-spacing on headings above 24px — all display and heading
+    text must track neutral-to-negative
+  typography:
+    fonts:
+    - family: Inter
+      weights:
+      - 400
+      - 500
+      - 600
+    - family: SF Pro Text
+      weights:
+      - 500
+      - 700
+    - family: GeistMono
+      weights:
+      - 300
+      - 400
+      - 500
+    - family: SF Pro
+      weights:
+      - 700
+    scale:
+      base: 16
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 8
+    density: comfortable
+  shapes:
+    radii:
+    - 11
+    - 8
+    - 20
+    shadows: 20
+- name: Base44
+  url: https://base44.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Canvas Pearl
+      hex: '#faf9f7'
+      role: Page backgrounds, subtle card surfaces
+    - name: Snowdrift White
+      hex: '#ffffff'
+      role: Observed in link borderColor, other backgroundColor, button borderColor.
+        Extract
+    - name: Ink Black
+      hex: '#000000'
+      role: Primary text, prominent headings, strong borders
+    - name: Graphite Text
+      hex: '#232529'
+      role: Secondary text, input placeholder text, subtle borders
+    - name: Slate Gray
+      hex: '#324158'
+      role: Dividers, subtle accent borders on cards
+    - name: Stone Whisper
+      hex: '#696f7b'
+      role: Muted body text, supportive captions, subtle input backgrounds
+    - name: '#e6e6e6'
+      hex: '#e6e6e6'
+      role: Backgrounds for decorative elements and subtle section dividers
+    - name: Ash Border
+      hex: '#cfcfcf'
+      role: Default button borders, light input borders
+    brand:
+    - name: Lime Spritz
+      hex: '#ade900'
+      role: Primary action button borders, 'Start Building' button accent
+    - name: Light Lime
+      hex: '#ebffb1'
+      role: Selected item background, subtle brand highlights
+    - name: Blazing Orange
+      hex: '#ff631f'
+      role: Decorative illustration accents, brand iconography
+    - name: Sky Dream Gradient
+      hex: '#F2F1ED'
+      role: Hero section background
+    - name: Warm Horizon Gradient
+      hex: '#FBFBFB'
+      role: Hero section background
+    accent:
+    - name: Sunset Orange
+      hex: '#d8723c'
+      role: Outlined action button borders for prompts
+  dos:
+  - 'Use Canvas Pearl #faf9f7 for primary page backgrounds to maintain an airy feel.'
+  - 'Apply Snowdrift White #ffffff for card surfaces and interactive elements to create
+    soft contrast and elevation against the canvas.'
+  - 'Reserve Ink Black #000000 for primary text and headings, ensuring high readability.'
+  - 'Implement Ghost Button styling with a 1px Ash Border #cfcfcf and 999px border-radius
+    for secondary actions.'
+  - 'Utilize Lime Spritz #ade900 for CTA button borders and key interactive indicators,
+    contrasting with the soft neutrals.'
+  donts:
+  - Avoid using saturated background colors for large sections; gradients should remain
+    pastel and subtle.
+  - Do not use dark text colors on anything but light backgrounds to preserve contrast
+    and system aesthetic.
+  - Do not introduce sharp corners on interactive elements; prefer soft rounding (999px
+    or 9.89577px) for buttons and inputs.
+  - Do not apply prominent box shadows for elevation; rely on subtle background color
+    shifts or the single rgba(34, 40, 42, 0.04) 0px 3px 10px 0px for modals.
+  - 'Avoid introducing additional vivid colors outside of Lime Spritz #ade900 and
+    Sunset Orange #d8723c to maintain focused accents.'
+  typography:
+    fonts:
+    - family: Arial
+      weights:
+      - 400
+    - family: wix-madefor-text-v2
+      weights:
+      - 400
+      - 500
+      - 600
+      - 700
+    - family: wfont_343a2a_4e484da66ffc4465a05a1c9ea5caf495
+      weights:
+      - 400
+    - family: wfont_343a2a_5b4cd32fc19d46e1b8c1b142abb27d39
+      weights:
+      - 400
+    - family: Madefor-Text
+      weights:
+      - 400
+    - family: Madefor-Display
+      weights:
+      - 400
+    scale:
+      base: 18
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 9.89577
+    - 999
+    - 7.42183
+    shadows: 1
+- name: General Intelligence Company
+  url: https://www.generalintelligencecompany.com
+  theme: light
+  northStar: ''
+  colors:
+    brand:
+    - name: Night Sky
+      hex: '#1f1f29'
+      role: Dark base for hero sections and occasional accent backgrounds; creates
+        a deep, c
+    accent:
+    - name: Cofounder Blue
+      hex: '#0081c0'
+      role: 'Highlight elements, card backgrounds for featured content, and active
+        interface '
+    - name: Action Azure
+      hex: '#41a1cf'
+      role: Border color for ghost buttons and interactive elements, providing a clear
+        but u
+    neutral:
+    - name: Pitch Black
+      hex: '#000000'
+      role: Primary text for headings and bold statements against light backgrounds,
+        emphasi
+    - name: Canvas White
+      hex: '#ffffff'
+      role: 'Main page background, component backgrounds, and primary text on dark
+        elements, '
+    - name: Off White
+      hex: '#fefffc'
+      role: Subtle alternative background for secondary sections and cards, creating
+        a sligh
+    - name: Ash Gray
+      hex: '#f9faf7'
+      role: Background for input fields and navigation elements, providing a soft
+        contrast
+    - name: Cool Gray
+      hex: '#eef1ed'
+      role: Subtle border for UI elements and dividers, offering minimal distinction
+    - name: Steel Gray
+      hex: '#dee2de'
+      role: Hairline borders and soft shadows, contributing to a refined, nearly unnoticeabl
+    - name: Dark Charcoal
+      hex: '#171717'
+      role: Primary body text and deep contrast accents. Used where legibility against
+        light
+    - name: Charcoal
+      hex: '#2c2c2c'
+      role: Secondary text and less prominent headings, providing contrast below the
+        primary
+    - name: Rich Black
+      hex: '#282834'
+      role: Darker accent for navigation hover states and subtly outlined actions,
+        providing
+    - name: Slate Gray
+      hex: '#444141'
+      role: Placeholder text and subtle icon fills, indicating less active states
+        or auxilia
+    - name: Medium Gray
+      hex: '#646464'
+      role: Muted text for helper descriptions and secondary information, reducing
+        visual no
+    - name: Light Gray
+      hex: '#b4b8b4'
+      role: Lightest neutral used for subtle background variations or very soft dividers
+  dos:
+  - Prioritize PPMondwest for all display and large headings (40px, 48px, 54px) using
+    weight 400 or 500, with letter-spacing -0.0200em for a refined, compact look.
+  - Use 'Night Sky' (#1f1f29) as a deep, rich background for hero sections or brand-defining
+    modules, contrasting with light body text and elements.
+  - Layer surfaces with 'Off White' (#fefffc) and 'Canvas White' (#ffffff) to provide
+    subtle depth and structure on light-themed pages, emphasizing 'Canvas White' for
+    main backgrounds and 'Off White' for slightly recessed elements.
+  - Apply 'Cofounder Blue' (#0081c0) sparingly as a functional accent color for key
+    cards or active states, reserving its prominence for maximum impact.
+  - Implement soft, layered shadows for card components (e.g., rgba(0, 0, 0, 0.08)
+    0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 4px 5px 0px) to give elements a subtle
+    lift without feeling heavy.
+  donts:
+  - Avoid excessive use of 'Cofounder Blue' (#0081c0) outside of clear accent roles;
+    it should highlight, not dominate, the UI.
+  - Do not introduce strong, bold colors or gradients other than the defined brand
+    accents; the system relies on a sophisticated achromatic foundation.
+  - Resist using heavy, opaque backgrounds for layered elements on light pages; instead,
+    favor sublte translucency (rgba(222, 226, 222, 0.16)) for a delicate, modern effect.
+  - Do not use letter-spacing values tighter than -0.0200em for headings or wider
+    than -0.0100em for body text. Maintain the precise, compact typographic rhythm.
+  - Refrain from sharp, angular corners for cards and buttons; apply the specified
+    radii (4px, 8px, 12px, 16px, 24px, 50.496px) consistently for a softer, approachable
+    feel.
+  typography:
+    fonts:
+    - family: af
+      weights:
+      - 400
+      - 500
+      - 600
+      - 700
+    - family: ppmondwest
+      weights:
+      - 400
+      - 500
+    scale:
+      base: 16
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 4
+    - 8
+    - 50.496
+    shadows: 5
+- name: Minimalissimo
+  url: https://minimalissimo.com
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Inkwell
+      hex: '#000000'
+      role: Primary text, core UI elements, strong borders, icon fills. Provides high
+        contra
+    - name: Canvas
+      hex: '#f5f5f5'
+      role: Dominant page and section backgrounds, giving a clean, expansive base
+    - name: Sterling
+      hex: '#999999'
+      role: Medium-contrast borders, control outlines, and structural separators.
+        Do not pro
+    - name: Porcelain
+      hex: '#ffffff'
+      role: Component backgrounds within sections, elevated surfaces. Provides internal
+        cont
+    - name: Pale Ash
+      hex: '#e0e0e0'
+      role: Neutral form states, badge text, and quiet UI feedback where color should
+        stay u
+    - name: Storm Gray
+      hex: '#a1a1a1'
+      role: Tertiary body text, informational text, less prominent details
+    - name: Whisper White
+      hex: '#efefef'
+      role: Background for subtle interactive elements like inputs and ghost buttons,
+        provid
+  dos:
+  - Use GeistSans 400 for all typographic elements, varying only size for hierarchy.
+  - Maintain high contrast text with Inkwell (#000000) on Canvas (#f5f5f5) or Porcelain
+    (#ffffff) backgrounds.
+  - Apply a 4px border-radius to all interactive elements like buttons and input fields.
+  - When a button is not a primary action, render it as text-only with Inkwell (#000000)
+    for a ghost-like appearance.
+  - Utilize Whisper White (#efefef) sparingly, primarily for subtle input backgrounds
+    or very soft button fills.
+  donts:
+  - Avoid using any chromatic colors; maintain a purely achromatic palette.
+  - Do not introduce heavy borders, drop shadows, or strong gradients that would detract
+    from the content.
+  - Refrain from using multiple font families or font weights other than 400 for GeistSans.
+  - Do not clutter layouts with excessive UI elements; focus on functional minimalism.
+  - Avoid large, attention-grabbing primary action buttons; keep interactive elements
+    understated.
+  typography:
+    fonts:
+    - family: GeistSans
+      weights:
+      - 400
+    scale:
+      base: 16
+      name: Minor Second
+      ratio: 1.067
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 4
+    - 8
+    shadows: 0
+- name: Hyperstudio
+  url: https://hyperstudio.org
+  theme: dark
+  northStar: ''
+  colors:
+    neutral:
+    - name: Midnight Void
+      hex: '#101010'
+      role: Primary page background, deepest dark surface.
+    - name: Deep Space
+      hex: '#080808'
+      role: Secondary background, slightly darker than Midnight Void, used for subtle
+        depth.
+    - name: Polar White
+      hex: '#F3F3F3'
+      role: Primary text color, hero headlines, clear contrast against dark backgrounds.
+    - name: Absolute Zero
+      hex: '#FFFFFF'
+      role: Accent text and background for interactive elements like buttons, header
+        text.
+    - name: Ash Gray
+      hex: '#949494'
+      role: Secondary text, subtle borders, slightly toned down from main text.
+    - name: Dark Carbon
+      hex: '#333333'
+      role: Border colors, muted backgrounds for secondary elements.
+    - name: Slate
+      hex: '#C1C1C1'
+      role: Subtle borders, outlines, dividers.
+    - name: Light Gradients
+      hex: '#B5B5B5'
+      role: Subtle background gradient for UI elements, providing a soft, almost imperceptib
+    accent:
+    - name: Amber Glow
+      hex: '#E7C59A'
+      role: Key accent color for interactive elements, 'NEW' tags, drawing attention
+        in a re
+    semantic:
+    - name: Neon Green
+      hex: '#00AC5C'
+      role: Small status indicators, 'spots left' tags, indicating positive status
+        or availa
+  dos:
+  - Prioritize high contrast between text and background, typically Polar White (#F3F3F3)
+    on Midnight Void (#101010) or Absolute Zero (#FFFFFF) on Dark Carbon (#333333).
+  - Use Aeonik at size 63px, weight 700, and lineHeight 0.95 for primary display headlines
+    to maintain a commanding yet compact presence.
+  - Employ Amber Glow (#E7C59A) exclusively for key attention-grabbing elements, such
+    as 'NEW' labels or critical status indicators.
+  - Maintain a default border radius of 8px for most interactive elements and cards,
+    using 99px only for circular or pill-shaped tags.
+  - Utilize Input font for any content that benefits from a monospace, data-like presentation,
+    especially at -0.037em letter spacing for specific technical details.
+  donts:
+  - Do not introduce additional vibrant colors; stick to Amber Glow (#E7C59A) and
+    Neon Green (#00AC5C) as the only chromatic accents.
+  - Avoid using drop shadows for elevation; rely on varied shades of dark neutrals
+    like Midnight Void (#101010) and Deep Space (#080808) for depth perception.
+  - Do not deviate from the specified tight line-heights for headlines, as they are
+    crucial for the dense, impactful typographic style.
+  - Do not use generic system fonts; Aeonik and Input are essential to the brand's
+    distinctive technical aesthetic.
+  - Avoid excessive rounding; maintain sharp or subtly rounded corners (8px) for most
+    UI elements, reserving pill shapes for specific tags.
+  typography:
+    fonts:
+    - family: Aeonik
+      weights:
+      - 400
+      - 700
+    - family: Input
+      weights:
+      - 400
+    scale:
+      base: 14
+      name: Minor Third
+      ratio: 1.2
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 4.5
+    - 8
+    - 20
+    shadows: 0
+- name: Perplexity AI
+  url: https://perplexity.ai
+  theme: light
+  northStar: ''
+  colors:
+    neutral:
+    - name: Inkwell
+      hex: '#000000'
+      role: Primary text, interactive icons, active states – commands immediate attention
+        ag
+    - name: Paper White
+      hex: '#FFFFFF'
+      role: Main page background, pristine canvas for content. The brightest neutral.
+    - name: Parchment
+      hex: '#FAF8F5'
+      role: Interactive element backgrounds like search bars and buttons in inactive
+        states,
+    - name: Graphite
+      hex: '#27251'
+      role: 'Secondary text, subtle backgrounds for elevated elements, and borders
+        for input '
+    - name: Faded Stone
+      hex: '#92918B'
+      role: Placeholder text, subtle contextual information, providing low-contrast
+        visual g
+    - name: Dusk Gray
+      hex: '#72706B'
+      role: Tertiary text, inactive icons, divider lines – defines softer visual cues
+        and no
+  dos:
+  - Prioritize Graphite (#27251E) for secondary text and subtle UI elements to maintain
+    a restrained aesthetic.
+  - Use Paper White (#FFFFFF) as the predominant background, with Parchment (#FAF8F5)
+    for interactive surfaces to create depth without strong shadows.
+  - Apply 9999px border-radius to all interactive buttons and tags for a distinctive
+    pill shape.
+  - Maintain 8px border-radius for input fields and active navigation items to denote
+    interactive, contained elements.
+  - Use Inkwell (#000000) exclusively for primary text and critical interactive icons
+    for maximum clarity and contrast.
+  donts:
+  - Avoid chromatic colors; this system relies exclusively on shades of gray and off-white.
+  - Do not use box-shadows that are anything other than extremely subtle; surface
+    differentiation comes from color variants, not elevation.
+  - Do not introduce square buttons or elements if they contain interactive copy or
+    serve as primary actions; use the 9999px radius.
+  - Do not vary font families; stick strictly to `pplxSans` (or 'Inter') for all typographic
+    elements.
+  - Do not use font weights other than 400 or 500.
+  typography:
+    fonts:
+    - family: pplxSans
+      weights:
+      - 400
+      - 500
+    scale:
+      base: 16
+      name: Minor Second
+      ratio: 1.067
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: compact
+  shapes:
+    radii:
+    - 8
+    - 12
+    - 16
+    shadows: 0
+- name: OpenAI
+  url: https://openai.com
+  theme: light
+  northStar: ''
+  colors:
+    brand:
+    - name: Void
+      hex: '#000000'
+      role: Primary text, nav labels, filled CTA button background, icon fills — the
+        singula
+    neutral:
+    - name: Fog Border
+      hex: '#e5e7eb'
+      role: 'All dividing lines, card outlines, input borders, nav underlines — the
+        lightest '
+    - name: Chalk
+      hex: '#f1f1f1'
+      role: Hover-state button backgrounds, subtle surface fills — one step off pure
+        white w
+    - name: Graphite
+      hex: '#666666'
+      role: Supporting body text, icon strokes, secondary labels — muted but still
+        readable
+    - name: Ash
+      hex: '#8f8f8f'
+      role: Tertiary labels, disabled states, fine-grain icon strokes
+    - name: Canvas
+      hex: '#ffffff'
+      role: Page background, card surfaces, all primary surfaces — absolute white
+        with no wa
+  dos:
+  - 'Use #000000 as the only filled button background color — no colored CTAs'
+  - Apply 9999px border-radius to all pill buttons, ghost buttons, and the conversational
+    input field
+  - Use 6.08px border-radius on all image-containing card elements and thumbnail clips
+  - Set display headlines (48px) with letter-spacing -0.03em; omit tracking overrides
+    below 22px unless using caps labels
+  - 'Use #e5e7eb as the only border/divider color — never darken it or tint it'
+  donts:
+  - Do not use any colored accent (blue, green, orange) on interactive elements or
+    backgrounds
+  - Do not apply box-shadows to cards — separation comes from whitespace, not depth
+  - Do not mix border-radius values between pill (9999px) and card (6.08px) contexts
+    — the contrast is intentional and the values must be exact
+  - Do not use weight below 400 or above 600 in OpenAI Sans — the 400/500/600 triad
+    defines all typographic hierarchy
+  - 'Do not use background colors on section blocks — the page stays #ffffff wall-to-wall'
+  typography:
+    fonts:
+    - family: OpenAI Sans
+      weights:
+      - 400
+      - 500
+      - 600
+    scale:
+      base: 17
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: 4
+    density: comfortable
+  shapes:
+    radii:
+    - 4
+    - 6.08
+    - 24
+    shadows: 1
+- name: Airbnb
+  url: https://www.airbnb.com
+  theme: light
+  northStar: ''
+  colors:
+    brand:
+    - name: Rausch Coral
+      hex: '#ff385c'
+      role: Brand logo fill, active nav underline, search button icon background,
+        carousel d
+    - name: Rausch Deep
+      hex: '#e00b41'
+      role: Hover state darkening of Rausch Coral on interactive brand elements
+    neutral:
+    - name: Carbon
+      hex: '#222222'
+      role: Primary text, headings, borders, icon strokes — the dominant neutral forming
+        alm
+    - name: Slate
+      hex: '#6a6a6a'
+      role: Secondary text (metadata, subtext, secondary labels), secondary icon fill
+    - name: Silver
+      hex: '#c1c1c1'
+      role: Disabled button text and icon strokes, inactive carousel navigation arrows
+    - name: Stone
+      hex: '#b0b0b0'
+      role: Skeleton/loading placeholder backgrounds
+    - name: Pebble
+      hex: '#dddddd'
+      role: Card image placeholder backgrounds, tertiary borders, disabled borders
+    - name: Mist
+      hex: '#ebebeb'
+      role: Subtle dividers and secondary section borders
+    - name: Fog
+      hex: '#f7f7f7'
+      role: Page canvas, footer background, button hover/selected state background
+    - name: Cloud
+      hex: '#ffffff'
+      role: Card surfaces, header background, modal/popover backgrounds, pill badge
+        fills
+  dos:
+  - 'Use #ff385c exclusively for the brand logo, the search trigger button background,
+    and active/selected state indicators — never for decorative fills or text blocks.'
+  - Apply 20px border-radius to all listing cards and the main search bar container;
+    use 8px for filter pill buttons and input fields; reserve 50% (circular) for icon-only
+    buttons.
+  - 'Set all typography in Airbnb Cereal VF (substitute: Inter Variable) with font-feature-settings:
+    ''salt''; apply letter-spacing -0.02em at 20px+ sizes and +0.04em for small-caps
+    labels at 11–12px.'
+  - Layer shadows as the three-value stack — rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04)
+    0px 2px 6px 0px, rgba(0,0,0,0.1) 0px 4px 8px 0px — on elevated containers like
+    the search bar and modals only; listing cards use no shadow.
+  - 'Maintain the surface hierarchy strictly: page canvas #f7f7f7 → card/header surface
+    #ffffff → disabled/placeholder fills #dddddd → skeleton loaders #b0b0b0.'
+  donts:
+  - 'Never use #ff385c for body text, headings, or decorative strokes — its appearance
+    outside logo/search-button/active-states breaks the signature scarcity of the
+    brand color.'
+  - 'Don''t add heavy drop shadows to listing cards — cards use no shadow; the #dddddd
+    placeholder color and 20px radius carry the visual weight without elevation.'
+  - Never set headings above weight 700 or below weight 500; Airbnb Cereal VF at weight
+    800+ is not in the design system and breaks the measured typographic rhythm.
+  - Don't use border-radius values other than 4px, 8px, 14px, 20px, 32px, or 50% —
+    mixing arbitrary radii (e.g. 6px, 12px, 24px) disrupts the deliberate radius vocabulary.
+  - 'Never place text directly on card photography without a scrim or badge surface
+    — overlay content uses #ffffff or semi-transparent white containers, not raw text
+    on image.'
+  typography:
+    fonts:
+    - family: Airbnb Cereal VF
+      weights:
+      - 400
+      - 500
+      - 600
+      - 700
+    scale:
+      base: 14
+      name: Major Second
+      ratio: 1.125
+      confidence: 1
+  spacing:
+    baseUnit: null
+    density: compact
+  shapes:
+    radii:
+    - 20
+    - 8
+    - 14
+    shadows: 2

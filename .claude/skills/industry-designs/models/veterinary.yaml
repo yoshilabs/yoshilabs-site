@@ -1,0 +1,210 @@
+vertical: veterinary
+name: Veterinary / Pet Care
+
+# === BRAND PERSONALITY ===
+core_emotion: "Care, warmth, trust"
+visual_voice: "Friendly, soft, approachable"
+motion_style: "Gentle, warm (0.5-0.7s, soft ease)"
+
+# === TYPOGRAPHY ===
+typography:
+  # Each pairing creates a DIFFERENT vet clinic personality
+  font_options:
+    - mood: "Modern, friendly pet care"
+      heading: "Nunito"
+      body: "Karla"
+      heading_weights: [600, 700, 800]
+      body_weights: [400, 500, 700]
+
+    - mood: "Warm, established animal hospital"
+      heading: "DM Serif Display"
+      body: "Nunito Sans"
+      heading_weights: [400]
+      body_weights: [400, 600, 700]
+
+    - mood: "Playful, community pet clinic"
+      heading: "Fraunces"
+      body: "Outfit"
+      heading_weights: [400, 700, 900]
+      body_weights: [400, 500, 600]
+
+    - mood: "Caring, professional, clinical trust"
+      heading: "Lora"
+      body: "Source Sans 3"
+      heading_weights: [400, 600, 700]
+      body_weights: [300, 400, 600]
+
+  scale:
+    h1: "clamp(2.5rem, 5vw, 4rem)"
+    h2: "clamp(1.8rem, 3.5vw, 2.75rem)"
+    h3: "clamp(1.25rem, 2vw, 1.5rem)"
+    h4: "1.25rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text minimum"
+    - "heading line-height: 1.2-1.3"
+    - "body text ALWAYS left-aligned, never center"
+    - "Rounded fonts = friendly. Never use sharp/condensed fonts for vet."
+    - "No dark mode — vet is light, warm, and approachable only"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  # Light mode: Gentle Care (ONLY mode — no dark mode for vet)
+  light:
+    dominant_60:
+      name: "Soft Mint White"
+      bg: "#FFFFFF"
+      bg_secondary: "#F0FAF8"
+    secondary_30:
+      name: "Warm Teal"
+      text_primary: "#1A2E2E"
+      text_secondary: "#3D5A5A"
+      text_muted: "#6B8582"
+      card_bg: "#F7FAFA"
+    accent_10:
+      name: "Trusting Teal (Care & Healing)"
+      primary: "#23B0B0"
+      hover: "#1D9595"
+      light: "#5CD4D4"
+      ghost: "rgba(35,176,176,.08)"
+    supporting:
+      soft_green: "#87D68D"
+      warm_orange: "#F0A050"
+      soft_purple: "#B8A0D0"
+      light_teal: "#E0F2EF"
+      warm_cream: "#FFF8F0"
+      paw_brown: "#8B6F5E"
+
+  # No dark mode — per master doc rule:
+  # "Dark mode does NOT work for: dental, bakery, veterinary, accounting"
+
+  # Full 10-shade ramp for CSS variables
+  neutrals:
+    - "#1A2E2E"  # text (deep teal-black)
+    - "#3D5A5A"  # text-secondary
+    - "#5A7A7A"  # text-muted dark
+    - "#6B8582"  # text-muted
+    - "#8AA0A0"  # subtle text
+    - "#A8BEBB"  # borders
+    - "#C8DDDA"  # dividers
+    - "#E0ECEA"  # light bg
+    - "#F0F7F6"  # secondary bg
+    - "#FFFFFF"  # primary bg (clean white)
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "16px"
+    cards: "16px"
+    images: "20px"
+    large_elements: "24px"
+    philosophy: "Friendly and approachable — generous rounding. Pets are family, not patients."
+
+  shadows:
+    small: "0 1px 2px rgba(26,46,46,.04), 0 4px 8px rgba(26,46,46,.03)"
+    medium: "0 2px 4px rgba(26,46,46,.04), 0 8px 16px rgba(26,46,46,.05)"
+    large: "0 4px 8px rgba(26,46,46,.04), 0 16px 32px rgba(26,46,46,.07)"
+    card_hover: "0 8px 22px rgba(35,176,176,.08), 0 24px 60px rgba(26,46,46,.08)"
+
+  icon_style: "Rounded, friendly, slightly playful. Thin line art with warm stroke weight. Paw prints ok as accents."
+
+  photography:
+    style: "Happy pets, caring staff, clean clinic. Warm and relatable — think boutique pet care meets modern animal hospital."
+    lighting: "Bright, natural, warm tones. Soft diffused light — no harsh shadows."
+    composition: "Pets with owners, vet examining pet gently, happy pet portraits, team with animals"
+    hero: "Happy pet + owner bond shot, soft gradient overlay in teal"
+    cards: "Square or 4:3, pet close-ups or service-in-action photos"
+    about: "Vet portrait with pet, clinic interior (clean but warm), team group photo"
+
+  animation:
+    speed: "Medium (0.5-0.7s)"
+    easing: "cubic-bezier(0.25, 0.46, 0.45, 0.94) for reveals"
+    hover_easing: "ease for interactions"
+    style: "Gentle, warm. Soft fade-ups, cozy reveals. No bounce, no snap, no sudden movements."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Happy pet + owner image, clinic name, 'Book Appointment' CTA"
+    layout: "Warm gradient bg with pet image, soft overlay"
+    required: true
+
+  - name: "Services"
+    purpose: "Wellness exams, surgery, grooming, dental care, emergency, vaccinations"
+    layout: "Icon cards in 3-column grid, warm illustrations"
+    required: true
+
+  - name: "About / Team"
+    purpose: "Vet credentials, experience, personal love for animals — pets are family"
+    layout: "Split layout: team photo left, credentials + story right"
+    required: true
+
+  - name: "Why Choose Us"
+    purpose: "Trust signals: licensed, years experience, modern equipment, fear-free approach"
+    layout: "Stats/counters row + feature highlights"
+    required: false
+
+  - name: "Testimonials"
+    purpose: "Pet owner reviews with pet photos, Google/Facebook ratings"
+    layout: "Carousel with dots, warm card style"
+    required: true
+
+  - name: "FAQ"
+    purpose: "Vaccination schedules, pricing ranges, emergency hours, first visit info"
+    layout: "Accordion with friendly icons"
+    required: true
+
+  - name: "Book Appointment"
+    purpose: "Online booking link, phone, WhatsApp — make it effortless"
+    layout: "Centered CTA card with multiple contact options"
+    required: true
+
+  - name: "Location & Hours"
+    purpose: "Map, address, parking info, emergency contact"
+    layout: "Two-column: info + map embed"
+    required: true
+
+  - name: "Footer"
+    purpose: "Contact, emergency info, socials, newsletter"
+    layout: "Multi-column with emergency hotline prominent"
+    required: true
+
+# === CTA STRATEGY ===
+cta_strategy:
+  primary_text: "Book Appointment"
+  secondary_text: "Our Services"
+  emergency_text: "24/7 Emergency Line"
+  placement: "Hero, after services, sticky nav, floating WhatsApp button"
+  urgency: "Annual checkup due? Schedule today — your pet deserves the best care."
+  trust_signals:
+    - "Licensed & accredited veterinarian"
+    - "10+ years serving pets and their families"
+    - "4.9 stars on Google"
+    - "Modern, fear-free certified clinic"
+
+# === COMPETITOR REFERENCES ===
+competitor_references:
+  - name: "Banfield Pet Hospital"
+    url: "banfield.com"
+    takeaways: "Clean navigation, prominent booking CTA, trust-building with credentials, warm but professional"
+
+  - name: "VCA Animal Hospitals"
+    url: "vcahospitals.com"
+    takeaways: "Service-focused layout, clear emergency info, team profiles build trust, approachable design"
+
+  - name: "Small independent vet clinics (Awwwards-style)"
+    url: "various"
+    takeaways: "Boutique feel, generous whitespace, pet photography as personality, warm color palettes, personal stories"
+
+# === PH LOCAL CONTEXT ===
+local_context:
+  payment: ["GCash", "Maya", "Cash", "Credit Card"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  trust_signals: ["DTI registered", "Licensed vet (PRC)", "Clinic permit", "Google reviews"]
+  social_proof: "Google reviews, Facebook ratings, pet community recommendations, local pet blogger features"
+  mobile_first: true
+  typical_hours: "Mon-Sat 8AM-6PM, Emergency 24/7"
+  notes: "WhatsApp is primary booking channel in PH. Include emergency hotline prominently — pet owners panic at night. GCash payment badge builds trust. Facebook Messenger for quick questions. Include 'first visit' guide to reduce anxiety."

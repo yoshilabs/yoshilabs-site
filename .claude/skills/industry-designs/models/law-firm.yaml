@@ -1,0 +1,147 @@
+vertical: law-firm
+name: Law Firm / Legal Services
+
+core_emotion: "Authority, confidence, gravitas"
+visual_voice: "Classic, structured, serious"
+motion_style: "Minimal, measured (0.3-0.5s, professional ease)"
+
+typography:
+  font_options:
+    - mood: "Classic authority, centuries of tradition"
+      heading: "Cormorant Garamond"
+      body: "Manrope"
+      heading_weights: [400, 600, 700]
+      body_weights: [400, 500, 600, 700]
+    - mood: "Traditional gravitas, established firm"
+      heading: "Libre Baskerville"
+      body: "Source Sans 3"
+      heading_weights: [400, 700]
+      body_weights: [400, 600, 700]
+    - mood: "Modern authority, confident not old-fashioned"
+      heading: "DM Serif Display"
+      body: "IBM Plex Sans"
+      heading_weights: [400]
+      body_weights: [400, 500, 600]
+    - mood: "Contemporary firm, clean and sharp"
+      heading: "Fraunces"
+      body: "Inter"
+      heading_weights: [400, 700, 900]
+      body_weights: [400, 500, 600, 700]
+  scale:
+    h1: "clamp(2.5rem, 5vw, 4rem)"
+    h2: "clamp(1.8rem, 3.5vw, 2.75rem)"
+    h3: "clamp(1.25rem, 2vw, 1.5rem)"
+    h4: "1.25rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text"
+    - "heading line-height: 1.2-1.3"
+    - "Body text ALWAYS left-aligned"
+    - "NEVER use playful or rounded fonts"
+    - "Serif headings communicate tradition and authority"
+
+color_system:
+  light:
+    dominant_60:
+      bg: "#FAFAFA"
+      bg_secondary: "#F0F0F0"
+    secondary_30:
+      text_primary: "#1C1C1C"
+      text_secondary: "#3D3D3D"
+      text_muted: "#6B6B6B"
+      card_bg: "#FFFFFF"
+    accent_10:
+      primary: "#722F37"
+      hover: "#5A252C"
+      light: "#944A52"
+      ghost: "rgba(114,47,55,.08)"
+    supporting:
+      navy: "#254476"
+      gold: "#B8860B"
+      gold_light: "#C4A265"
+      steel: "#6B7B8D"
+  dark:
+    dominant_60:
+      bg: "#0C0C0C"
+      bg_secondary: "#141414"
+    secondary_30:
+      text_primary: "#F0F0F0"
+      text_secondary: "#B0B0B0"
+      text_muted: "#787878"
+      card_bg: "#1C1C1C"
+    accent_10:
+      primary: "#C4A265"
+      hover: "#B8860B"
+      light: "#D4B87A"
+    supporting:
+      burgundy: "#944A52"
+      navy_accent: "#3A5A9F"
+  neutrals:
+    - "#1C1C1C"
+    - "#3D3D3D"
+    - "#5A5A5A"
+    - "#6B6B6B"
+    - "#8A8A8A"
+    - "#A5A5A5"
+    - "#C0C0C0"
+    - "#D8D8D8"
+    - "#F0F0F0"
+    - "#FAFAFA"
+
+structure:
+  border_radius:
+    buttons: "4px"
+    cards: "8px"
+    images: "4px"
+    large_elements: "8px"
+    philosophy: "Sharp and authoritative — minimal rounding. Structure, not softness."
+  shadows:
+    small: "0 1px 2px rgba(0,0,0,.06), 0 4px 8px rgba(0,0,0,.04)"
+    medium: "0 2px 4px rgba(0,0,0,.06), 0 8px 16px rgba(0,0,0,.06)"
+    large: "0 4px 8px rgba(0,0,0,.06), 0 16px 32px rgba(0,0,0,.08)"
+    card_hover: "0 8px 22px rgba(0,0,0,.08), 0 24px 60px rgba(0,0,0,.10)"
+  icon_style: "Solid/geometric, clean and uniform. Professional, not decorative."
+  photography:
+    style: "Formal, professional, corporate. Think Wall Street Journal."
+    lighting: "Even, corporate, bright but not clinical"
+    composition: "Office interiors, handshake, building exterior, gavel/scales of justice"
+    hero: "City skyline or office building with dark overlay"
+    cards: "Practice area icons or formal imagery"
+    about: "Attorney portraits in formal setting, office interior"
+  animation:
+    speed: "Fast-minimal (0.3-0.5s)"
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    hover_easing: "ease"
+    style: "Restrained, only on interaction. Subtle fades, no decorative animation. Lawyers don't need parallax."
+
+sections:
+  - {name: "Hero", purpose: "Firm name + practice areas + 'Free Consultation' CTA", layout: "Clean hero with strong typography", required: true}
+  - {name: "Practice Areas", purpose: "Legal specialties with descriptions", layout: "Icon grid with descriptions", required: true}
+  - {name: "About / Attorneys", purpose: "Lawyer bios, credentials, bar admissions", layout: "Team grid with portraits", required: true}
+  - {name: "Results / Case Studies", purpose: "Notable wins, case types, client outcomes", layout: "Stats + brief stories", required: false}
+  - {name: "Testimonials", purpose: "Client reviews", layout: "Clean carousel", required: true}
+  - {name: "FAQ", purpose: "Common legal questions", layout: "Accordion", required: true}
+  - {name: "Contact / Consultation", purpose: "Free consultation form + phone + office address", layout: "Two-column: form + CTA", required: true}
+  - {name: "Footer", purpose: "Practice areas, disclaimer, bar association info", layout: "Multi-column", required: true}
+
+cta_strategy:
+  primary_text: "Free Consultation"
+  secondary_text: "Practice Areas"
+  placement: "Hero, after practice areas, sticky nav"
+  urgency: "Don't wait — protect your rights"
+  trust_signals: ["Licensed attorneys", "IBP member", "Years of experience"]
+
+competitor_references:
+  - name: "Cravath, Swaine & Moore"
+    takeaways: "Classic, restrained, serif-heavy, dark palette, authoritative"
+  - name: "Latham & Watkins"
+    takeaways: "Clean, modern, structured, navy + white, professional"
+
+local_context:
+  payment: ["Bank Transfer", "Cash", "Check"]
+  contact: ["Phone", "WhatsApp", "Email", "Viber"]
+  trust_signals: ["IBP member", "Licensed by Supreme Court", "Years practicing"]
+  mobile_first: true
+  typical_hours: "Mon-Fri 8AM-5PM, Sat 9AM-12PM"

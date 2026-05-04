@@ -1,0 +1,206 @@
+vertical: salon
+name: Salon / Beauty / Spa
+
+# === BRAND PERSONALITY ===
+core_emotion: "Desire, luxury, self-care"
+visual_voice: "Soft, elegant, editorial"
+motion_style: "Gentle, graceful (0.6-0.8s, soft ease)"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "High-fashion, luxury spa"
+      heading: "Cormorant"
+      body: "Outfit"
+      heading_weights: [300, 400, 600, 700]
+      body_weights: [400, 500, 600]
+
+    - mood: "Timeless beauty, classic salon"
+      heading: "Playfair Display"
+      body: "Manrope"
+      heading_weights: [400, 700]
+      body_weights: [400, 500, 600, 700]
+
+    - mood: "Approachable luxury, modern beauty"
+      heading: "Libre Caslon Display"
+      body: "Karla"
+      heading_weights: [400]
+      body_weights: [400, 500, 700]
+
+    - mood: "Contemporary, minimalist beauty brand"
+      heading: "DM Serif Display"
+      body: "Nunito"
+      heading_weights: [400]
+      body_weights: [400, 600, 700]
+
+  scale:
+    h1: "clamp(2.75rem, 6vw, 5rem)"
+    h2: "clamp(2rem, 4vw, 3.25rem)"
+    h3: "clamp(1.5rem, 3vw, 2.25rem)"
+    h4: "1.375rem"
+    body: "clamp(1rem, 1.1vw, 1.125rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "letter-spacing: 0.15em on ALL uppercase labels"
+    - "line-height: 1.7 on body text minimum"
+    - "heading line-height: 1.15-1.25"
+    - "Use italic/oblique for pull quotes and testimonials"
+    - "body text ALWAYS left-aligned"
+
+# === COLOR SYSTEM (60-30-10) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Blush White"
+      bg: "#FFF5F2"
+      bg_secondary: "#F9ECE8"
+    secondary_30:
+      name: "Deep Plum"
+      text_primary: "#1A1020"
+      text_secondary: "#3D2A3A"
+      text_muted: "#6B5066"
+      card_bg: "#F5E6D3"
+    accent_10:
+      name: "Antique Gold"
+      primary: "#C9A96E"
+      hover: "#B08F55"
+      light: "#E0CBA8"
+      ghost: "#F5EFE0"
+    supporting:
+      blush: "#E8C4C4"
+      mocha: "#8B6F5E"
+      rose: "#D4A0A0"
+      champagne: "#F5E6D3"
+
+  dark:
+    dominant_60:
+      name: "Deep Plum Dark"
+      bg: "#0F0A14"
+      bg_secondary: "#1A1020"
+    secondary_30:
+      name: "Soft Lavender"
+      text_primary: "#F5F0EB"
+      text_secondary: "#C4B5C0"
+      text_muted: "#8C7A88"
+      card_bg: "#2A1E30"
+    accent_10:
+      name: "Champagne Gold"
+      primary: "#E0CBA8"
+      hover: "#C9A96E"
+      light: "#F5E6D3"
+    supporting:
+      rose_accent: "#E8C4C4"
+      plum_accent: "#6B3A6B"
+
+  neutrals:
+    - "#1A1020"
+    - "#3D2A3A"
+    - "#5A3D55"
+    - "#6B5066"
+    - "#8C7A88"
+    - "#B5A5B0"
+    - "#D4C7D0"
+    - "#E8DCE5"
+    - "#F5F0F3"
+    - "#FFF5F2"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "10px"
+    cards: "16px"
+    images: "20px"
+    large_elements: "28px"
+    philosophy: "Soft and elegant — rounded but not bubbly"
+
+  shadows:
+    small: "0 1px 2px rgba(26,16,32,.04), 0 4px 8px rgba(26,16,32,.03)"
+    medium: "0 2px 4px rgba(26,16,32,.04), 0 8px 16px rgba(26,16,32,.06)"
+    large: "0 4px 8px rgba(26,16,32,.04), 0 16px 32px rgba(26,16,32,.08)"
+    card_hover: "0 8px 22px rgba(26,16,32,.08), 0 24px 60px rgba(26,16,32,.10)"
+
+  icon_style: "Thin line art, 1px stroke, elegant and minimal"
+
+  photography:
+    style: "Bright, editorial, beauty-forward. Think Vogue Beauty."
+    lighting: "Soft, diffused, even — ring light aesthetic"
+    composition: "Close-ups of hair/skin/nails, portraits, product flat-lays"
+    hero: "Portrait or beauty shot with soft gradient overlay"
+    cards: "Portrait orientation, beauty close-ups"
+    about: "Stylist at work, salon interior, before/after"
+
+  animation:
+    speed: "Medium (0.5-0.8s)"
+    easing: "cubic-bezier(0.25, 0.46, 0.45, 0.94) — soft ease"
+    hover_easing: "ease"
+    style: "Gentle fades, elegant transitions. Graceful, not snappy."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Beauty shot + salon name + 'Book Now' CTA"
+    layout: "Split hero: image left, text right (60/40)"
+    required: true
+
+  - name: "Services"
+    purpose: "Treatment menu with prices and durations"
+    layout: "Elegant list or card grid, categorized"
+    required: true
+
+  - name: "Gallery / Portfolio"
+    purpose: "Before/after, finished looks, salon work"
+    layout: "Masonry grid or before/after slider"
+    required: true
+
+  - name: "About / Team"
+    purpose: "Stylist bios, salon story, certifications"
+    layout: "Team grid with portraits + specialties"
+    required: true
+
+  - name: "Testimonials"
+    purpose: "Client reviews with star ratings"
+    layout: "Carousel with client photos"
+    required: true
+
+  - name: "Booking CTA"
+    purpose: "Book appointment button + Cal.com link"
+    layout: "Centered card with booking platform"
+    required: true
+
+  - name: "Location & Hours"
+    purpose: "Address, map, parking"
+    layout: "Two-column: info + map"
+    required: true
+
+  - name: "Footer"
+    purpose: "Contact, socials, Instagram feed preview"
+    layout: "Multi-column"
+    required: true
+
+cta_strategy:
+  primary_text: "Book Now"
+  secondary_text: "View Services"
+  placement: "Hero, after services, after gallery, sticky nav"
+  urgency: "Limited slots available this week"
+  trust_signals:
+    - "4.9 stars on Google"
+    - "500+ happy clients"
+    - "Certified stylists"
+
+competitor_references:
+  - name: "Aesop"
+    url: "aesop.com"
+    takeaways: "Minimalist luxury, warm neutrals, serif typography, editorial photography"
+  - name: "Glossier"
+    url: "glossier.com"
+    takeaways: "Soft pink palette, modern sans-serif, clean product shots, friendly yet premium"
+
+local_context:
+  payment: ["GCash", "Maya", "Cash"]
+  contact: ["Phone", "WhatsApp", "Facebook Messenger", "Viber"]
+  booking_platforms: ["Cal.com", "Google Calendar", "FB Messenger"]
+  trust_signals: ["DTI registered", "Certified stylists", "Years of experience"]
+  social_proof: "Facebook reviews, Instagram portfolio, before/after posts"
+  mobile_first: true
+  typical_hours: "Mon-Sat 9AM-8PM, Sun 10AM-6PM"
