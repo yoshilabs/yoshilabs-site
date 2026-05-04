@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#fdfcfc">
+<title>Yoshi Labs — AI Systems for Filipino Businesses</title>
+<meta name="description" content="Premium websites, AI assistants, and automations for Filipino SMEs. Built in Davao, live in 3-5 days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#fdfcfc;--surface:#f5f3f1;--border:#e5e5e5;--text:#000000;--text-2:#777169;
+--text-3:#57534e;--muted:#a59f97;--blue:#0447ff;--ember:#ff4704;--ease:cubic-bezier(.16,1,.3,1);
+--green:#059669;--font:Inter,system-ui,sans-serif;--mono:Geist Mono,monospace;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.62;font-size:16px;overflow-x:hidden}
+h1,h2,h3,h4{font-weight:300;letter-spacing:-0.02em;line-height:1.15}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+section{padding:100px 0}
+.scrollbar-hide::-webkit-scrollbar{display:none}
+
+/* Navigation */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:16px 0;background:rgba(253,252,252,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.04)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
+.logo{font-weight:600;font-size:20px;letter-spacing:-0.01em}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:14px;color:var(--text-2);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:#000;color:#fff;padding:8px 20px;border-radius:9999px;font-size:14px;font-weight:500;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:1.5px;background:var(--text);display:block;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:0;right:0;width:280px;height:100vh;background:var(--bg);padding:80px 32px;box-shadow:-10px 0 40px rgba(0,0,0,.06);z-index:1000;transform:translateX(100%);transition:transform .4s var(--ease)}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{display:block;padding:12px 0;font-size:16px;color:var(--text-2);border-bottom:1px solid var(--border)}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.15);z-index:999}
+.overlay.show{display:block}
+
+/* Hero */
+.hero{padding:160px 0 80px;text-align:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:9999px;border:1px solid var(--border);font-size:12px;font-weight:500;color:var(--text-2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:28px}
+.hero-eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green)}
+.hero h1{font-size:clamp(36px,5.5vw,68px);max-width:800px;margin:0 auto 20px}
+.hero p{font-size:18px;color:var(--text-2);max-width:560px;margin:0 auto 36px}
+.hero-ctas{display:flex;gap:14px;justify-content:center;margin-bottom:48px}
+.btn-pill{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:9999px;font-size:15px;font-weight:500;transition:all .25s var(--ease);cursor:pointer;border:none;font-family:var(--font)}
+.btn-primary{background:#000;color:#fff;box-shadow:rgba(0,0,0,.06) 0 0 0 1px,rgba(0,0,0,.04) 0 1px 2px 0px}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:rgba(0,0,0,.08) 0 4px 12px}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-ghost:hover{border-color:var(--text-2)}
+.trust{display:flex;gap:30px;justify-content:center;align-items:center;font-size:13px;color:var(--text-2)}
+.trust-item{display:flex;align-items:center;gap:6px}
+
+/* Problem */
+.problem{background:var(--bg)}
+.problem strike{color:var(--muted);text-decoration:line-through;text-decoration-color:rgba(0,0,0,.15)}
+.problem h2{font-size:clamp(26px,3.5vw,40px);max-width:700px;margin-bottom:48px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat-card{background:var(--surface);padding:32px;border-radius:20px;position:relative;overflow:hidden}
+.stat-card::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border-radius:inherit;box-shadow:inset rgba(0,0,0,.05) 0 0 0 .5px;pointer-events:none}
+.stat-num{font-family:var(--mono);font-size:36px;font-weight:400;margin-bottom:6px;color:var(--text)}
+.stat-label{font-size:14px;color:var(--text-2)}
+
+/* Services */
+.services h2{font-size:clamp(26px,3.5vw,40px);text-align:center;margin-bottom:16px}
+.section-sub{text-align:center;color:var(--text-2);font-size:16px;margin-bottom:56px}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc-card{background:var(--bg);padding:28px;border-radius:18px;position:relative;transition:transform .3s var(--ease);cursor:pointer}
+.svc-card::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset rgba(0,0,0,.07) 0 0 0 .5px;pointer-events:none}
+.svc-card:hover{transform:translateY(-3px)}
+.svc-icon{width:40px;height:40px;border-radius:10px;background:var(--surface);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:18px}
+.svc-title{font-weight:500;font-size:16px;margin-bottom:8px;color:var(--text)}
+.svc-desc{font-size:14px;color:var(--text-2);margin-bottom:14px}
+.svc-price{font-size:13px;color:var(--text-3);font-family:var(--mono)}
+
+/* How It Works */
+.howit{text-align:center}
+.howit h2{font-size:clamp(26px,3.5vw,40px);margin-bottom:56px}
+.steps{display:flex;gap:16px;position:relative}
+.steps::before{content:"";position:absolute;top:28px;left:12%;right:12%;height:2px;background:var(--surface);z-index:0}
+.step{flex:1;position:relative;z-index:1}
+.step-num{width:56px;height:56px;margin:0 auto 16px;border-radius:50%;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:16px;color:var(--text-2)}
+.step-title{font-weight:500;margin-bottom:6px;font-size:16px}
+.step-desc{font-size:14px;color:var(--text-2)}
+
+/* Portfolio */
+.portfolio{background:var(--surface)}
+.portfolio h2{font-size:clamp(26px,3.5vw,40px);text-align:center;margin-bottom:16px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.port-card{border-radius:18px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--bg);transition:transform .3s var(--ease)}
+.port-card:hover{transform:translateY(-4px)}
+.port-card::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.35);z-index:1}
+.port-img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.port-card:hover .port-img{transform:scale(1.05)}
+.port-label{position:absolute;bottom:0;left:0;right:0;padding:20px;z-index:2;color:#fff}
+.port-label h3{font-weight:400;font-size:18px;margin-bottom:4px}
+.port-label p{font-size:13px;opacity:.8}
+
+/* Pricing */
+.pricing{text-align:center}
+.pricing h2{font-size:clamp(26px,3.5vw,40px);margin-bottom:16px}
+.price-card{max-width:440px;margin:48px auto 0;background:var(--surface);padding:40px;border-radius:20px;position:relative;overflow:hidden}
+.price-card::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset rgba(0,0,0,.05) 0 0 0 .5px;pointer-events:none}
+.price-amount{font-size:42px;font-weight:300;margin-bottom:4px}
+.price-period{font-size:14px;color:var(--text-2);margin-bottom:24px;display:block}
+.price-features{text-align:left;margin-bottom:32px}
+.price-features li{list-style:none;padding:8px 0;font-size:15px;color:var(--text-2);display:flex;gap:10px;align-items:center}
+.price-features li::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--green);opacity:.35;flex-shrink:0}
+
+/* About */
+.about .container{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img{border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--surface);position:relative}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-tags{display:flex;gap:8px;margin-top:24px;flex-wrap:wrap}
+.tag{padding:6px 16px;border-radius:9999px;border:1px solid var(--border);font-size:13px;color:var(--text-2)}
+.about h2{font-size:clamp(26px,3.5vw,40px);margin-bottom:16px}
+.about-bio{color:var(--text-2);font-size:16px;line-height:1.7}
+.about-name{font-weight:600;font-size:18px;margin-top:24px;margin-bottom:4px}
+.about-role{font-size:14px;color:var(--text-2)}
+
+/* FAQ */
+.faq h2{font-size:clamp(26px,3.5vw,40px);text-align:center;margin-bottom:16px}
+.accordion{max-width:800px;margin:48px auto 0}
+.accordion-item{border-top:1px solid var(--border)}
+.accordion-item:last-child{border-bottom:1px solid var(--border)}
+.accordion-header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;cursor:pointer;font-weight:500;font-size:16px;text-align:left;width:100%;background:none;border:none;font-family:var(--font)}
+.accordion-num{font-family:var(--mono);font-size:14px;color:var(--muted);margin-right:16px;min-width:28px}
+.accordion-icon{width:20px;height:20px;position:relative;flex-shrink:0}
+.accordion-icon::before,.accordion-icon::after{content:"";position:absolute;background:var(--text);transition:transform .3s var(--ease)}
+.accordion-icon::before{top:9px;left:2px;right:2px;height:1.5px}
+.accordion-icon::after{top:2px;left:9px;bottom:2px;width:1.5px}
+.accordion-item.open .accordion-icon::after{transform:scaleY(0)}
+.accordion-body{overflow:hidden;max-height:0;transition:max-height .4s var(--ease)}
+.accordion-item.open .accordion-body{max-height:300px}
+.accordion-body p{padding:0 0 24px 44px;color:var(--text-2);font-size:15px;line-height:1.65}
+
+/* CTA */
+.cta{background:var(--surface);text-align:center;padding:80px 0}
+.cta h2{font-size:clamp(28px,4vw,52px);margin-bottom:20px}
+.cta p{color:var(--text-2);margin-bottom:28px;font-size:16px}
+
+/* Footer */
+footer{padding:60px 0 24px;border-top:1px solid var(--border)}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-brand{font-weight:600;font-size:18px;margin-bottom:8px}
+.footer-tagline{color:var(--text-2);font-size:14px;line-height:1.6}
+.footer-col h4{font-weight:500;font-size:14px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em;font-size:12px;color:var(--text-3)}
+.footer-col a{display:block;color:var(--text-2);font-size:14px;padding:6px 0;transition:color .2s}
+.footer-col a:hover{color:var(--text)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid var(--border);font-size:13px;color:var(--text-2)}
+.footer-dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;margin-right:8px}
+
+/* Responsive */
+@media(max-width:1024px){
+.service-grid{grid-template-columns:repeat(2,1fr)}
+.portfolio-grid{grid-template-columns:repeat(2,1fr)}
+.steps::before{display:none}
+}
+@media(max-width:768px){
+.nav-links{display:none}
+.hamburger{display:flex}
+section{padding:60px 0}
+.hero{padding:120px 0 60px}
+.hero h1{font-size:32px}
+.hero p{font-size:16px}
+.hero-ctas{flex-direction:column;align-items:center}
+.btn-pill{width:100%;max-width:280px;justify-content:center}
+.stats{grid-template-columns:1fr}
+.service-grid{grid-template-columns:1fr}
+.portfolio-grid{grid-template-columns:1fr}
+.steps{flex-direction:column;gap:32px}
+.about .container{grid-template-columns:1fr}
+.about-img{max-width:320px;margin:0 auto}
+.footer-inner{grid-template-columns:1fr;gap:32px}
+}
+
+/* Reduced motion */
+@media(prefers-reduced-motion:reduce){
+*{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav><div class="nav-inner">
+  <a href="#" class="logo">Yoshi Labs</a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="nav-cta">Book a Call</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</div></nav>
+<div class="overlay" onclick="toggleMenu()"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#work" onclick="toggleMenu()">Work</a>
+  <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#contact" onclick="toggleMenu()" class="nav-cta" style="display:inline-block;margin-top:16px">Book a Call</a>
+</div>
+
+<!-- Hero -->
+<section class="hero"><div class="container">
+  <div class="hero-eyebrow">Building in Davao &middot; Open for Projects</div>
+  <h1>Your business, online and automated.</h1>
+  <p>Premium websites, AI assistants and automations for Filipino SMEs. Live in 3&ndash;5 days. Built by humans, accelerated by AI.</p>
+  <div class="hero-ctas">
+    <a href="#contact" class="btn-pill btn-primary">Book Free Consultation</a>
+    <a href="#work" class="btn-pill btn-ghost">See Our Work <span style="margin-left:4px">&rarr;</span></a>
+  </div>
+  <div class="trust">
+    <div class="trust-item">&#9733; Trusted by 25+ SMEs</div>
+    <div class="trust-item">&#10003; Local Davao Team</div>
+    <div class="trust-item">&#10003; Built in 3&ndash;5 Days</div>
+  </div>
+</div></section>
+
+<!-- Problem -->
+<section class="problem"><div class="container">
+  <h2><strike>Most Filipino SMEs are invisible online getting left behind.</strike></h2>
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-num">77%</div>
+      <div class="stat-label">of SMEs want to go digital</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">3%</div>
+      <div class="stat-label">have adopted AI tools</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">&#8369;30-50K</div>
+      <div class="stat-label">typical agency monthly fee</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- Services -->
+<section class="services" id="services"><div class="container">
+  <h2>What We Build</h2>
+  <p class="section-sub">AI-powered systems designed for Filipino businesses</p>
+  <div class="service-grid">
+    <div class="svc-card">
+      <div class="svc-icon">&#128187;</div>
+      <div class="svc-title">Professional Website</div>
+      <div class="svc-desc">Premium website with animations, mobile-first, SEO-ready. 5 pages.</div>
+      <div class="svc-price">Starts at &#8369;15,000</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">&#128270;</div>
+      <div class="svc-title">Google SEO &amp; Maps</div>
+      <div class="svc-desc">Show up when customers search. Google Business Profile, local SEO.</div>
+      <div class="svc-price">Included in plans</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">&#129302;</div>
+      <div class="svc-title">AI Assistant</div>
+      <div class="svc-desc">24/7 AI answers on Messenger. Taglish. Books appointments. Follows up.</div>
+      <div class="svc-price">Included in plans</div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">&#9881;</div>
+      <div class="svc-title">Smart Automations</div>
+      <div class="svc-desc">Reminders, follow-ups, review requests &mdash; all on autopilot.</div>
+      <div class="svc-price">Included in plans</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- How It Works -->
+<section class="howit"><div class="container">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step"><div class="step-num">01</div><div class="step-title">Discovery</div><div class="step-desc">Share your business info in 10 minutes</div></div>
+    <div class="step"><div class="step-num">02</div><div class="step-title">Design</div><div class="step-desc">We craft your site using Refero systems</div></div>
+    <div class="step"><div class="step-num">03</div><div class="step-title">Review</div><div class="step-desc">You review and we refine in 24 hours</div></div>
+    <div class="step"><div class="step-num">04</div><div class="step-title">Live</div><div class="step-desc">Site goes live with AI assistant ready</div></div>
+  </div>
+</div></section>
+
+<!-- Portfolio -->
+<section class="portfolio" id="work"><div class="container">
+  <h2>Recent Work</h2>
+  <p class="section-sub">Trusted by businesses across the Philippines</p>
+  <div class="portfolio-grid">
+    <div class="port-card">
+      <div class="port-img" style="background:#1a1a2e"></div>
+      <div class="port-label"><h3>Bleuspace</h3><p>Real Estate &middot; Davao City</p></div>
+    </div>
+    <div class="port-card">
+      <div class="port-img" style="background:#16213e"></div>
+      <div class="port-label"><h3>So Social</h3><p>Events &middot; Davao City</p></div>
+    </div>
+    <div class="port-card">
+      <div class="port-img" style="background:#0f3460"></div>
+      <div class="port-label"><h3>Keisha Fitness</h3><p>Fitness &middot; Davao City</p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing"><div class="container">
+  <h2>Transparent Pricing</h2>
+  <p class="section-sub">No hidden fees. No surprises.</p>
+  <div class="price-card">
+    <div class="price-amount">&#8369;15,000</div>
+    <span class="price-period">One-time setup + &#8369;5,000/mo retainer</span>
+    <ul class="price-features">
+      <li>Custom website (5+ pages)</li>
+      <li>Mobile-first responsive design</li>
+      <li>SEO &amp; Google Maps setup</li>
+      <li>AI chatbot (Messenger)</li>
+      <li>Lead capture automation</li>
+      <li>Monthly updates &amp; support</li>
+    </ul>
+    <a href="#contact" class="btn-pill btn-primary" style="width:100%;justify-content:center">Book Free Consultation</a>
+  </div>
+</div></section>
+
+<!-- About -->
+<section class="about" id="about"><div class="container">
+  <div class="about-img">
+    <div style="width:100%;height:100%;background:#e5e5e5;display:flex;align-items:center;justify-content:center;color:#777;font-size:14px">Photo: Prince at Toronto</div>
+  </div>
+  <div>
+    <h2>Built by a Filipino-Canadian team in Davao.</h2>
+    <p class="about-bio">Yoshi Labs was founded by Prince Yoshiko Intes, a Filipino-Canadian entrepreneur who saw that 77% of Filipino SMEs want to go digital &mdash; but only 3% have adopted AI. Traditional agencies charge &#8369;30-50K/month for websites that look the same. We saw an opening: build systems that combine human design with AI speed. Each site we ship is built in 3&ndash;5 days, costs a fraction of traditional rates, and comes with an AI assistant that never sleeps.</p>
+    <div class="about-tags">
+      <span class="tag">Davao-based</span>
+      <span class="tag">Filipino-Canadian</span>
+      <span class="tag">AI-powered</span>
+    </div>
+    <div class="about-name">Prince Yoshiko Intes</div>
+    <div class="about-role">Founder, Yoshi Labs</div>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section class="faq" id="faq"><div class="container">
+  <h2>Frequently Asked</h2>
+  <p class="section-sub">Common questions from Filipino business owners</p>
+  <div class="accordion" id="faqAccordion"></div>
+</div></section>
+
+<!-- CTA -->
+<section class="cta" id="contact"><div class="container">
+  <h2>Ready to go digital?</h2>
+  <p>Book a free 20-minute call. We'll audit your current setup and show you exactly what to improve.</p>
+  <a href="mailto:prince@yoshilabs.io" class="btn-pill btn-primary">Book Free Consultation</a>
+</div></section>
+
+<!-- Footer -->
+<footer><div class="container">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Yoshi Labs</div>
+      <div class="footer-tagline">AI systems for Filipino SMEs.<br>Built in Davao. Shipped in 3&ndash;5 days.</div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Websites</a>
+      <a href="#services">SEO &amp; Maps</a>
+      <a href="#services">AI Assistants</a>
+      <a href="#services">Automations</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:prince@yoshilabs.io">prince@yoshilabs.io</a>
+      <a href="#contact">Book a call</a>
+      <p style="margin-top:8px;font-size:14px;color:var(--text-2)">Davao City, Philippines</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2025 Yoshi Labs. All rights reserved.</div>
+    <div><span class="footer-dot"></span>All systems operational</div>
+  </div>
+</div></footer>
+
+<script>
+const faqData=[
+  {q:"Do I need any tech knowledge?",a:"None at all. We handle everything — setup, maintenance, updates. You just run your business."},
+  {q:"How fast can you build my website?",a:"3-5 business days from the time you send us your business info. Often faster."},
+  {q:"What if I already have a website?",a:"We'll audit it for free and show you exactly what to improve. Most websites need a complete rebuild to be competitive."},
+  {q:"What does the AI Assistant actually do?",a:"It answers customer inquiries on Messenger 24/7 — pricing, availability, booking, FAQs. It speaks Taglish and English. It follows up with leads automatically."},
+  {q:"Can I cancel anytime?",a:"Yes. No contracts. After the initial setup, you can cancel the monthly retainer anytime. Your website stays yours."},
+  {q:"What industries do you work with?",a:"Any Filipino SME — restaurants, salons, clinics, real estate, retail, professional services, housekeeping, catering, construction. If you have customers, we can help."},
+  {q:"Why is it so affordable?",a:"Because AI does 80% of the work. We pass those savings to you. Traditional agencies charge ₱30-50K/mo for less."}
+];
+const acc=document.getElementById('faqAccordion');
+faqData.forEach((item,i)=>{
+  const div=document.createElement('div');
+  div.className='accordion-item'+(i===0?' open':'');
+  div.innerHTML='<button class="accordion-header"><span><span class="accordion-num">'+String(i+1).padStart(2,'0')+'</span>'+item.q+'</span><span class="accordion-icon"></span></button><div class="accordion-body"><p>'+item.a+'</p></div>';
+  div.querySelector('.accordion-header').addEventListener('click',()=>{
+    document.querySelectorAll('.accordion-item').forEach(el=>{if(el!==div)el.classList.remove('open')});
+    div.classList.toggle('open');
+  });
+  acc.appendChild(div);
+});
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');document.querySelector('.overlay').classList.toggle('show')}
+</script>
+</body>
+</html>
