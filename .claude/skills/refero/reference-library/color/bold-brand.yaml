@@ -1,0 +1,30 @@
+# Bold Brand Palettes
+# Use for: gyms, repair/auto, construction, creative agencies with edge
+# Principles: high contrast, saturated accent pops, dramatic dark/light shifts
+# Accent must punch through. One hero color. Everything else = neutral.
+
+palettes:
+  - source: Linear
+    colors: [Pitch Black ##08090a, Graphite ##0f1011, Deep Slate ##161718, Charcoal Grey ##23252a, Muted Ash ##323334, Gunmetal ##383b3f]
+  - source: Mercury
+    colors: [Mercury Blue ##5266eb, Ghost Blue ##cdddff, Deep Space ##171721, Midnight Slate ##1e1e2a, Graphite ##272735, Lead ##70707d]
+  - source: monopo saigon
+    colors: [Midnight Canvas ##000000, Frost White ##ffffff, Deep Shadow ##181818, Whisper Gray ##6d6d6d, Misty Gray ##636363, Deep Ocean Gradient ##a0e0ab]
+  - source: Superhuman
+    colors: [Parchment Canvas ##f2f0eb, Ink ##292827, Bone ##ffffff, Fog ##e3e3e2, Driftwood ##dcd7d3, Graphite ##666666]
+  - source: Hyperstudio
+    colors: [Midnight Void ##101010, Deep Space ##080808, Polar White ##F3F3F3, Absolute Zero ##FFFFFF, Ash Gray ##949494, Dark Carbon ##333333]
+  - source: Antimetal
+    colors: [Midnight Navy ##1b2540, Deep Cosmos ##001033, Chartreuse Pulse ##d0f100, Ice Veil ##e0f6ff, Ghost Canvas ##f8f9fc, Pure Surface ##ffffff]
+  - source: Raycast
+    colors: [Void Black ##040506, Deep Charcoal ##07080a, Graphite 700 ##111214, Graphite 600 ##1b1c1e, Graphite 500 ##363739, Graphite 400 ##454647]
+  - source: Authkit
+    colors: [Midnight Abyss ##05060f, Ghost White ##ffffff, Storm Gray ##2f343, Comet ##d8ecf8, Arctic Mist ##d1e4fa, Celestial Light ##b6d9fc]
+  - source: Base44
+    colors: [Canvas Pearl ##faf9f7, Snowdrift White ##ffffff, Ink Black ##000000, Graphite Text ##232529, Slate Gray ##324158, Stone Whisper ##696f7b]
+  - source: Apple
+    colors: [Midnight Graphite ##1d1d1f, Cloud Mist ##6b6c6c, Pure White ##ffffff, Frost Gray ##f3f6f6, Steel Accent ##cccfcf, Dark Charcoal ##313131]
+  - source: All-In-One Salon
+    colors: [Inkwell Black ##17150, Cloud White ##ffffff, Porcelain Gray ##f0f7f6, Obsidian Black ##000000, Silver Mist ##e2e2e2, Genius Yellow ##cccc25]
+  - source: monopo london
+    colors: [Midnight Canvas ##000000, Ghost White ##ffffff, Subtle Gray ##7f7f7f, Medium Gray ##666970, Nebula Gradient ##cd5a07]

@@ -1,0 +1,21 @@
+# Warm Hover Language
+# Use for: restaurants, bakeries, cafes, medical/dental clinics
+# Principles: Friendly, approachable, comforting. Gentle feedback.
+# Cards feel like paper — soft shadows, slight warmth shift.
+
+motion:
+  hover:
+    cards: "Warm background shift (2-3% darker) + subtle shadow"
+    images: "Gentle scale (1.03) with 0.35s ease"
+    buttons: "Fill transition from ghost to solid, 0.3s"
+  accordion:
+    duration: "0.35s"
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    style: "Smooth max-height transition"
+  counters:
+    duration: "1.5s"
+    easing: "easeOutExpo"
+  atmosphere:
+    - "Noise overlay at 0.015-0.02 opacity"
+    - "No parallax — keeps the page grounded and trustworthy"
+    - "Hero section: static warm image, no video autoplay"

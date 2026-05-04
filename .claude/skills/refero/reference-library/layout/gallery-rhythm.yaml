@@ -1,0 +1,17 @@
+# Gallery / Portfolio Rhythm
+# Use for: photography, real estate, salons, visual portfolios
+# Principles: Image-led. Text = minimal label. Grid = primary layout engine.
+# Masonry or uniform grid. Photos determine pace, not text.
+
+rules:
+  hero:
+    type: "Full-bleed image with minimal overlay text"
+    text_position: "Bottom-left or centered"
+  grid:
+    mobile: "2 columns, 0.5rem gap"
+    desktop: "3-4 columns masonry or uniform, 1rem gap"
+  image_treatment:
+    - "No borders on images"
+    - "Subtle rounded corners (8-12px)"
+    - "Hover: slight scale (1.02-1.05) or brightness shift"
+    - "Lazy load with blur-up placeholder"

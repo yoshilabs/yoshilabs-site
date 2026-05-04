@@ -1,0 +1,18 @@
+# Utility Snappy Motion
+# Use for: repair shops, auto, construction, developer tools, utilities
+# Principles: Fast, functional, efficient. No drama. Purposeful motion.
+# Transitions under 0.3s. Instant feedback on interaction.
+
+motion:
+  transitions:
+    duration: "0.15-0.25s"
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)" — standard ease
+  hover:
+    cards: "Subtle border color shift, no lift"
+    buttons: "Background color shift only, no transform"
+  loading:
+    type: "Skeleton screens, no spinners"
+  scroll:
+    stagger: "40-60ms"
+    duration: "0.4s"
+    direction: "Fade only, no translate"

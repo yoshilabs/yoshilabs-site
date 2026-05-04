@@ -1,0 +1,63 @@
+# Technical Display Systems
+# Use for: construction, repair, auto, developer tools, engineering
+# Principles: Monospace for code/data. Geometric sans for UI. Tight but not cramped.
+# Bold weights acceptable for hierarchy. Numbers in tabular figures.
+
+systems:
+  - source: ElevenLabs
+    north_star: "Architect's blueprint on warm vellum — Waldenburg weight-300 headlines at 48px with -0.02em tracking anchored against an"
+    fonts: ['Waldenburg', 'WaldenburgFH', 'Inter', 'Geist Mono']
+    mono_pair: ['Geist Mono']
+  - source: Cursor
+    north_star: "Warm ivory software studio."
+    fonts: ['CursorGothic', 'berkeleyMono', 'Lato', 'EB Garamond', '-apple-system']
+    mono_pair: ['berkeleyMono']
+  - source: Linear
+    north_star: "Midnight Command Center: A dark, layered interface lit by precise accents, like a high-tech control panel."
+    fonts: ['Inter Variable', 'Berkeley Mono']
+    mono_pair: ['Berkeley Mono']
+  - source: Mercury
+    north_star: "Mountain Top Command Center"
+    fonts: ['arcadiaDisplay', 'arcadia']
+  - source: Hyperstudio
+    north_star: "Monochrome terminal with amber accents. The design feels like a precisely coded interface, where every element serves a "
+    fonts: ['Aeonik', 'Input']
+  - source: Antimetal
+    north_star: "Electric storm over a blueprint — vivid neon signal cutting through deep navy atmosphere, then snapping to precise techn"
+    fonts: ['abcdFont', 'ivarTextFont']
+  - source: Raycast
+    north_star: "Obsidian command terminal — a near-black void where UI surfaces emerge like backlit glass panels, depth created by shado"
+    fonts: ['Inter', 'GeistMono', 'SF Pro Text', 'SF Pro']
+    mono_pair: ['GeistMono']
+  - source: Titan
+    north_star: "monochrome financial ledger"
+    fonts: ['Geist', 'Geist Mono']
+    mono_pair: ['Geist Mono']
+  - source: Anthropic
+    north_star: "Research journal printed on warm stone — authoritative typographic composition where word-level underlines replace color"
+    fonts: ['Anthropic Sans', 'Anthropic Serif', 'Anthropic Mono']
+    mono_pair: ['Anthropic Mono']
+  - source: Column
+    north_star: "Architectural blueprint on white marble. Subtle background patterns convey structure beneath a pristine, luminous surfac"
+    fonts: ['SuisseIntl', 'SFMono', 'Inter', 'SuisseIntlMono']
+    mono_pair: ['SFMono', 'SuisseIntlMono']
+  - source: Authkit
+    north_star: "Midnight Command Center. Imagine a high-tech dashboard glowing softly in a dark room, with frosted glass elements reflec"
+    fonts: ['Untitled Sans', 'aeonikPro', 'dotDigital']
+  - source: Augen Pro
+    north_star: "Architectural Blueprint on White Marble. Every element is immaculately placed against a pristine, bright background, cre"
+    fonts: ['PP Neue Montreal', 'PP Neue Montreal']
+  - source: Ui
+    north_star: "Monochromatic architectural blueprint – precise, functional forms on a stark, bright canvas."
+    fonts: ['Geist', 'Geist Mono']
+    mono_pair: ['Geist Mono']
+  - source: Perplexity AI
+    north_star: "Ivory Desk, Graphite Tools — a pristine, brightly lit workspace filled with essential gray instruments."
+    fonts: ['pplxSans']
+  - source: Resend
+    north_star: "Obsidian developer terminal — every surface reads like polished black glass under a focused beam of white type."
+    fonts: ['Inter', 'Domaine', 'ABCFavorit', 'CommitMono', 'Helvetica', '-apple-system']
+    mono_pair: ['CommitMono']
+  - source: Fey
+    north_star: "Deep-space observatory control panel. Functionality, precision, and high-contrast data visualization on a near-black can"
+    fonts: ['calibre']

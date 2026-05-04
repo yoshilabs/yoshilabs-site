@@ -1,0 +1,24 @@
+# Warm Trust Palettes
+# Use for: service businesses, hospitality, creative agencies, editorial content
+# Principles: warm off-whites, never pure white. Natural stone/paper undertones.
+# Black text on warm ground. Accent = deep warm tone (not neon, not saturated).
+
+palettes:
+  - source: ElevenLabs
+    scheme: light
+    colors: [Eggshell ##fdfcfc, Powder ##f5f3f1, Chalk ##e5e5e5, Fog ##b1b0b0, Gravel ##777169, Slate ##a59f97]
+  - source: Cursor
+    scheme: light
+    colors: [Canvas Parchment ##f7f7f4, Inkwell ##262510, Muted Stone ##7a7974, Deep Shadow ##141414, Pebble Gray ##e6e5e0, Onyx Outline ##f54e00]
+  - source: Superhuman
+    scheme: both
+    colors: [Parchment Canvas ##f2f0eb, Ink ##292827, Bone ##ffffff, Fog ##e3e3e2, Driftwood ##dcd7d3, Graphite ##666666]
+  - source: Family
+    scheme: light
+    colors: [Warm Canvas ##fbfaf9, Stone Surface ##f2f0ed, Parchment Card ##f8f7f4, Graphite ##474645, Charcoal Primary ##343433, Midnight ##121212]
+  - source: Anthropic
+    scheme: light
+    colors: [Slate Dark ##141413, Ivory Light ##faf9f5, Ivory Medium ##f0eee6, Ivory Dark ##e8e6dc, Oat ##e3dacc, Cloud Medium ##b0aea5]
+  - source: Perplexity AI
+    scheme: light
+    colors: [Inkwell ##000000, Paper White ##FFFFFF, Parchment ##FAF8F5, Graphite ##27251, Faded Stone ##92918B, Dusk Gray ##72706B]

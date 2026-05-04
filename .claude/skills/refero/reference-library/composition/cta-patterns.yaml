@@ -1,0 +1,22 @@
+# CTA (Call-to-Action) Patterns
+# Every page needs clear next steps. CTA = conversion engine.
+
+patterns:
+  primary_cta:
+    style: "Solid fill — dark bg with white text (light mode) or accent color (dark mode)"
+    shape: "Pill (9999px) for agencies/editorial. 6-8px for tech/SaaS. 12px for service."
+    padding: "14-18px vertical, 28-36px horizontal"
+    text: "Action verb + value. 'Book a Free Consultation' not 'Submit'"
+    hover: "Magnetic displacement (4px) or bg shift"
+  secondary_cta:
+    style: "Ghost — transparent bg, border matches primary color, text matches"
+    shape: "Same as primary"
+    text: "Lower-commitment action. 'See Our Work', 'Learn More'"
+  sticky_cta:
+    position: "Fixed bottom on mobile. In-nav on desktop."
+    style: "Primary CTA, sometimes simplified (icon + short text)"
+    trigger: "Appears after 30% scroll on mobile"
+  cta_section:
+    background: "Subtle off-white or gradient. Full-width."
+    layout: "Centered. Heading (trust-building) + Subtext + CTA button."
+    urgency: "Optional: 'Limited slots', 'Sites built in 3-5 days'"

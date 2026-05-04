@@ -1,0 +1,28 @@
+# Hero Section Composition Patterns
+# Mix and match: background type + text position + CTA style
+
+patterns:
+  editorial_hero:
+    background: "Warm gradient or atmospheric photo with 40% opacity dark overlay"
+    heading: "48-72px light weight (300). -0.02em tracking. Max 2 lines."
+    subtext: "18-20px body, 1-2 sentences below heading. 60% opacity."
+    cta_position: "Below subtext, left-aligned or centered"
+    use_for: ["creative-agency", "salon", "law-firm", "editorial"]
+  command_hero:
+    background: "Dark gradient or solid near-black with subtle grain"
+    heading: "40-56px medium weight (400-500). Tight tracking. 1-2 lines."
+    subtext: "16-18px in muted gray. Systems-describer, not storyteller."
+    cta_position: "Left-aligned, often with secondary ghost CTA"
+    use_for: ["tech", "saas", "fintech", "accounting"]
+  image_hero:
+    background: "Full-bleed photo. Text overlays with dark gradient at bottom."
+    heading: "36-56px. White text. Bold or medium weight on dark overlay."
+    subtext: "White at 80% opacity. Short. 1 line max."
+    cta_position: "Bottom-left overlay, pill button"
+    use_for: ["restaurant", "real-estate", "salon", "hotel"]
+  minimal_hero:
+    background: "Solid off-white or very subtle gradient. No photo."
+    heading: "40-56px. Serif or light-weight sans. Generous whitespace around."
+    subtext: "16px, muted. Short."
+    cta_position: "Below text, centered"
+    use_for: ["dental", "medical", "law-firm", "minimal-brand"]

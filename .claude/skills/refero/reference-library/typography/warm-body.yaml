@@ -1,0 +1,203 @@
+# Warm Body Text Systems
+# Use for: restaurants, bakeries, cafes, dental clinics, medical practices
+# Principles: Readable, warm, human. 16px+ body size. Generous line-height (1.6-1.75).
+# System fonts or clean sans for body. Display serif for headings.
+# Never below 14px body. Never tight line-height. Never all-caps body.
+
+systems:
+  - source: ElevenLabs
+    fonts: ['Waldenburg', 'WaldenburgFH', 'Inter', 'Geist Mono']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Cursor
+    fonts: ['CursorGothic', 'berkeleyMono', 'Lato', 'EB Garamond', '-apple-system']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Apple
+    fonts: ['SF Pro Display', 'SF Pro Text']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Stripe
+    fonts: ['sohne-var']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Family
+    fonts: ['Family', 'Inter']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: General Intelligence Company
+    fonts: ['PPMondwest', 'af']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Dia Browser
+    fonts: ['ABC Oracle']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Titan
+    fonts: ['Geist', 'Geist Mono']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Anthropic
+    fonts: ['Anthropic Sans', 'Anthropic Serif', 'Anthropic Mono']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Minimalissimo
+    fonts: ['GeistSans']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Column
+    fonts: ['SuisseIntl', 'SFMono', 'Inter', 'SuisseIntlMono']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Acctual
+    fonts: ['sans-serif', 'Open Runde', 'Caveat', 'Inter']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Hyer Aviation
+    fonts: ['HelveticaNowDisplay', 'sans-serif']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Duolingo
+    fonts: ['feather', 'din-round']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Gleap
+    fonts: ['PP Editorial New', 'Switzer', 'Arial', 'system-ui']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Base44
+    fonts: ['Arial', 'wfont_343a2a_5b4cd32fc19d46e1b8c1b142abb27d39', 'wfont_343a2a_4e484da66ffc4465a05a1c9ea5caf495', 'wix-madefor-text-v2', 'Madefor-Text', 'Madefor-Display', 'wfont_343a2a_5b4cd32fc19d46e1b8c1b142abb27d39']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Apple
+    fonts: ['SF Pro Text', 'SF Pro Display', 'Arial']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Contractbook
+    fonts: ['Abcwhyte']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Augen Pro
+    fonts: ['PP Neue Montreal', 'PP Neue Montreal']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: All-In-One Salon
+    fonts: ['Basel Grotesk Book', 'Basel Classic Book']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: OpenAI
+    fonts: ['OpenAI Sans']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Ui
+    fonts: ['Geist', 'Geist Mono']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Perplexity AI
+    fonts: ['pplxSans']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: customer.io
+    fonts: ['saansFont']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Workable
+    fonts: ['Proxima Nova', 'Source Serif Pro']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Airbnb
+    fonts: ['Airbnb Cereal VF']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Apple
+    fonts: ['SF Pro Text', 'SF Pro Display']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."
+  - source: Slack
+    fonts: ['Salesforce-Sans', 'Salesforce-Avant-Garde']
+    body_rules:
+      - "Min 16px body. Ideal: clamp(1rem, 1.1vw, 1.125rem)"
+      - "Line-height: 1.65-1.75 for body paragraphs"
+      - "Left-aligned body. Never justified or centered."
+      - "400 weight body. 500 for emphasis. Never bold paragraphs."

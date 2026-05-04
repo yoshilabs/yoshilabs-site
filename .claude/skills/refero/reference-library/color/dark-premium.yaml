@@ -1,0 +1,20 @@
+# Dark Premium Palettes
+# Use for: SaaS, fintech, developer tools, data-heavy products
+# Principles: near-black base, layered dark grays for depth, single accent color
+# Text: white/light-gray hierarchy. Accent: ONE color used sparingly on CTAs only.
+
+palettes:
+  - source: Linear
+    colors: [Pitch Black ##08090a, Graphite ##0f1011, Deep Slate ##161718, Charcoal Grey ##23252a, Muted Ash ##323334, Gunmetal ##383b3f]
+  - source: Mercury
+    colors: [Mercury Blue ##5266eb, Ghost Blue ##cdddff, Deep Space ##171721, Midnight Slate ##1e1e2a, Graphite ##272735, Lead ##70707d]
+  - source: Hyperstudio
+    colors: [Midnight Void ##101010, Deep Space ##080808, Polar White ##F3F3F3, Absolute Zero ##FFFFFF, Ash Gray ##949494, Dark Carbon ##333333]
+  - source: Raycast
+    colors: [Void Black ##040506, Deep Charcoal ##07080a, Graphite 700 ##111214, Graphite 600 ##1b1c1e, Graphite 500 ##363739, Graphite 400 ##454647]
+  - source: Virtual
+    colors: [Midnight Void ##000000, Ghost White ##ffffff, Muted Ash ##666666, Accent Orange ##ff5c00]
+  - source: Resend
+    colors: [Void Black ##000000, Graphite Rail ##292d30, Smoke ##464a4d, Ash ##6c6c6c, Steel ##6e727a, Fog ##a1a4a5]
+  - source: Fey
+    colors: [Midnight Ink ##0b0b0b, Obsidian Deep ##131313, Coal Dust ##191919, Slate Text ##868f97, Ash Gray ##999999, Silver Accents ##cccccc]

@@ -1,0 +1,27 @@
+# Card System Patterns
+# Card = the primary content container in every Yoshi Labs site
+
+systems:
+  service_card:
+    structure: "Icon/emoji-free-icon + Service Name + 1-line description + Price (optional)"
+    shape: "12-16px radius"
+    hover: "Warm bg shift or subtle lift depending on industry mood"
+    grid: "2 columns mobile, 3 desktop"
+  pricing_card:
+    structure: "Tier name + Price + Feature list (checkmarks) + CTA button"
+    featured: "Slightly elevated (subtle shadow or border accent) — ONE featured card max"
+    shape: "16-20px radius"
+    grid: "Stacked mobile, side-by-side desktop"
+  portfolio_card:
+    structure: "Full-bleed image + Category label + Client name"
+    shape: "8-12px radius"
+    hover: "Image scale 1.03 + overlay with 'View Project' text"
+    grid: "2 col mobile, 3 col desktop masonry"
+  testimonial_card:
+    structure: "Quote text (italic/serif) + Author name + Role + Star rating"
+    shape: "12-16px radius, subtle border or bg"
+    grid: "Carousel or 2-3 col grid"
+  team_card:
+    structure: "Portrait photo (centered face) + Name + Role + Short bio"
+    shape: "Photo: 12-16px radius or circular. Card: flat or subtle shadow."
+    grid: "2 col mobile, 3-4 desktop"

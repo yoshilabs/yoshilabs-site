@@ -1,0 +1,41 @@
+# Refero Reference Library — Master Index
+# 40 design systems extracted from real production sites via styles.refero.design
+
+# HOW TO USE:
+# During a build, Claude Code loads: /reference <category> <file>
+# Example: /reference color warm-trust
+# The reference principles override generic defaults and enforce design quality
+
+categories:
+  color:
+    warm-trust: "Service businesses, hospitality, agencies — warm off-whites, black text"
+    dark-premium: "SaaS, fintech, tools — near-black base, layered grays, single accent"
+    gallery-minimal: "Photography, real estate, portfolios — white dominant, photos carry color"
+    bold-brand: "Gyms, repair, construction — high contrast, saturated accent pops"
+  typography:
+    editorial-headings: "Light weight, negative tracking, serif or humanist sans — confidence"
+    technical-display: "Monospace + geometric sans — data, tools, engineering"
+    warm-body: "16px+, 1.65-1.75 line-height — restaurants, clinics, readable warmth"
+  layout:
+    editorial-spacing: "5-8rem sections, 1200px max width, content breathes"
+    dashboard-density: "3-4rem sections, multi-column, cards carry data weight"
+    gallery-rhythm: "Image-led grids, minimal text, photos dictate pace"
+  interaction:
+    cinematic-motion: "Atmospheric, 0.5-0.8s, parallax, grain — salons, hospitality"
+    utility-snappy: "0.15-0.3s, functional, no drama — repair, tools, construction"
+    warm-hover: "Gentle paper-like feedback, 0.3-0.5s — restaurants, clinics"
+  composition:
+    hero-patterns: "4 hero types: editorial, command, image-led, minimal"
+    card-systems: "5 card types: service, pricing, portfolio, testimonial, team"
+    cta-patterns: "Primary, secondary, sticky, section — conversion engine"
+
+build_decision_tree: |
+  1. What's the industry? → industry-designs/models/{vertical}.yaml gives SECTION structure
+  2. What's the mood? → 
+     - Warm/editorial/human → color: warm-trust + typography: editorial-headings + interaction: cinematic or warm-hover
+     - Technical/data/system → color: dark-premium + typography: technical-display + interaction: utility-snappy
+     - Visual/gallery/minimal → color: gallery-minimal + layout: gallery-rhythm
+     - Bold/energetic/punch → color: bold-brand + interaction: cinematic-motion
+  3. What's the primary CTA? → composition: cta-patterns
+  4. What's the content density? → layout: editorial-spacing or dashboard-density
+  5. Apply composition patterns → hero-patterns + card-systems

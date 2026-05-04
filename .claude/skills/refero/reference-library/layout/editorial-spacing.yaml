@@ -1,0 +1,21 @@
+# Editorial Spacing Rhythm
+# Use for: agencies, law firms, editorial content, storytelling sites
+# Principles: Generous sections (5-8rem padding vertical). Wide content columns.
+# Content breathes. Density is editorial-magazine, not dashboard-crammed.
+
+rules:
+  section_padding:
+    mobile: "5rem 1.5rem"
+    desktop: "8rem 2rem"
+  content_width:
+    max: "1200px"
+    text_column: "680px"
+  grid:
+    base_unit: "8px"
+    gap_default: "2rem"
+    gap_large: "4rem"
+  rhythm:
+    - "Sections separated by generous whitespace, not dividers"
+    - "Content groups have 2-3rem internal gaps"
+    - "Hero section: 50vh minimum on mobile, 90vh on desktop"
+    - "Paragraphs max 75 characters wide"

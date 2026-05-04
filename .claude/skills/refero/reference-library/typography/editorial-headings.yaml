@@ -1,0 +1,92 @@
+# Editorial Heading Systems
+# Use for: creative agencies, salons, law firms, editorial content, hospitality
+# Principles: Light weight (300-400) for display. Negative tracking (-0.02em).
+# Serif or humanist sans for headlines. Generous line-height (1.1-1.2).
+# Never bold headings. Never centered body text. Never tight tracking.
+
+systems:
+  - source: ElevenLabs
+    north_star: "Architect's blueprint on warm vellum — Waldenburg weight-300 headlines at 48px with -0.02em tracking anchored against an"
+    fonts: ['Waldenburg', 'WaldenburgFH', 'Inter', 'Geist Mono']
+    rules:
+      - "Headings at 300 weight with -0.02em tracking"
+      - "Inter for headings — geometric, clean, modern"
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Cursor
+    north_star: "Warm ivory software studio."
+    fonts: ['CursorGothic', 'berkeleyMono', 'Lato', 'EB Garamond', '-apple-system']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Stripe
+    north_star: "Architectural blueprint on white marble."
+    fonts: ['sohne-var']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Superhuman
+    north_star: "Cinematic cockpit behind warm parchment — a productivity instrument panel where atmospheric photography meets structured"
+    fonts: ['Super Sans VF']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Family
+    north_star: "Pixar storyboard on cream paper — playful illustrated characters inhabit a warm off-white world where fintech feels like"
+    fonts: ['Family', 'Inter']
+    rules:
+      - "Inter for headings — geometric, clean, modern"
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: General Intelligence Company
+    north_star: "Architectural Night Sky"
+    fonts: ['PPMondwest', 'af']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Anthropic
+    north_star: "Research journal printed on warm stone — authoritative typographic composition where word-level underlines replace color"
+    fonts: ['Anthropic Sans', 'Anthropic Serif', 'Anthropic Mono']
+    rules:
+      - "Serif display faces for authority and warmth"
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Column
+    north_star: "Architectural blueprint on white marble. Subtle background patterns convey structure beneath a pristine, luminous surfac"
+    fonts: ['SuisseIntl', 'SFMono', 'Inter', 'SuisseIntlMono']
+    rules:
+      - "Inter for headings — geometric, clean, modern"
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Acctual
+    north_star: "Architectural blueprint on white marble. Precision, clarity, and transparent flow of information."
+    fonts: ['sans-serif', 'Open Runde', 'Caveat', 'Inter']
+    rules:
+      - "Inter for headings — geometric, clean, modern"
+      - "Serif display faces for authority and warmth"
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Augen Pro
+    north_star: "Architectural Blueprint on White Marble. Every element is immaculately placed against a pristine, bright background, cre"
+    fonts: ['PP Neue Montreal', 'PP Neue Montreal']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: OpenAI
+    north_star: "Blank page before the first word — a design that treats white space as the most powerful element, reserving all color fo"
+    fonts: ['OpenAI Sans']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: Ui
+    north_star: "Monochromatic architectural blueprint – precise, functional forms on a stark, bright canvas."
+    fonts: ['Geist', 'Geist Mono']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"
+  - source: customer.io
+    north_star: "Architectural Blueprint on Frosted Glass"
+    fonts: ['saansFont']
+    rules:
+      - "Line-height 1.1-1.25 on all headings"
+      - "Never bold. Light weight = editorial confidence"

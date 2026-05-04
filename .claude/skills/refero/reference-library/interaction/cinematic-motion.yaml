@@ -1,0 +1,23 @@
+# Cinematic Motion Language
+# Use for: salons, spas, creative agencies, hospitality, experiential brands
+# Principles: Atmospheric, immersive. Slow transitions (0.5-0.8s).
+# Parallax, atmospheric photography, graceful reveals.
+
+motion:
+  scroll_reveal:
+    stagger: "100-120ms between elements"
+    duration: "0.7s"
+    easing: "cubic-bezier(0.22, 0.61, 0.36, 1)"
+    direction: "fade-up with 20px translate"
+  counters:
+    duration: "1.8s"
+    easing: "cubic-bezier(0.16, 1, 0.3, 1)" — easeOutExpo
+  hover:
+    cards: "Slight lift (4px translateY) + soft shadow increase"
+    buttons: "Magnetic displacement — max 4px, spring return 0.4s"
+  transitions:
+    page: "Crossfade or smooth reveal, never hard cut"
+  atmosphere:
+    - "Subtle noise/grain overlay at 0.02-0.035 opacity"
+    - "Cursor spotlight within cards (radial gradient follows mouse)"
+    - "Parallax on hero image (0.15x scroll factor max)"

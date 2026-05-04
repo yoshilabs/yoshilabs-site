@@ -1,0 +1,19 @@
+# Dashboard / Data Density
+# Use for: accounting firms, fintech, data-heavy products, real estate dashboards
+# Principles: Compact but readable. Multi-column layouts. Cards carry data weight.
+# Section padding: 3-4rem. Card internal: 1-1.5rem.
+
+rules:
+  section_padding:
+    mobile: "3rem 1rem"
+    desktop: "5rem 2rem"
+  content_width:
+    max: "1400px"
+  grid:
+    base_unit: "4px"
+    card_gap: "1rem"
+    section_gap: "3rem"
+  density:
+    - "Cards can be tight (1rem internal padding)"
+    - "Tables and lists at native density"
+    - "3-4 column grids work here (vs 2-3 editorial)"
