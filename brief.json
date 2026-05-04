@@ -58,27 +58,27 @@
   },
   "brand": {
     "colors": {
-      "bg": "#08090a",
-      "bg_elevated_1": "#0f1011",
-      "bg_elevated_2": "#161718",
-      "border": "#23252a",
-      "border_subtle": "#323334",
-      "text_primary": "#f7f8f8",
-      "text_secondary": "#d0d6e0",
-      "text_tertiary": "#8a8f98",
-      "text_muted": "#62666d",
-      "accent": "#e4f222",
-      "accent_blue": "#5e6ad2",
-      "accent_cyan": "#02b8cc",
-      "success": "#27a644",
-      "warning": "#eb5757"
+      "bg": "#fdfcfc",
+      "bg_elevated_1": "#f5f3f1",
+      "bg_elevated_2": "#f0eeec",
+      "border": "#e5e5e5",
+      "border_subtle": "#d5d5d5",
+      "text_primary": "#000000",
+      "text_secondary": "#57534e",
+      "text_tertiary": "#a59f97",
+      "text_muted": "#777169",
+      "accent": "#000000",
+      "accent_blue": "#0447ff",
+      "accent_cyan": "#ff4704",
+      "success": "#22c55e",
+      "warning": "#ef4444"
     },
     "fonts": {
       "heading": "Inter",
       "body": "Inter",
-      "mono": "JetBrains Mono"
+      "mono": "Geist Mono"
     },
-    "style": "dark",
+    "style": "light",
     "gradient": "none"
   },
   "sections": [

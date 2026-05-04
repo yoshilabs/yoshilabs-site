@@ -1,0 +1,251 @@
+vertical: creative-agency
+name: Creative / AI Agency
+
+# === BRAND PERSONALITY ===
+core_emotion: "Possibility, transformation, acceleration"
+visual_voice: "Editorial, warm, sophisticated — like a design journal"
+motion_style: "Deliberate, confident (0.5-0.7s, ease-out)"
+refero_style: "ElevenLabs"
+
+# === TYPOGRAPHY ===
+typography:
+  font_options:
+    - mood: "Premium editorial, warm storytelling"
+      heading: "Inter"
+      body: "Inter"
+      heading_weights: [300, 400, 500]
+      body_weights: [400, 500]
+
+    - mood: "Bold creative, confident presence"
+      heading: "DM Serif Display"
+      body: "Karla"
+      heading_weights: [400]
+      body_weights: [400, 500, 700]
+
+    - mood: "Technical-forward, systems thinking"
+      heading: "Space Grotesk"
+      body: "DM Sans"
+      heading_weights: [300, 400, 500, 700]
+      body_weights: [400, 500]
+
+    - mood: "Humanist agency, warm craft"
+      heading: "Cormorant"
+      body: "Manrope"
+      heading_weights: [300, 400, 600]
+      body_weights: [400, 500, 600]
+
+  scale:
+    h1: "clamp(2.5rem, 5.5vw, 4.5rem)"
+    h2: "clamp(1.75rem, 3.5vw, 3rem)"
+    h3: "clamp(1.375rem, 2.5vw, 2rem)"
+    h4: "1.25rem"
+    body: "clamp(0.9375rem, 1.05vw, 1.0625rem)"
+    small_label: "0.8125rem"
+
+  rules:
+    - "letter-spacing: -0.02em on all headings 32px+"
+    - "letter-spacing: -0.01em on headings 24-31px"
+    - "letter-spacing: 0.01em on body text"
+    - "line-height: 1.75 on body text minimum"
+    - "heading line-height: 1.1-1.2"
+    - "body text ALWAYS 400 weight, never bold for paragraphs"
+    - "Use 300 weight for headline emphasis, never italic"
+
+# === COLOR SYSTEM (ElevenLabs warm editorial) ===
+color_system:
+  light:
+    dominant_60:
+      name: "Warm Paper"
+      bg: "#fdfcfc"
+      bg_secondary: "#f5f3f1"
+      card_bg: "#f0eeec"
+    secondary_30:
+      name: "Stone Text"
+      text_primary: "#000000"
+      text_secondary: "#57534e"
+      text_muted: "#777169"
+      text_tertiary: "#a59f97"
+      border: "#e5e5e5"
+      border_subtle: "#d5d5d5"
+      disabled: "#b1b0b0"
+    accent_10:
+      name: "Warm Black"
+      primary: "#000000"
+      hover: "#1a1a1a"
+      light: "rgba(0,0,0,0.07)"
+      ghost: "rgba(0,0,0,0.04)"
+    supporting:
+      dot_blue: "#0447ff"
+      dot_ember: "#ff4704"
+      logo_blue: "#3d75d8"
+      success: "#22c55e"
+      warning: "#ef4444"
+
+  dark:
+    dominant_60:
+      name: "Deep Ink"
+      bg: "#08090a"
+      bg_secondary: "#0f1011"
+      card_bg: "#161718"
+    secondary_30:
+      name: "Warm Grey Text"
+      text_primary: "#f7f8f8"
+      text_secondary: "#d0d6e0"
+      text_muted: "#8a8f98"
+      text_tertiary: "#62666d"
+      border: "#23252a"
+      border_subtle: "#323334"
+      disabled: "#4a4d52"
+    accent_10:
+      name: "Warm Gold"
+      primary: "#d4a574"
+      hover: "#c49563"
+      light: "rgba(212,165,116,0.12)"
+      ghost: "rgba(212,165,116,0.06)"
+    supporting:
+      dot_blue: "#5e6ad2"
+      dot_ember: "#eb5757"
+      logo_blue: "#5e6ad2"
+      success: "#27a644"
+      warning: "#eb5757"
+
+  neutrals:
+    light:
+      - "#000000"
+      - "#1a1a1a"
+      - "#57534e"
+      - "#777169"
+      - "#a59f97"
+      - "#b1b0b0"
+      - "#d5d5d5"
+      - "#e5e5e5"
+      - "#f0eeec"
+      - "#f5f3f1"
+      - "#fdfcfc"
+    dark:
+      - "#f7f8f8"
+      - "#d0d6e0"
+      - "#8a8f98"
+      - "#62666d"
+      - "#4a4d52"
+      - "#323334"
+      - "#23252a"
+      - "#161718"
+      - "#0f1011"
+      - "#08090a"
+
+# === BRAND STRUCTURE ===
+structure:
+  border_radius:
+    buttons: "9999px"
+    cards: "16px"
+    images: "12px"
+    large_elements: "20px"
+    inputs: "0px"
+    philosophy: "Pill buttons (9999px) for CTAs — every interaction point is a capsule. Cards get subtle 16px rounding. Input fields stay bare (0px) for editorial feel."
+
+  shadows:
+    small: "rgba(0,0,0,0.035) 0px 0px 0px 0.5px inset"
+    medium: "rgba(0,0,0,0.05) 0px 2px 8px 0px"
+    large: "rgba(0,0,0,0.06) 0px 4px 16px 0px"
+    card_hover: "rgba(0,0,0,0.08) 0px 8px 24px 0px"
+    philosophy: "Inset shadows replace borders. Very subtle. Almost invisible. The page feels like paper, not a UI."
+
+  icon_style: "Thin line art, 1.5px stroke, minimal. Icons serve text, never dominate."
+
+  photography:
+    style: "Editorial, cinematic, human-centered. Think Monocle magazine meets a design studio."
+    lighting: "Natural, window-lit, warm. Golden hour, not studio."
+    composition: "People working, screens with code/AI output, team shots, desk setups, Davao cityscapes"
+    hero: "Abstract AI visualization or team portrait with warm paper overlay"
+    cards: "Process shots — code on screen, design mockups, team collaboration"
+    about: "Founder portrait (centered face, 4/5 crop), office interior, city background"
+
+  animation:
+    speed: "Medium (0.5-0.7s)"
+    easing: "cubic-bezier(0.16, 1, 0.3, 1) — ease-out-expo"
+    hover_easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+    style: "Staggered reveal (80ms delays). Counters animate up. Subtle noise grain. Text scramble on hero. Magnetic buttons (4px max). Spotlight hover on cards."
+
+# === SECTION STRUCTURE ===
+sections:
+  - name: "Hero"
+    purpose: "Agency value prop + trust + primary CTA"
+    layout: "Centered or split 50/50 with abstract AI visual"
+    required: true
+
+  - name: "Problem / Insight"
+    purpose: "Why traditional agencies fail PH SMEs. Why AI changes everything."
+    layout: "Two-column: problem left, solution right, or stat-led with counters"
+    required: true
+
+  - name: "Services"
+    purpose: "What we build — websites, AI assistants, SEO, automations"
+    layout: "3-column card grid with icons"
+    required: true
+
+  - name: "How It Works"
+    purpose: "The 3-5 day build process. From brief to live."
+    layout: "Numbered timeline or stepped cards"
+    required: true
+
+  - name: "Pricing"
+    purpose: "Simple, transparent tiers. No hidden fees."
+    layout: "2-3 card comparison with feature lists"
+    required: true
+
+  - name: "Portfolio / Proof"
+    purpose: "Real client sites with results"
+    layout: "Masonry grid or carousel with category filters"
+    required: true
+
+  - name: "About / Team"
+    purpose: "Founder story, team, location (Davao)"
+    layout: "Founder portrait + story + team grid"
+    required: true
+
+  - name: "FAQ"
+    purpose: "Answer objections — speed, quality, price, cancellation"
+    layout: "Accordion with smooth expand/collapse"
+    required: true
+
+  - name: "CTA / Contact"
+    purpose: "Book consultation, Cal.com integration"
+    layout: "Centered card with booking embed"
+    required: true
+
+  - name: "Footer"
+    purpose: "Contact, socials, location"
+    layout: "Multi-column with minimal branding"
+    required: true
+
+cta_strategy:
+  primary_text: "Book a Free Consultation"
+  secondary_text: "See Our Work"
+  placement: "Hero, after services, after pricing, sticky nav"
+  urgency: "Sites built in 3-5 days. Limited slots this month."
+  trust_signals:
+    - "3-5 day build time"
+    - "No contracts. Cancel anytime."
+    - "₱15K setup. ₱5K/mo."
+    - "Based in Davao, PH"
+
+competitor_references:
+  - name: "ElevenLabs"
+    url: "elevenlabs.io"
+    takeaways: "Warm editorial on paper. Inter 300 headings. Pill buttons. Near-zero saturation. Absolute black text on warm eggshell background."
+  - name: "Anthropic"
+    url: "anthropic.com"
+    takeaways: "Research journal aesthetic. Scholarly yet warm. Clean hierarchy. Thoughtful spacing."
+  - name: "Stripe"
+    url: "stripe.com"
+    takeaways: "Structured warmth. Off-white base with golden accents. Clear information architecture."
+
+local_context:
+  payment: ["GCash", "Maya", "Bank Transfer", "Credit Card"]
+  contact: ["WhatsApp", "Facebook Messenger", "Email", "Phone"]
+  booking_platforms: ["Cal.com", "Google Meet"]
+  trust_signals: ["DTI registered", "Based in Davao", "Filipino-Canadian founder", "3-5 day delivery"]
+  social_proof: "Portfolio sites, client results, Google reviews"
+  mobile_first: true
+  typical_hours: "Mon-Fri 9AM-6PM PH time"
