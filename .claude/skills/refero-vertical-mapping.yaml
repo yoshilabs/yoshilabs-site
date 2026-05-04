@@ -1,98 +1,90 @@
-# Refero Style → Industry Vertical Mapping
-# Use this to pick a world-class design reference for each client vertical
+# Refero Style → Industry Mapping (HONEST — May 2026)
+
+## What Refero Actually Is
+22 design systems extracted from real tech company websites. 
+Every single one is SaaS, developer tools, fintech, AI, or creative agencies.
+Zero hospitality. Zero food. Zero beauty. Zero medical. Zero real estate.
+
+## When to Use Refero
+- Client is a tech company, SaaS, or startup
+- Client is a creative/digital agency
+- Client wants a tech-forward, systems-driven aesthetic
+- Client explicitly chooses a style from the gallery
+
+## When NOT to Use Refero
+- Service businesses (salons, restaurants, dental clinics, vet clinics)
+- Hospitality (hotels, B&Bs, STRs)
+- Trade businesses (construction, repair, auto)
+- Traditional professions (law firms, accounting firms)
+- These industries use their own industry model's visual DNA instead
+
+## Honest Mapping
 
 mapping:
-  salon:
-    primary: Superhuman
-    secondary: ElevenLabs
-    reason: "Cinematic, immersive, experience-focused — perfect for beauty/wellness"
-  dental:
-    primary: Anthropic
-    secondary: OpenAI
-    reason: "Scholarly, clean, trustworthy — medical credibility without looking sterile"
-  restaurant:
-    primary: Stripe
-    secondary: Family
-    reason: "Structured, appetizing, payment/checkout DNA — food business flow"
-  repair:
-    primary: Cursor
-    secondary: Hyperstudio
-    reason: "Bold, technical, industrial — shows competence and precision"
-  real-estate:
-    primary: Linear
-    secondary: Mercury
-    reason: "Dark mode, data-heavy, premium aspirational — property dashboard feel"
-  law-firm:
-    primary: Anthropic
-    secondary: Titan
-    reason: "Editorial, authoritative, text-heavy — legal credibility"
-  gym:
-    primary: Cursor
-    secondary: Antimetal
-    reason: "Bold, energetic, high-contrast — power and performance"
-  bakery:
+  creative-agency:
     primary: ElevenLabs
-    secondary: Family
-    reason: "Warm, editorial, storytelling — food craft and care"
-  veterinary:
-    primary: Superhuman
-    secondary: OpenAI
-    reason: "Caring, immersive, clean — trust for pet owners"
-  accounting:
+    secondary: monopo-saigon
+    reason: "Both are editorial/creative. ElevenLabs = warm storytelling. monopo = bold gradient depth. Both fit agencies."
+  
+  tech-startup:
     primary: Linear
     secondary: Stripe
-    reason: "Dark, data-driven, precise — financial dashboards"
-  construction:
-    primary: Cursor
-    secondary: Hyperstudio
-    reason: "Technical, structural, engineering — shows building expertise"
-  tutorial:
+    reason: "Linear = dark command center for SaaS. Stripe = structured architectural for fintech."
+  
+  developer-tools:
+    primary: Raycast
+    secondary: Cursor
+    reason: "Dark terminal aesthetic for tools aimed at developers."
+  
+  ai-company:
     primary: Anthropic
-    secondary: Perplexity
-    reason: "Educational, clean info hierarchy, scholarly"
-  photography:
-    primary: Minimalissimo
-    secondary: ElevenLabs
-    reason: "Minimal gallery aesthetic, visual-first, editorial"
-  event-planner:
-    primary: Base44
-    secondary: ElevenLabs
-    reason: "Modern playful, gradient warmth, creative energy"
-  creative-agency:
-    primary: monopo-saigon
-    secondary: Base44
-    reason: "Asian minimal, dark gradient, modern creative"
-  general:
-    primary: OpenAI
-    secondary: Dia-Browser
-    reason: "Clean, versatile, trustworthy — works for any business"
+    secondary: OpenAI
+    reason: "Research journal / clean minimal. Both fit AI/research companies."
 
-# Quick reference for all 20 styles
+  # Everything else — DO NOT USE REFERO
+  # Use the industry model's own color system, typography, photography, and layout.
+  # The industry models were built from studying real businesses in each vertical.
+  # salon.yaml → salon colors/fonts/photos
+  # restaurant.yaml → restaurant colors/fonts/photos
+  # dental.yaml → dental colors/fonts/photos
+  # etc.
+
+## Refero as Quality Layer (NOT Design System)
+Even when NOT using a Refero style as the primary design system, 
+Refero's dos/donts apply universally to all builds:
+- "No saturated colors for backgrounds" (ElevenLabs)
+- "Accent used sparingly — only on CTAs and active states" (Linear)
+- "Generous whitespace. Content density that feels editorial" (Anthropic)
+- "Subtle noise/grain overlay breaks flatness" (monopo-saigon)
+- "Inset shadows instead of visible borders on light surfaces" (ElevenLabs)
+- "Staggered reveals. Counters animate up. Buttons feel tactile." (All)
+
+These are universal quality rules. Apply them to EVERY build regardless of industry.
+
+## Quick Reference — All 22 Styles
+
 styles:
-  Linear:         "Dark command center, neon lime accent, Layered surfaces (#08090a → #0f1011 → #161718)"
-  Stripe:         "White architectural blueprint, structured, payment/checkout DNA"
-  Anthropic:     "Warm research journal, editorial, scholarly, text-heavy"
-  Cursor:         "Warm ivory studio, technical, bold, developer-focused"
-  Mercury:        "Mountain top command center, premium banking, aspirational"
-  Superhuman:     "Cinematic cockpit, immersive, experience-focused, warm tech"
-  ElevenLabs:     "Architect's blueprint on warm vellum, editorial, storytelling"
-  Raycast:        "Obsidian command terminal, dark utility, developer tools"
-  Base44:         "Softly lit gradient canvas, modern playful, contemporary"
-  OpenAI:         "Blank page, clean minimal, trustworthy"
-  Perplexity:     "Ivory desk with graphite tools, clean info hierarchy, research"
-  Airbnb:         "Vacation photos on white wall, visual-first, cards, booking"
-  Titan:          "Monochrome financial ledger, premium data, investment"
-  Hyperstudio:    "Monochrome terminal with amber, structural engineering, dark"
-  Dia-Browser:    "Prism on white stationery, light, clean, contemporary"
-  Family:         "Pixar storyboard on cream paper, warm, friendly, versatile"
-  Antimetal:      "Electric storm over blueprint, high contrast, dramatic"
-  monopo-saigon:  "Shifting gradient depths, dark gradient, Asian minimal"
-  Minimalissimo:  "White gallery canvas, extreme minimal, gallery aesthetic"
-  General-Intelligence: "Architectural night sky, premium tech, innovation"
+  ElevenLabs:         "Warm editorial, eggshell #fdfcfc, pill buttons, near-zero saturation — Creative agencies"
+  Cursor:             "Warm ivory software studio — Developer tools, tech"
+  Linear:             "Dark command center, neon lime — SaaS, data-heavy, tech"
+  Mercury:            "Mountain top command center — Premium fintech, banking"
+  Apple:              "Gallery wall at natural light — Consumer hardware, visual-first"
+  Stripe:             "Structured architectural blueprint — Fintech, payments, trust"
+  monopo-saigon:      "Shifting gradient depths — Bold creative agencies"
+  Superhuman:         "Cinematic cockpit — Productivity, experience-focused"
+  Hyperstudio:        "Monochrome terminal with amber — Engineering, structural"
+  Family:             "Pixar storyboard on cream paper — Friendly fintech, playful brands"
+  General-Intelligence: "Architectural night sky — AI, innovation"
+  Antimetal:          "Electric storm over blueprint — High contrast, dramatic tech"
+  Raycast:            "Obsidian command terminal — Developer tools, dark utility"
+  Dia-Browser:        "Prism on white stationery — Clean, contemporary, light"
+  Titan:              "Monochrome financial ledger — Investment, premium finance"
+  Anthropic:          "Research journal on warm stone — AI, scholarly, text-heavy"
+  Minimalissimo:      "White gallery canvas — Photography, portfolios, visual-first"
+  Column:             "Architectural blueprint — Fintech, banking"
+  Acctual:            "Architectural blueprint — Fintech, crypto"
+  Authkit:            "Midnight command center — Developer tools, auth, security"
 
 # Usage in builds
-# Include this file in Claude Code prompts:
-# "Read .claude/skills/refero-design-systems.yaml and use the [style] system
-# as the primary design reference for this build."
-# Then follow our industry model for section structure, but use Refero's
-# colors, typography, spacing, and dos/donts for the visual execution.
+# For tech/agency clients: include Refero style as PRIMARY visual DNA
+# For service/trade clients: use industry model's visual DNA + Refero dos/donts as quality overlay
