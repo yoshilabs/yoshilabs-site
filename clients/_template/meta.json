@@ -1,0 +1,28 @@
+{
+  "slug": "",
+  "status": "lead_captured",
+  "stages": {
+    "lead_captured": null,
+    "brief_ready": null,
+    "design_locked": null,
+    "mockup_assets_ready": null,
+    "mockup_built": null,
+    "mockup_qa_passed": null,
+    "mockup_live": null,
+    "outreach_sent": null,
+    "engaged": null,
+    "closed_won": null,
+    "assets_uploaded": null,
+    "production_built": null,
+    "production_qa_passed": null,
+    "live": null
+  },
+  "deploy_urls": {
+    "mockup": null,
+    "production": null
+  },
+  "created": null,
+  "closed_won_date": null,
+  "monthly_fee": null,
+  "notes": ""
+}

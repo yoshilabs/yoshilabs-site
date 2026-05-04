@@ -1,172 +1,190 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Yoshi Labs Client Brief",
-  "description": "Source of truth for every client build. Every field is used by Claude Code to generate the website and chatbot.",
+  "description": "Source of truth for every client build. Matches actual brief.json structure used by Claude Code.",
   "type": "object",
-  "required": ["business_name", "slug", "business_type", "package", "location", "contact", "services", "hours", "owner"],
+  "required": ["business_name", "slug", "industry", "location"],
   "properties": {
+    "client_name": {
+      "type": "string",
+      "description": "Name of the client/person who commissioned the build."
+    },
     "business_name": {
       "type": "string",
-      "description": "Exact legal/display name of the business. Used in nav, hero h1, footer, SEO title, chatbot greetings.",
-      "examples": ["Fresh Cuts Salon", "Dr. Santos Dental Clinic", "Kusina ni Maria"]
+      "description": "Exact display name. Used in nav, hero h1, footer, SEO, chatbot greetings."
+    },
+    "industry": {
+      "type": "string",
+      "description": "Maps to industry model in .claude/skills/industry-designs/models/{industry}.yaml",
+      "enum": [
+        "accounting", "auto", "bakery", "cafe", "catering", "clinic",
+        "construction", "creative-agency", "dental", "education",
+        "event-planner", "fitness", "general", "gym", "hotel",
+        "housekeeping", "law-firm", "medical", "photography",
+        "real-estate", "repair", "restaurant", "retail", "salon",
+        "spa", "tutorial", "veterinary"
+      ]
     },
     "slug": {
       "type": "string",
-      "description": "URL-safe identifier. Used for Vercel subdomain, API endpoints, folder names. Lowercase, hyphens only.",
       "pattern": "^[a-z0-9-]+$",
-      "examples": ["fresh-cuts-salon", "santos-dental", "kusina-ni-maria"]
-    },
-    "business_type": {
-      "type": "string",
-      "enum": ["salon", "dental", "medical", "restaurant", "cafe", "bakery", "real_estate", "law", "repair", "auto", "retail", "fitness", "education", "general"],
-      "description": "Determines which design template to use. Maps to .claude/skills/industry-design-system.md"
-    },
-    "package": {
-      "type": "string",
-      "enum": ["starter", "pro"],
-      "description": "Starter: website + chatbot. Pro: + booking + SMS + Google Business."
-    },
-    "tagline": {
-      "type": "string",
-      "description": "One-line value proposition for the hero section. If empty, Claude generates one based on business_type and services.",
-      "examples": ["Davao's Finest Hair Experience", "Your Smile, Our Passion", "Home-Style Cooking, Restaurant Quality"]
+      "description": "URL-safe identifier. Folder name, Vercel subdomain."
     },
     "location": {
-      "type": "object",
-      "required": ["address", "city"],
-      "properties": {
-        "address": { "type": "string", "description": "Full street address for Google Maps embed and SEO." },
-        "city": { "type": "string", "default": "Davao City" },
-        "province": { "type": "string", "default": "Davao del Sur" },
-        "country": { "type": "string", "default": "Philippines" },
-        "maps_embed_url": { "type": "string", "description": "Google Maps embed URL. If empty, generate from address." },
-        "landmark": { "type": "string", "description": "Nearby landmark for directions. Filipinos navigate by landmarks." }
-      }
+      "type": "string",
+      "description": "City, country. Simple string format."
     },
     "contact": {
       "type": "object",
-      "required": ["phone"],
       "properties": {
-        "phone": { "type": "string", "description": "Primary contact number. Format: 09XX-XXX-XXXX. Used for click-to-call and WhatsApp button." },
-        "phone_secondary": { "type": "string" },
         "email": { "type": "string" },
-        "facebook_url": { "type": "string", "description": "Facebook page URL. Used for social link and photo scraping source." },
-        "instagram_url": { "type": "string", "description": "Instagram profile URL. Used for photo scraping source." },
-        "viber": { "type": "string", "description": "Viber number if different from phone." }
+        "phone": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "address": { "type": "string" },
+        "hours": { "type": "string" },
+        "socials": {
+          "type": "object",
+          "properties": {
+            "facebook": { "type": "string" },
+            "instagram": { "type": "string" },
+            "tiktok": { "type": "string" }
+          }
+        }
       }
     },
-    "owner": {
-      "type": "object",
-      "required": ["name"],
-      "properties": {
-        "name": { "type": "string", "description": "Owner name. Used in About section and as Cal.com booking host." },
-        "title": { "type": "string", "examples": ["Founder", "Lead Stylist", "Principal Dentist"] },
-        "photo": { "type": "string", "description": "Path to owner photo in /photos/. If empty, skip owner photo." },
-        "bio": { "type": "string", "description": "2-3 sentences about the owner. If empty, generate based on business_type." }
-      }
+    "tagline": {
+      "type": "string",
+      "description": "One-line value prop for hero section."
+    },
+    "description": {
+      "type": "string",
+      "description": "1-2 sentence elevator pitch."
     },
     "services": {
       "type": "array",
-      "description": "Every service the business offers. This feeds the Services section AND the chatbot knowledge base.",
+      "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["name"],
+        "required": ["name", "description"],
         "properties": {
-          "name": { "type": "string", "examples": ["Haircut", "Teeth Cleaning", "Lechon Kawali"] },
-          "description": { "type": "string", "description": "1-2 sentence description for the service card." },
-          "price": { "type": "string", "description": "Price as displayed text. Use ₱ symbol. Can be range.", "examples": ["₱250", "₱800-1,200", "Price varies"] },
-          "duration": { "type": "string", "description": "Service duration. Used by chatbot for booking estimates.", "examples": ["30 min", "1 hour", "45 min"] },
-          "category": { "type": "string", "description": "Group services under categories for the services section.", "examples": ["Hair Services", "Dental Procedures", "Main Dishes"] },
-          "popular": { "type": "boolean", "description": "If true, show a 'Popular' badge on the service card." }
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "price": { "type": "string" }
         }
-      },
-      "minItems": 3
+      }
     },
-    "hours": {
+    "pricing": {
       "type": "object",
-      "description": "Business hours. Used in Contact section, SEO, and chatbot responses.",
       "properties": {
-        "monday": { "type": "string", "examples": ["9:00 AM - 6:00 PM", "Closed"] },
-        "tuesday": { "type": "string" },
-        "wednesday": { "type": "string" },
-        "thursday": { "type": "string" },
-        "friday": { "type": "string" },
-        "saturday": { "type": "string" },
-        "sunday": { "type": "string" }
+        "setup": { "type": "string" },
+        "monthly": { "type": "string" },
+        "contract": { "type": "string" }
       }
     },
     "about": {
-      "type": "string",
-      "description": "Business story for the About section. 3-5 sentences. If empty, generate based on business_type, owner, and services."
-    },
-    "brand": {
       "type": "object",
-      "description": "Visual identity. If empty, use the industry template defaults.",
       "properties": {
-        "logo_path": { "type": "string", "description": "Path to logo file in /photos/. If empty, use text-only business name as logo." },
-        "primary_color": { "type": "string", "description": "Override the template accent color. Must be valid hex.", "pattern": "^#[0-9a-fA-F]{6}$", "examples": ["#FF385C", "#B76E79"] },
-        "secondary_color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
-        "style_preference": { "type": "string", "enum": ["minimal", "bold", "elegant", "warm", "professional", "playful"], "description": "If set, overrides the default template for this industry." }
-      }
-    },
-    "photos": {
-      "type": "object",
-      "description": "References to downloaded photos in /photos/ directory.",
-      "properties": {
-        "hero": { "type": "string", "description": "Best photo for hero section. Path relative to /photos/." },
-        "gallery": {
+        "story": { "type": "string" },
+        "team": {
           "type": "array",
-          "items": { "type": "string" },
-          "description": "Paths to gallery images. Max 12. Path relative to /photos/."
+          "items": {
+            "type": "object",
+            "required": ["name", "role"],
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "bio": { "type": "string" },
+              "photo": { "type": "string" }
+            }
+          }
         },
-        "services": {
+        "fun_facts": {
           "type": "array",
-          "items": { "type": "string" },
-          "description": "Service-specific photos. Maps to services array by index."
+          "items": { "type": "string" }
         }
       }
     },
-    "seo": {
+    "brand": {
       "type": "object",
-      "description": "SEO overrides. If empty, auto-generate from business data.",
       "properties": {
-        "title": { "type": "string", "description": "HTML <title>. Default: '{business_name} — {business_type} in {city}'" },
-        "description": { "type": "string", "description": "Meta description. 150-160 chars." },
-        "keywords": { "type": "array", "items": { "type": "string" } }
+        "colors": {
+          "type": "object",
+          "properties": {
+            "bg": { "type": "string" },
+            "bg_elevated_1": { "type": "string" },
+            "bg_elevated_2": { "type": "string" },
+            "border": { "type": "string" },
+            "border_subtle": { "type": "string" },
+            "text_primary": { "type": "string" },
+            "text_secondary": { "type": "string" },
+            "text_tertiary": { "type": "string" },
+            "text_muted": { "type": "string" },
+            "accent": { "type": "string" },
+            "accent_blue": { "type": "string" },
+            "accent_cyan": { "type": "string" },
+            "success": { "type": "string" },
+            "warning": { "type": "string" }
+          }
+        },
+        "fonts": {
+          "type": "object",
+          "properties": {
+            "heading": { "type": "string" },
+            "body": { "type": "string" },
+            "mono": { "type": "string" }
+          }
+        },
+        "style": { "type": "string" },
+        "gradient": { "type": "string" }
       }
     },
-    "chatbot": {
+    "sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Ordered list of page sections."
+    },
+    "ctas": {
       "type": "object",
-      "description": "Chatbot personality overrides. If empty, auto-generate from business data.",
       "properties": {
-        "greeting": { "type": "string", "description": "First message the chatbot shows. Default: 'Hi! Welcome to {business_name}. How can I help you today?'" },
-        "tone": { "type": "string", "enum": ["friendly", "professional", "casual", "warm"], "default": "friendly" },
-        "use_po_opo": { "type": "boolean", "default": true, "description": "Use Filipino respect markers (po/opo) in responses." },
-        "fallback_phone": { "type": "boolean", "default": true, "description": "If AI can't answer, direct customer to call the business." },
-        "lead_capture_after_messages": { "type": "integer", "default": 3, "description": "After N messages, ask for name and phone number." }
+        "primary": { "type": "string" },
+        "secondary": { "type": "string" },
+        "tertiary": { "type": "string" }
       }
     },
-    "pro_features": {
-      "type": "object",
-      "description": "Only used if package === 'pro'.",
-      "properties": {
-        "cal_event_length": { "type": "integer", "default": 30, "description": "Default booking slot length in minutes." },
-        "cal_buffer": { "type": "integer", "default": 15, "description": "Buffer between bookings in minutes." },
-        "sms_enabled": { "type": "boolean", "default": true },
-        "sms_reminder_24h": { "type": "boolean", "default": true },
-        "sms_reminder_1h": { "type": "boolean", "default": true },
-        "sms_follow_up_post_visit": { "type": "boolean", "default": true },
-        "google_business_category": { "type": "string", "description": "Google Business Profile category. Auto-mapped from business_type if empty." }
+    "faq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question", "answer"],
+        "properties": {
+          "question": { "type": "string" },
+          "answer": { "type": "string" }
+        }
       }
     },
-    "meta": {
-      "type": "object",
-      "properties": {
-        "created_date": { "type": "string", "format": "date-time" },
-        "status": { "type": "string", "enum": ["intake", "assets_ready", "building", "qa", "deployed", "live", "delivered"] },
-        "deploy_url": { "type": "string" },
-        "qa_score": { "type": "number" }
+    "competitors": { "type": "array", "items": { "type": "string" } },
+    "testimonials": { "type": "array", "items": { "type": "object" } },
+    "portfolio": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "url": { "type": "string" }
+        }
       }
-    }
+    },
+    "refero_style": {
+      "type": "string",
+      "description": "Refero design system to use as quality benchmark."
+    },
+    "photos_needed": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Descriptions for Higgsfield photo generation."
+    },
+    "deadline": { "type": "string" },
+    "notes": { "type": "string" }
   }
 }
